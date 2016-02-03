@@ -1,0 +1,1169 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Short description.
+msgid "WordPress Twitter Bootstrap CSS lets you include the latest Twitter Bootstrap CSS and Javascript libraries in your WordPress site."
+msgstr ""
+
+#. Screenshot description.
+msgid "<p>Here you select which CSS to use.</p>"
+msgstr ""
+
+#. Screenshot description.
+msgid ""
+"<p>If you prefer you can specifiy your own custom reset CSS file. You could use this if you wanted to use a Twitter Bootstrap\n"
+"CSS library that you have created yourself (useful until we implement a LESS compiler into the plugin).</p>"
+msgstr ""
+
+#. Screenshot description.
+msgid "<p>Assuming you select Twitter Bootstrap CSS, you may now select which Twitter Bootstrap Javascript libraries to include</p>"
+msgstr ""
+
+#. Screenshot description.
+msgid ""
+"<p>You have the option of including any selected Javascript libraries in the HEAD of your WordPress document. This is not recommended\n"
+"for various performance reason.  You can also selected to enable our WordPress Shortcode library.</p>"
+msgstr ""
+
+#. Screenshot description.
+msgid ""
+"<p>A new feature as of version 2.0.2.1. Plugin/Theme Developers can now include Twitter Bootstrap CSS in the WordPress Admin screen.\n"
+"Don't select this unless you know you need it - no harm if you do, but no point otherwise.</p>"
+msgstr ""
+
+#. Screenshot description.
+msgid "<p>As of version 2.0.2.1, we've included a news feed on the Dashboard. If you don't want it displayed, select this to hide it.</p>"
+msgstr ""
+
+#. Found in description list item.
+msgid "Works with <em>any</em> Wordpress Theme without ever editing Theme files and NO programming needed."
+msgstr ""
+
+#. Found in description list item.
+msgid "Now fully customizable with built-in LESS Compiler."
+msgstr ""
+
+#. Found in description list item.
+msgid "Handy WordPress [SHORTCODES] to add Twitter Bootstrap elements to your site quickly"
+msgstr ""
+
+#. Found in description list item.
+msgid "Add your own custom CSS reset file"
+msgstr ""
+
+#. Found in description list item.
+msgid "Option to add JavaScript to the [HEAD] (defaults to end of [BODY] as is good practice)"
+msgstr ""
+
+#. Found in description list item.
+msgid "and more.."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Support The Plugin: <a href=\"http://www.icontrolwp.com/2013/05/remove-ads-support-wordpress-twitter-bootstrap-plugin/\">Go Ad free</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"What is Twitter Bootstrap?\n"
+"It's a CSS and Javascript framework that helps boost your site design and functionality quickly."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"We love Twitter Bootstrap on our <a href=\"http://icwp.io/2\" title=\"iControlWP: Secure WordPress Management\">WordPress sites at iControlWP</a>.\n"
+"And we wanted a way to quickly link the latest Bootstrap CSS and Javascript to all pages, regardless of the WordPress Theme."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "With this plugin, now you can!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "To get the latest news and support go here: <a href=\"http://icwp.io/8\" title=\"WordPress Twitter Bootstrap CSS Plugin Home\">WordPress Twitter Bootstrap CSS Plugin Home</a> to see the release article on our site."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"<strong>Why use Twitter Bootstrap?</strong> \n"
+"It's good practice to have a core, underlying CSS definition so that your website appears and acts consistently across all\n"
+"browsers as far as possible."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Twitter Bootstrap does this extremely well."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"From Twitter Bootstrap:\n"
+"<em>Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites.\n"
+"It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more</em>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"The problem?\n"
+"Many themes do not allow you to add custom CSS files easily. Even the Thesis Framework! So we take\n"
+"another approach and inject the CSS as one of the FIRST items in the HTML HEAD section. This way, no\n"
+"other CSS interferes first so you can be sure these bootstrap file can be used as a foundation/reset CSS."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"The CSS is only part of the solution. Twitter Bootstrap also have Javascript libraries\n"
+"to complement their Bootstrap CSS. These may also be added to your site with the option to\n"
+"add them to the HEAD of your site - by default they are added to the end of the BODY."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "We also wanted the option to alternatively include YUI \"reset.css\" and \"normalize.css\".  These both form related roles to bootstrap, but are lighter."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You could look at the difference between the styles as:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Some References</strong>:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Bootstrap, from Twitter: http://twitter.github.com/bootstrap/"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Yahoo Reset CSS, YUI 2: http://developer.yahoo.com/yui/2/"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Normalize CSS: http://necolas.github.com/normalize.css/"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Upgrade code I kept in previous versions for those that moved from v1 to v2 of the plugin has been completely removed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Allow for a free entry LESS section for users to add their own completely custom variables."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Twitter Bootstrap library to v3.3.6"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Twitter Bootstrap library to v3.3.5"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Normalize to v3.0.3"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Admin Bootstrap CSS is now updated to v3.3.5"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Twitter Bootstrap library to v3.3.4"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Normalize to v3.0.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  LESS PHP compiler to latest 1.7.0.3"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX:      Small fixes to code."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED:    Non-critical errors and warning notices."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED:    Non-critical error in options processing."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED:  Slight code refactor"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Twitter Bootstrap library to v3.2.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Normalize to v3.0.1"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  LESS PHP compiler to latest 1.7.0.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED:    Option for automatic plugin updates for minor releases - i.e. features &amp; bug fixes only."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED:  <strong>Massive</strong> code refactor and change how certain settings are applied - e.g. To use LESS compiled CSS it is chosen from the main CSS select option."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX:      Reported bugs/errors."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Twitter Bootstrap library to v3.1.1"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Less.php compiler to latest stable (v1.7.0.1)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Twitter Bootstrap library to v3.1.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Normalize.css to version 3.0.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Less.php compiler to latest stable (v1.5.1.2)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX:      Minified CSS for Less compiler - the Less compiler now works when requested minified/compressed CSS."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Twitter Bootstrap library to v3.0.3"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX:      A bug relating to preservation of LESS variables in compiler."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Twitter Bootstrap library to v3.0.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Admin Bootstrap CSS is now updated to v3.0.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX:      Bug when saving LESS options that are \"sizes\". This means there is now much less validation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX:      LESS compiler for v2.0 of Bootstrap"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX:      For Multisite and wpDirAuth compatibility."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX:      Some other smaller tweaks and fixes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Normalize.css to v2.1.3"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX:      Crash for links to Normalize and Yahoo Reset, due to variables not defined."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  The version of the JQuery library included if you use the CDNJS option (to align with WordPress 3.6)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED:  Support for the latest W3 Total Cache plugin version."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED:  A lot of code refactoring to improve its reliability and performance (and also to cater for v2 and v3 of the Bootstrap libraries)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX:      LESS Compiler for Bootstrap v3.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Twitter Bootstrap library to version 3.0.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Less compiler to v0.4.0 (although still doesn't work with Bootstrap v3.0.0)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED: Refactored a lot of code (with more to come!)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Removed dashboard ad link."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Normalize CSS to version 2.1.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX: Undefined variable warning."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Bootstrap version to latest release v2.3.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: The ability/option to hide all ads - this is simply achieved by purchasing an iControlWP subscription. See FAQ."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: The option to enqueue the CSS styles using the WordPress styles enqueue option. There's no guarantee that this will add the files so that they're first CSS, so not recommended."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED: Vastly simplified the logic for CSS files being included so it's a little easier to maintain."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED: references to Worpit are now iControlWP."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX: Using use the plugin's original method to include the CSS will only ever make the necessary code replacement on the head element once. (http://wordpress.org/support/topic/css-added-outside-the-head)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Normalize to version 2.1.1"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED: Yahoo! Reset to version 3.10.0."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX: CDNJS changed their path for their Bootstrap Javscript files since version 2.3.0 so the code now reflects this."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: LESS PHP to version 0.3.9 for full compatibility with Twitter Bootstrap 2.3"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Bootstrap version to latest release 2.3.1"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: New shortcodes: TBS_THUMBNAILS and TBS_THUMBNAIL - use in conjuction."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: less.php library with a fix from the lesscphp author for an error generated due to unhandled less syntax."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Bootstrap version to latest release 2.3.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Normalize CSS to latest release 2.1.0 (https://github.com/necolas/normalize.css/blob/v2.1.0/CHANGELOG.md)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Optimization where the list of CSS links to be included is only created once and then saved in the options table. This is a nice optimization so it's not done on every page load."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: Bug where accordion content was not processing shortcodes (http://wordpress.org/support/topic/doshortcode-inside-bootstrap)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: No longer a fatal error if another less.php library was included.  Minimum must be 0.3.8 though, otherwise compiling will outright fail. "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: option to include Bootstrap CSS in the WP Editor (request: http://wordpress.org/support/topic/include-twitter-bootstrap-to-wp-editor)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Now uses CDNJS for the source of the jQuery CDN option is selected."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: The option to use <a href=\"http://wordpress.org/extend/plugins/cdnjs/\">CDNJS</a> for the main Twitter Bootstrap library files - note, if you're using the LESS compiler, then it will use files on your server as it cannot store your personal customizations on CDNJS."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED: Requirements changed - if you opt to use CDNJS, you must have WordPress 3.5+"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Twitter Bootstrap library to version 2.2.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Changed Google CDN for Jquery to use 1.8.3 (inline with WordPress 3.5)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: Reported bug: http://wordpress.org/support/topic/tbs_span-size3-offset4-generates-wrong-code"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Twitter Bootstrap library version to 2.2.1"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: New option to use shortcodes within sidebar widgets."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: New shortcode: TBS_TEXT <a href=\"http://twitter.github.com/bootstrap/base-css.html#typography\">See emphasis classes</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: New shortcode: TBS_ABBR <a href=\"http://twitter.github.com/bootstrap/base-css.html#typography\">See abbreviations</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Option to set TBS_ICON to the white version of the icon using parameter: white=\"y\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: LESS PHP Compiler to latest release 0.3.8"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Using new LESS PHP compiler to write CSS files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Using new LESS PHP compiler to create minified CSS files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Google CDN JQuery library now links to version 1.8.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED: Using plugin_url() instead of PLUGIN_URL because it seems SSL is ignored with the latter"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED: Directory separator to WORPIT_DS, moved it to a base class, and ensured there'd be no attempt to redefine it if it already exists."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(v2.2.1.2 includes a fix for a PHP error)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added a guard around class declarations to prevents fatal errors if you have the plugin installed twice(?)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Twitter Bootstrap library to latest release v2.1.1"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: option to Popover to allow you to set the activation 'trigger' and defaulted it to pre-Bootstrap 2.1.0 behaviour - i.e. on hover!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: option to Tooltip to allow you to set the activation 'trigger' and defaulted it to pre-Bootstrap 2.1.0 behaviour - i.e. on hover!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: btn-block to the shortcode help for buttons."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX: RSS Feed Widget urls"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Twitter Bootstrap library to latest release of 2.1.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Normalize CSS upgraded to version 2.0.1"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX: Valid XHMTL http://wordpress.org/support/topic/plugin-wordpress-twitter-bootstrap-css-xhtml-validation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Shortcode [TBS_PROGRESS_BAR] for Twitter Bootstrap Progress Bars (http://twitter.github.com/bootstrap/components.html#progress)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: MUCH more verbose help on ALL shortcodes. Simply type: help=\"y\" and it will print the help box on your post."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: 'target' parameter to the TBS_BUTTON shortcode so you can open in new window if you want. i.e. target=\"_blank\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: \"help=y\" parameter to all shortcodes so you can quickly print out all available shortcode parameters."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: : <a href=\"http://bit.ly/OFYCh8\" title=\"Complete WordPress Twitter Bootstrap Shortcodes demo page\">Complete WordPress Twitter Bootstrap Shortcodes demo page</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: (again) Fatal error reported- http://wordpress.org/support/topic/plugin-wordpress-twitter-bootstrap-css-cant-activate-the-plugin-because-of-fatal-error"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: a few minor plugin interface bugs."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Normalize.css to latest version (2012-07-07) at time of release"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Shortcode TBS_SPAN - this is just an alias for TBS_COLUMN added previously."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: offset parameter to the TBS_SPAN (and TBS_COLUMN) to reflect offset option in Twitter Bootstrap."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Responsive CSS is automatically recompiled when CSS is recompiled (regardless of whether responsive is enabled or not)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: NONCE to form submissions to improve the security of the plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: A new compile button - compile CSS from Original or customized Variable.less an option (http://wordpress.org/support/topic/plugin-wordpress-twitter-bootstrap-css-make-compile-variablesless-from-original-an-option)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: Fatal error reported- http://wordpress.org/support/topic/plugin-wordpress-twitter-bootstrap-css-cant-activate-the-plugin-because-of-fatal-error"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: Further attempt to fix string escape issues (thanks Troy!)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: Bug with Grid Columns field being appended with 'px' in LESS compiler."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: LESS PHP compiler to latest release (v0.3.5)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: Wasn't properly linking to Google Prettify CSS and JS files when the option was enabled."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Yahoo! YUI v3 to version 3.5.1."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Uses serialized data for the LESS CSS plugin options - greatly reducing database calls on the admin section and database usage."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Plugin now uses iControlWP's standard plugin structure for dynamically creating plugin options pages. The whole plugin is more stable and more reliable."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Now flushes W3 Total Cache (if installed) when you update your LESS CSS options also."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: iControlWP feed to the news feed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: Reported Bug (thanks Claudio!) with Responsive CSS includes - there was a typo in the code and the CSS wasn't linked to correctly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Twitter Bootstrap version 2.0.4"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "IMPROVED much of the plugin code."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "IMPROVED variable.less integrity. Now always uses the original copy for LESS compilation in case it becomes corrupted."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "IMPROVED Upgrade handling in terms of LESS compiled CSS. Now automatically recompiles CSS upon upgrade where applicable."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "IMPROVED [TBS_ROW] shortcode to allow fluid rows/containers and also to allow option of creating a container or not. Default to NOT creating container."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: A few reported bugs."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: LESS Compiler for some of the most common Bootstrap style options! ( <a href=\"http://leafo.net/lessphp/\">thanks to LESSCPHP for PHP LESS compiler</a> )"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Option - toggle use of minimized or non-minized Bootstrap CSS"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Option - toggle delete all plugin settings upon plugin deactivation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Option - enable LESS compiler and include less-compiled CSS"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Now enqueues native WordPress JQuery Javascript when Bootstrap Javascript is enabled."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Yahoo YUI! reset.css v3.4.1"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Plugin upgrade handling is much improved"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Normalize CSS updated to the latest version"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "REMOVED: support Twitter Bootstrap v1.4.0 (\"legacy\") !"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "REMOVED: support for Individual Twitter Bootstrap Javascript Libraries !"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "REMOVED: support for shortcodes [TBS_BLOCK] and [TBS_TWIPSY] !"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIX: Fixed a bug where the plugin would error and WordPress may deactivate the plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: A notice in the dashboard about removal of Javascript library changes coming in version 2.0.3"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: <em>Ability to include Twitter Bootstrap CSS in WP Admin (along with some CSS fixes to accomodate)</em>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: WordPress Admin notices for upgrades and success settings operations."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: New Shortcode: TBS_BADGE"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Host Like Toast RSS News feed on Dashboard + option to hide (hlt-rssfeed-widget.php)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Settings page now uses a new Twitter Bootstrap layout/design"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: The screenshots for the docs"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "STARTED: The process of Internationalisation (I18n) for the plugin. Anyone who wants to help out, please get in touch."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "UPDATED: Updated Twitter Bootstrap library to v2.0.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Ability to include Responsive CSS stylesheet that comes with Twitter Bootstrap version 2.0+"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Reorg'd some of the interface to be a little more logical"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: serious oversight with including individual Javascript libraries."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: Ability to add the \"disabled\" option to Twitter Bootstrap button components."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "FIXED: a couple of bugs in the shortcodes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: New shortcode <a href=\"http://bit.ly/zmGUeD\" title=\"Twitter Bootstrap Glyph Icon WordPress Shortcode\">TBS_ICON</a> to allow you to easily make use of <a href=\"http://bit.ly/AxCdQj\">Twitter Bootstrap Glyphicons</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "ADDED: New shortcode [TBS_BUTTONGROUP] to allow you to easily make use of <a href=\"http://bit.ly/z13ICu\">Twitter Bootstrap Button Groups</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED: Rewrote [TBS_BUTTON]. Now you can add \"toggle\" option, and specify the exact html element type, eg [a], [button], [input]"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED: Rewrote [TBS_ALERT]. Now you can add the Alert Heading using the parameter: heading=\"my lovely heading\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "With [TBS_ALERT], parameter \"type\" is no longer supported - use parameter \"class\" instead"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CHANGED: Added inline Javascript for activating Popover and Tooltips - nice page-loading optimization and also only execute JS code necessary"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Throughout, attempted to retain support for Twitter Bootstrap 1.4.0. But no guarantees - you should upgrade and convert asap."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "TODO: necessary javascript snippet to enable button toggling - couldn't get it working."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Skipped due to missing elements in [TBS_ICON] shortcode."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Twitter Bootstrap library upgraded to v2.0.1"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the options for Twitter Bootstrap Library 2.0.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Maintained compatibility with Twitter Bootstrap Library 1.4.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed option to HotLink to resources"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added more Javascript libraries for 1.4.0 and 2.0.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed several bugs."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Keeping plugin version numbering in-line with Twitter Bootstrap versioning."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "References to \"Twipsy\" renamed to \"Tooltips\" to be inline with version 2.0.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Most SHORTCODES work between both versions. <a href=\"http://bit.ly/wLkYjf\" title=\"Host Like Toast WordPress Twitter Bootstrap plugin release notes v2.0\">Latest Notes</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Restructured and centralized CSS on admin side."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Revamped the Host Like Toast Developer Channel subscription box - the previous one wasn't working so well."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug where styles were being reapplied when HTML [HEADER] element was defined (thanks to Matt Sims!) "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved compatibility with WordPress 3.3 with more correct enqueue of scripts/stylesheets."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[TBS_TWIPSY] and [TBS_POPOVER] are now by default SPAN elements (There may be an option at a later date to specify the element)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Made some functional improvements to [TBS_TWIPSY]"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed [TBS_POPOVER]"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a quoting bug in [TBS_BLOCK]"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added [TBS_ALERT] shortcode (see guide below for TBS_BLOCK)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to inline \"style\" labels, blocks, and code."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to \"style\" buttons inline."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Some bug fixes with shortcodes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "This is a huge release. We have implemented some of the major Twitter Bootstrap feature through <a href=\"http://www.hostliketoast.com/2011/12/how-extend-wordpress-powerful-shortcodes/\" title=\"What are WordPress Shortcodes?\">Wordpress Shortcodes</a>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Shortcode [TBS_BUTTON] : produces a Twitter Bootstrap styled BUTTON <a href=\"http://www.hostliketoast.com/2011/12/master-twitter-bootstrap-using-wordpress-shortcodes-part-1-buttons/\" title=\"Master Twitter Bootstrap Buttons using WordPress Shortcodes\">Guide on Button shortcode here</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Shortcode [TBS_LABEL] : produces a Twitter Bootstrap styled LABEL <a href=\"http://www.hostliketoast.com/2011/12/master-twitter-bootstrap-using-wordpress-shortcodes-part-2-labels/\" title=\"Master Twitter Bootstrap Labels using WordPress Shortcodes\">Guide on Label shortcode here</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Shortcode [TBS_BLOCK] : produces a Twitter Bootstrap styled BLOCK Messages <a href=\"http://www.hostliketoast.com/2011/12/master-twitter-bootstrap-using-wordpress-shortcodes-part-4-alerts-and-block-messages/\" title=\"Master Twitter Bootstrap Labels using WordPress Shortcodes\">Guide on Blockquote shortcode here</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Shortcode [TBS_CODE] : produces a Twitter Bootstrap styled CODE BLOCK"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Shortcode [TBS_TWIPSY] : produces a Twitter Bootstrap TWIPSY mouse over effect <a href=\"http://www.hostliketoast.com/2011/12/master-twitter-bootstrap-using-wordpress-shortcodes-part-5-twipsy-rollovers/\" title=\"Master Twitter Bootstrap Labels using WordPress Shortcodes\">Guide on Twipsy shortcode here</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Shortcode [TBS_POPOVER] : produces a Twitter Bootstrap POPOVER window"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Shortcode [TBS_DROPDOWN] + [TBS_DROPDOWN_OPTION] : produces a Twitter Bootstrap styled DROPDOWN MENU"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Shortcode [TBS_TABGROUP] + [TAB] : produces a Twitter Bootstrap TAB! Now you can create TAB'd content in your posts!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "More documentation will be forthcoming in the <a href=\"http://icwp.io/p\" title=\"iControlWP WordPress Twitter Bootstrap Plugin\">iControlWP WordPress Plugins Page</a>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Quick fix for Login and Register pages - for now there is no Bootstrap added to the login/register pages whatsoever."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated to account for the latest version of Twitter Bootsrap version 1.4.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Re-added the attempt utilize W3 Total Cache \"flush all\" if the plugin is active (compatible with W3 Total Cache v0.9.2.4)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added some more screenshots to the docs"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for 'Bootstrap, from Twitter' Javascript libraries. You can now select which of the invididual JS libraries to include."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Inclusion of Javascript libraries is dependent upon selection of Twitter Bootstrap CSS. If this is not selected, no Javascript is added."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Option to load Javascript files in the \"HEAD\" (using wp_head). The default, and recommended, is just before the closing html \"BODY\" (using wp_footer)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated Twitter Bootstrap CSS link to version 1.3.0."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "bugfix for 'None' option. Update recommended."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "First public release"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Allows you to select 1 of 3 possible styles: YUI 2 Reset; normalize CSS; or Twitter Bootstrap CSS."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "YUI 2 version 2.9.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Normalize CSS version 2011-08-31"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Twitter Bootstrap version 1.2.0"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "<a href=\"http://icwp.io/o\">See Full Demos Of All Shortcodes Available In This Plugin</a>."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid ""
+"As of Twitter Bootstrap 3.0.0 and the release of the plugin with this Bootstrap library version, several things have changed which\n"
+"you should be aware of before you upgrade!"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "Skipped."
+msgstr ""
+
+#. Found in faq header.
+msgid "How can I install the plugin?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How can I remove the ads and marketing links?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How can I use the WordPress Twitter Bootstrap Shortcodes?"
+msgstr ""
+
+#. Found in faq header.
+msgid "What are all the parameters for all the shortcodes?"
+msgstr ""
+
+#. Found in faq header.
+msgid "The WordPress Shortcodes aren't getting processed properly - why?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Why was Twitter (\"Legacy\") Bootstrap v1.4.0 support dropped from the plugin in v2.0.3?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I link more than one CSS?"
+msgstr ""
+
+#. Found in faq header.
+msgid "What happens if uninstall this plugin after I design a site with it installed?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Why does my site not look any different?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Is WordPress Twitter Bootstrap CSS compatible with caching plugins?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Do you make any other plugins?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Is the CSS \"minified\"?"
+msgstr ""
+
+#. Found in faq header.
+msgid "My Popover/Tooltip doesn't seem to work and it's generating Javascript errors in the console"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Browse to Plugins -&gt; Add Plugin"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Search: Wordpress Bootstrap CSS"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Click Install"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Click to Activate."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Download the zip file using the download link to the right."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Extract the contents of the file and locate the folder called 'wordpress-bootstrap-css' containing the plugin files."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Upload this whole folder to your '/wp-content/plugins/' directory"
+msgstr ""
+
+#. Found in faq list item.
+msgid "From the plugins page within Wordpress locate the plugin 'Wordpress Bootstrap CSS' and click Activate"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "This plugin should install as any other WordPress.org respository plugin."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Alternatively using FTP:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"A new menu item will appear on the left-hand side called 'Twitter Bootstrap'.  Click this menu and select\n"
+"Bootstrap CSS."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Select the CSS file as desired."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"Our bread and butter is iControlWP multiple WordPress site management, which costs a few cents a month. Whenever you use iControlWP\n"
+"to manage your sites and your site is connected to the service, the plugin will automatically remove all marketing / ads from the admin interface."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "So by using our services, you get a great service for one, and also support us by contributing and helping with the ongoing development of our plugins."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "To understand why it makes sense to financially support free plugin development, please read: http://blog.pinboard.in/2011/12/don_t_be_a_free_user/"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"I've put a full demo page of all the fully support shortcodes in this plugin:\n"
+"<a href=\"http://bit.ly/OFYCh8\" title=\"Complete WordPress Twitter Bootstrap Shortcodes demo page\">Complete WordPress Twitter Bootstrap Shortcodes demo page</a>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"For all the shortcodes simply type help=\"y\" and preview your post - it will print a box for you showing all parameters, their default values\n"
+"and an explanation where appropriate."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"You need to enable the shortcodes feature in the options page. This is a performance optimization so that people who don't need\n"
+"it don't have to process it.  Also, some require the Bootstrap Javascript library to be loaded so enable that also if you require it."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Time and resources. The work to maintain it and ensure it's bug-free was getting too great."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "I've explained a bit more in this <a href=\"http://wordpress.org/support/topic/plugin-wordpress-twitter-bootstrap-css-legacy-support-removed\">support forum post here</a>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "No. There's no point in doing that and serves only to add a performance penalty to your page loads."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "With version 0.4+, you can now add your own custom reset CSS that will follow the standard reset/Twittter Bootstrap CSS."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"In all likelihood your site design/layout will change. How much so depends on which CSS you used and how much of\n"
+"your own customizations you have done."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"There are severals reasons for this, most likely it is that you or your Wordpress Theme has defined all the styles\n"
+"already in such a manner that the CSS applied with this plugin is overwritten."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"CSS is hierarchical. This means that any styles defined that apply to an element that <em>already</em> has\n"
+"styles applied to it will take precedence over any previous styles."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"The only caching plugin that iControlWP recommends, and has decent experience with, is W3\n"
+"Total Cache."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"This plugin will automatically flush your W3TC cache when you save changes on this plugin (assuming you have\n"
+"the other plugin installed)."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Otherwise, consult your caching program's documentation."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "We also created the <a href=\"http://icwp.io/3\">Multiple WordPress Site Manager (iControlWP) </a> to make it easier for you manage all your WordPress sites in one place."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"Yes, we created <a href=\"http://wordpress.org/extend/plugins/custom-content-by-country/\" title=\"Custom Content By Country WordPress Plugin\">Custom Content By Country</a>\n"
+"plugin that lets you display content to users in specific regions."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Yes, but only in the case of Yahoo! YUI 2/3, and Twitter Bootstrap CSS."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You now have the option to enable minified CSS or not."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"This is likely due to you not linking to the latest version of JQuery. Twitter Bootstrap requires the latest\n"
+"version (v1.7.2 at the time of writing). There is now ( plugin v2.0.3.1+ ) an option to replace the\n"
+"JQuery of your WordPress installation with the latest version served from Google CDN. Try this if you're\n"
+"having issues with Popovers etc., or better yet upgrade your WordPress to the latest version."
+msgstr ""
