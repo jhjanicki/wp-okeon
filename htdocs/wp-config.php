@@ -53,6 +53,7 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
 
 
 /** Database Charset to use in creating database tables. */
+define('REVISR_WORK_TREE', '/Users/arilab/Sites/wp-okeon'); // Added by Revisr
 define('DB_CHARSET', 'utf8mb4');
 
 
