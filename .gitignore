@@ -16,3 +16,4 @@ license.txt
 
 # Ignore any wp-config as well #
 wp-config.php
+wp-config-local.php
