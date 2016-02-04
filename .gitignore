@@ -13,3 +13,6 @@ readme.html
 license.txt
 .log
 .DS_Store
+
+# Ignore any wp-config as well #
+wp-config.php
