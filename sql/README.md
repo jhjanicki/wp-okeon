@@ -41,9 +41,21 @@ Then `SOURCE` this file and, if you don't receive any errors, delete the file so
 * Since the home and site URLs are hard coded into the database, you need to update them to point to your web server. [This can be done in many ways](https://codex.wordpress.org/Changing_The_Site_URL) but here's a way to directly change them through the MySQL console:
 
 ```sql
-UPDATE okeon_options SET option_value = 'http://okeon.unit.oist.jp' WHERE option_name = 'siteurl';
-UPDATE okeon_options SET option_value = 'http://okeon.unit.oist.jp' WHERE option_name = 'home';
+UPDATE okeon_options SET option_value = '<your-site-url>' WHERE option_name = 'siteurl';
+UPDATE okeon_options SET option_value = '<your-site-url>' WHERE option_name = 'home';
 ```
+
+Note that `<your-site-url>` should not end with a `/`. For example, `http://example.com` will work, `http://example.com/` will not.
+
+
+### Fix Media Links
+
+* Similar to the home and site URL issues, the media links in pages and posts need to be fixed.
+
+```sql
+UPDATE okeon_posts SET post_content = (REPLACE (post_content, '<old-site-url>', '<new-site-url'));
+```
+
 
 ---
 
