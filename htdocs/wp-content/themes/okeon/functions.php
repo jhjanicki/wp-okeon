@@ -60,6 +60,7 @@ function create_widget($name, $id, $description){
 create_widget('Front Page Left', 'front-left', 'Displays on the left of the homepage');
 create_widget('Front Page Center', 'front-center', 'Displays on the center of the homepage');
 create_widget('Front Page Right', 'front-right', 'Displays on the right of the homepage');
+create_widget('Front Page Icons', 'front-icons', 'Displays the icons of the homepage');
 create_widget('Front Page Nav', 'front-nav', 'Displays on the nav of the homepage');
 create_widget('Page Sidebar', 'page', 'Displays on the pages with a call to sidebar');
 create_widget('Blog Sidebar', 'blog', 'Displays on the blog with a call to sidebar');

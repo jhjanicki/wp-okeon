@@ -344,7 +344,7 @@ var adm2={
 	        .enter()
 	        .append("circle")
 	        .attr("r", 6)
-			.attr("fill", "#008978")
+			.attr("fill", "#46b698")
 	        .style("stroke", "black")
 	        .classed("point", true)
 	        .attr('cx',function(d){
@@ -401,7 +401,7 @@ var adm2={
 	        .enter()
 	        .append("circle")
 	        .attr("r", 6)
-			.attr("fill", "#CDD9BA")
+			.attr("fill", "#81B26D")
 	        .style("stroke", "black")
 	        .classed("point", true)
 	        .attr('cx',function(d){
@@ -486,7 +486,7 @@ var adm2={
 		var labelHTML = "<p><span class='bold'>SITE: </span>"+d.locality_name+"<br><span class='bold'>REGION: </span>"+d.adm_region+"</p>";
 		var infolabel=d3.select("#map").append("div")
 			.attr("class","infolabel")
-			.style("background-color", "#CDD9BA")
+			.style("background-color", "#81B26D")
 			.attr("id", "infolabel-"+i)
 			.style("color","black")
 			.html(labelHTML);
@@ -497,7 +497,7 @@ var adm2={
 		var labelHTML = "<p><span class='bold'>COLLABORATOR: </span>"+d.collaborator+"<br><span class='bold'>TYPE: </span>"+d.type+"</p>";
 		var infolabel=d3.select("#map").append("div")
 			.attr("class","infolabel")
-			.style("background-color", "#CDD9BA")
+			.style("background-color", "#81B26D")
 			.attr("id", "infolabel-col"+i)
 			.style("color","black")
 			.html(labelHTML);
@@ -596,9 +596,9 @@ var adm2={
 			.html(titleHTML);
 			
 			var legend = d3.select("#map-title").append("svg").classed("legend",true);
-			legend.append("rect").attr("x",10).attr("y",10).attr("width", 20).attr("height",20).attr("fill","#008978");
+			legend.append("rect").attr("x",10).attr("y",10).attr("width", 20).attr("height",20).attr("fill","#46b698");
 			legend.append("text").attr("x", 35).attr("y",24).classed("glow",true).text("sites");
-			legend.append("rect").attr("x",80).attr("y",10).attr("width", 20).attr("height",20).attr("fill","#CDD9BA");
+			legend.append("rect").attr("x",80).attr("y",10).attr("width", 20).attr("height",20).attr("fill","#81B26D");
 			legend.append("text").attr("x", 105).attr("y",24).classed("glow",true).text("collaborators");
 			
 		

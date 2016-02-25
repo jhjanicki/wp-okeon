@@ -24,7 +24,6 @@
     
     <style>
     html{
-		/* margin-top:0px !important; */
 		overflow-x: hidden;
 	}	
     </style>
@@ -32,16 +31,11 @@
 </head>
 
 <body> 
-<!-- 
-<div class="row">
-	<div id="title">OKEON <span id="subtitle">～美ら森プロジェクト～</span></div>
-</div>
- -->
+
 
 <div id="header">
-    <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/okeon2.png" alt="Logo" class="inline" id="brand"/> -->
-    <h1 id="brand-title" class="inline">OKEON&nbsp;&nbsp;</h1>
-    <span id="subtitle" class="inline shadow">～美ら森プロジェクト～</span>
+    
+    <span id="brand-title" class="inline">OKEON</span>&nbsp;&nbsp;<span id="brand-title2">～美ら森プロジェクト～</span></h1>
     <span class="inline" id="search"><?php if (dynamic_sidebar('front-nav')); ?></span>
 </div> 
 
@@ -57,40 +51,6 @@
             wp_nav_menu( $args );
  ?>
 
-
-
-
-
-  <!-- 
-  <ul>
-   <li class='active'><a href="<?php bloginfo('url'); ?>">Home</a></li>
-   <li><a href='#'>About</a>
-   		<ul>
-   			<li><a href='#'>History</a></li>
-   			<li><a href='#'>Staff</a></li>
-   			<li><a href='#'>Timeline</a></li>
-   		</ul>
-   </li>	
-   <li><a href='#'>Project</a>
-   		<ul>
-   			<li><a href='#'>Field Network</a></li>
-   			<li><a href='#'>Sample Processing</a></li>
-   			<li><a href='#'>Ecological Genomics</a></li>
-   			<li><a href='#'>Environmental Informatics</a></li>
-   		</ul>
-   </li>	
-   <li><a href='#'>Data</a></li>
-   <li><a href='#'>Interactive Map</a></li>
-   <li><a href='#'>Resources</a>
-   <ul>
-   			<li><a href='#'>Tutorials</a></li>
-   			<li><a href='#'>Videos</a></li>
-   			<li><a href='#'>Activity Reports</a></li>
-   		</ul>
-   </li>	
-   <li><a href='#'>Blog</a></li>
-   </ul>
- -->
 
 
 </div> 
