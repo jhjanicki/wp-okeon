@@ -25,6 +25,8 @@
 		</div>　<!-- end row -->
 	</section>
 	
+	
+<div id="wrapper" class="width-80-percent">
 	<section id="second-pane">
 		<?php if (dynamic_sidebar('front-icons')); ?>
 	
@@ -35,9 +37,8 @@
 
 	<section id="front-page-blog thrid-pane">
 		 <div class="row">
-			 <div class="col-md-9">
+			 <div class="col-lg-9">
 			 <hr class="page_main">
-				 <div class="width-80-percent">
 					<?php $temp_query = $wp_query; ?>
 					<?php query_posts('showposts=3'); ?>
 					<?php while (have_posts()) : the_post(); ?>
@@ -47,14 +48,14 @@
 						<?php the_post_thumbnail('medium'); ?>  <?php the_excerpt(); ?>
 					</div>
 					<?php endwhile; ?>
-				 </div><!-- end width80% -->
+		
 			  </div>
 
 			<?php get_sidebar('front'); ?>
 	  
 		  </div>
 	</section>
-
+</div>
 
 <script>
 

@@ -19,7 +19,7 @@
 
     <div class="row width-90-percent">
       
-      <div class="col-md-9">
+      <div class="col-lg-9">
       	
       	
       	<div id="myCarousel" class="carousel slide">

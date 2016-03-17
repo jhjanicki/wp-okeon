@@ -1,4 +1,4 @@
-  <div class="col-md-3">
+  <div class="col-lg-3">
       	<h2> Updates </h2>
       	<hr class="page_side">
       	<?php if(! dynamic_sidebar('blog')): ?>

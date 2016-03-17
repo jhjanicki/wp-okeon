@@ -1,7 +1,7 @@
-window.onload=initialize();
-function initialize(){
 
+(function($){
 
+$(window).load(function() {
 	var sites;
 	var collaborators;
 	
@@ -9,77 +9,77 @@ function initialize(){
 
 	var dataset =[
 	{
-	"locality_code":"S0008","adm_region":"Onna","locality_name":"OIST Forest S0008","site_id":"OISTFR","latitude":26.46509,"longitude":127.8419,"elevation":114},
+	"locality_code":"S0008","adm_region":"Onna","locality_name":"OIST Forest S0008","site_id":"OISTFR","latitude":26.46509,"longitude":127.8419,"elevation":114,"img_url":[]},
 	{
-	"locality_code":"S0007","adm_region":"Onna","locality_name":"OIST Forest S0007","site_id":"OISTFR","latitude":26.46517,"longitude":127.8422,"elevation":115},
+	"locality_code":"S0007","adm_region":"Onna","locality_name":"OIST Forest S0007","site_id":"OISTFR","latitude":26.46517,"longitude":127.8422,"elevation":115,"img_url":[]},
 	{
-	"locality_code":"S0009","adm_region":"Onna","locality_name":"OIST Forest S0009","site_id":"OISTFR","latitude":26.4648,"longitude":127.84209,"elevation":109},
+	"locality_code":"S0009","adm_region":"Onna","locality_name":"OIST Forest S0009","site_id":"OISTFR","latitude":26.4648,"longitude":127.84209,"elevation":109,"img_url":[]},
 	{
-	"locality_code":"S0005","adm_region":"Onna","locality_name":"OIST Open S0005","site_id":"OISTOP","latitude":26.46294,"longitude":127.82893,"elevation":62},
+	"locality_code":"S0005","adm_region":"Onna","locality_name":"OIST Open S0005","site_id":"OISTOP","latitude":26.46294,"longitude":127.82893,"elevation":62,"img_url":[]},
 	{
-	"locality_code":"S0004","adm_region":"Onna","locality_name":"OIST Open S0004","site_id":"OISTOP","latitude":26.4631,"longitude":127.82857,"elevation":61},
+	"locality_code":"S0004","adm_region":"Onna","locality_name":"OIST Open S0004","site_id":"OISTOP","latitude":26.4631,"longitude":127.82857,"elevation":61,"img_url":[]},
 	{
-	"locality_code":"S0006","adm_region":"Onna","locality_name":"OIST Open S0006","site_id":"OISTOP","latitude":26.46351,"longitude":127.82809,"elevation":57},
+	"locality_code":"S0006","adm_region":"Onna","locality_name":"OIST Open S0006","site_id":"OISTOP","latitude":26.46351,"longitude":127.82809,"elevation":57,"img_url":[]},
 	{
-	"locality_code":"S0020","adm_region":"Nakagusuku","locality_name":"Nakagusuku Forest S0020","site_id":"NAKAGUSUKUFR","latitude":26.28557,"longitude":127.79491,"elevation":107},
+	"locality_code":"S0020","adm_region":"Nakagusuku","locality_name":"Nakagusuku Forest S0020","site_id":"NAKAGUSUKUFR","latitude":26.28557,"longitude":127.79491,"elevation":107,"img_url":[]},
 	{
-	"locality_code":"S0019","adm_region":"Nakagusuku","locality_name":"Nakagusuku Forest S0019","site_id":"NAKAGUSUKUFR","latitude":26.28571,"longitude":127.79523,"elevation":106},
+	"locality_code":"S0019","adm_region":"Nakagusuku","locality_name":"Nakagusuku Forest S0019","site_id":"NAKAGUSUKUFR","latitude":26.28571,"longitude":127.79523,"elevation":106,"img_url":[]},
 	{
-	"locality_code":"S0018","adm_region":"Nakagusuku","locality_name":"Nakagusuku Forest S0018","site_id":"NAKAGUSUKUFR","latitude":26.28498,"longitude":127.79572,"elevation":121},
+	"locality_code":"S0018","adm_region":"Nakagusuku","locality_name":"Nakagusuku Forest S0018","site_id":"NAKAGUSUKUFR","latitude":26.28498,"longitude":127.79572,"elevation":121,"img_url":[]},
 	{
-	"locality_code":"S0012","adm_region":"Okinawa","locality_name":"Takeyanbaru Forest S0012","site_id":"TAKEYANBARUFR","latitude":26.41375,"longitude":127.78918,"elevation":137},
+	"locality_code":"S0012","adm_region":"Okinawa","locality_name":"Takeyanbaru Forest S0012","site_id":"TAKEYANBARUFR","latitude":26.41375,"longitude":127.78918,"elevation":137,"img_url":[]},
 	{
-	"locality_code":"S0013","adm_region":"Okinawa","locality_name":"Takeyanbaru Forest S0013","site_id":"TAKEYANBARUFR","latitude":26.41363,"longitude":127.78934,"elevation":135},
+	"locality_code":"S0013","adm_region":"Okinawa","locality_name":"Takeyanbaru Forest S0013","site_id":"TAKEYANBARUFR","latitude":26.41363,"longitude":127.78934,"elevation":135,"img_url":[]},
 	{
-	"locality_code":"S0014","adm_region":"Okinawa","locality_name":"Takeyanbaru Forest S0014","site_id":"TAKEYANBARUFR","latitude":26.4131,"longitude":127.79021,"elevation":129},
+	"locality_code":"S0014","adm_region":"Okinawa","locality_name":"Takeyanbaru Forest S0014","site_id":"TAKEYANBARUFR","latitude":26.4131,"longitude":127.79021,"elevation":129,"img_url":[]},
 	{
-	"locality_code":"S0021","adm_region":"Nago","locality_name":"Genka Open S0021","site_id":"GENKAOP","latitude":26.63912,"longitude":128.06187,"elevation":6},
+	"locality_code":"S0021","adm_region":"Nago","locality_name":"Genka Open S0021","site_id":"GENKAOP","latitude":26.63912,"longitude":128.06187,"elevation":6,"img_url":[]},
 	{
-	"locality_code":"S0010","adm_region":"Ogimi","locality_name":"Kitamura 04 S0010","site_id":"KITAMURA04","latitude":26.7056,"longitude":128.17001,"elevation":17},
+	"locality_code":"S0010","adm_region":"Ogimi","locality_name":"Kitamura 04 S0010","site_id":"KITAMURA04","latitude":26.7056,"longitude":128.17001,"elevation":17,"img_url":[]},
 	{
-	"locality_code":"S0011","adm_region":"Ogimi","locality_name":"Kitamura 03 S0011","site_id":"KITAMURA03","latitude":26.69066,"longitude":128.17839,"elevation":155},
+	"locality_code":"S0011","adm_region":"Ogimi","locality_name":"Kitamura 03 S0011","site_id":"KITAMURA03","latitude":26.69066,"longitude":128.17839,"elevation":155,"img_url":[]},
 	{
-	"locality_code":"S0024","adm_region":"Kunigami","locality_name":"Yona Forest S0024","site_id":"YONAFR","latitude":26.73974,"longitude":128.23598,"elevation":297},
+	"locality_code":"S0024","adm_region":"Kunigami","locality_name":"Yona Forest S0024","site_id":"YONAFR","latitude":26.73974,"longitude":128.23598,"elevation":297,"img_url":[]},
 	{
-	"locality_code":"S0025","adm_region":"Kunigami","locality_name":"Yona Forest S0025","site_id":"YONAFR","latitude":26.73972,"longitude":128.2363,"elevation":300},
+	"locality_code":"S0025","adm_region":"Kunigami","locality_name":"Yona Forest S0025","site_id":"YONAFR","latitude":26.73972,"longitude":128.2363,"elevation":300,"img_url":[]},
 	{
-	"locality_code":"S0026","adm_region":"Kunigami","locality_name":"Yona Forest S0026","site_id":"YONAFR","latitude":26.73894,"longitude":128.2372,"elevation":311},
+	"locality_code":"S0026","adm_region":"Kunigami","locality_name":"Yona Forest S0026","site_id":"YONAFR","latitude":26.73894,"longitude":128.2372,"elevation":311,"img_url":[]},
 	{
-	"locality_code":"S0029","adm_region":"Okinawa","locality_name":"Kurashiki Open S0029","site_id":"KURASHIKIOP","latitude":26.39299,"longitude":127.80787,"elevation":80},
+	"locality_code":"S0029","adm_region":"Okinawa","locality_name":"Kurashiki Open S0029","site_id":"KURASHIKIOP","latitude":26.39299,"longitude":127.80787,"elevation":80,"img_url":[]},
 	{
-	"locality_code":"S0030","adm_region":"Uruma","locality_name":"Kurashiki Open S0030","site_id":"KURASHIKIOP","latitude":26.39329,"longitude":127.8074,"elevation":78},
+	"locality_code":"S0030","adm_region":"Uruma","locality_name":"Kurashiki Open S0030","site_id":"KURASHIKIOP","latitude":26.39329,"longitude":127.8074,"elevation":78,"img_url":[]},
 	{
-	"locality_code":"S0031","adm_region":"Uruma","locality_name":"Kurashiki Open S0031","site_id":"KURASHIKIOP","latitude":26.39382,"longitude":127.80736,"elevation":77},
+	"locality_code":"S0031","adm_region":"Uruma","locality_name":"Kurashiki Open S0031","site_id":"KURASHIKIOP","latitude":26.39382,"longitude":127.80736,"elevation":77,"img_url":[]},
 	{
-	"locality_code":"S0015","adm_region":"Ogimi","locality_name":"Hentona Open S0015","site_id":"HENTONAOP","latitude":26.70314,"longitude":128.13156,"elevation":23},
+	"locality_code":"S0015","adm_region":"Ogimi","locality_name":"Hentona Open S0015","site_id":"HENTONAOP","latitude":26.70314,"longitude":128.13156,"elevation":23,"img_url":[]},
 	{
-	"locality_code":"S0017","adm_region":"Ogimi","locality_name":"Hentona Open S0017","site_id":"HENTONAOP","latitude":26.70251,"longitude":128.13113,"elevation":11},
+	"locality_code":"S0017","adm_region":"Ogimi","locality_name":"Hentona Open S0017","site_id":"HENTONAOP","latitude":26.70251,"longitude":128.13113,"elevation":11,"img_url":[]},
 	{
-	"locality_code":"S0016","adm_region":"Ogimi","locality_name":"Hentona Open S0016","site_id":"HENTONAOP","latitude":26.70286,"longitude":128.13,"elevation":6},
+	"locality_code":"S0016","adm_region":"Ogimi","locality_name":"Hentona Open S0016","site_id":"HENTONAOP","latitude":26.70286,"longitude":128.13,"elevation":6,"img_url":[]},
 	{
-	"locality_code":"S0022","adm_region":"Nago","locality_name":"Genka Open S0022","site_id":"GENKAOP","latitude":26.6396,"longitude":128.06212,"elevation":7},
+	"locality_code":"S0022","adm_region":"Nago","locality_name":"Genka Open S0022","site_id":"GENKAOP","latitude":26.6396,"longitude":128.06212,"elevation":7,"img_url":[]},
 	{
-	"locality_code":"S0023","adm_region":"Nago","locality_name":"Genka Open S0023","site_id":"GENKAOP","latitude":26.63974,"longitude":128.06258,"elevation":5},
+	"locality_code":"S0023","adm_region":"Nago","locality_name":"Genka Open S0023","site_id":"GENKAOP","latitude":26.63974,"longitude":128.06258,"elevation":5,"img_url":[]},
 	{
-	"locality_code":"S0032","adm_region":"Nishihara","locality_name":"University of Ryukyus Open S0032","site_id":"UNIVRYUKYUSOP","latitude":26.24818,"longitude":127.75763,"elevation":105},
+	"locality_code":"S0032","adm_region":"Nishihara","locality_name":"University of Ryukyus Open S0032","site_id":"UNIVRYUKYUSOP","latitude":26.24818,"longitude":127.75763,"elevation":105,"img_url":[]},
 	{
-	"locality_code":"S0033","adm_region":"Nishihara","locality_name":"University of Ryukyus Open S0033","site_id":"UNIVRYUKYUSOP","latitude":26.24795,"longitude":127.75863,"elevation":105},
+	"locality_code":"S0033","adm_region":"Nishihara","locality_name":"University of Ryukyus Open S0033","site_id":"UNIVRYUKYUSOP","latitude":26.24795,"longitude":127.75863,"elevation":105,"img_url":[]},
 	{
-	"locality_code":"S0034","adm_region":"Nishihara","locality_name":"University of Ryukyus Open S0034","site_id":"UNIVRYUKYUSOP","latitude":26.24921,"longitude":127.75906,"elevation":114},
+	"locality_code":"S0034","adm_region":"Nishihara","locality_name":"University of Ryukyus Open S0034","site_id":"UNIVRYUKYUSOP","latitude":26.24921,"longitude":127.75906,"elevation":114,"img_url":[]},
 	{
-	"locality_code":"S0035","adm_region":"Nishihara","locality_name":"University of Ryukyus Forest S0035","site_id":"UNIVRYUKYUSFR","latitude":26.24528,"longitude":127.75887,"elevation":113},
+	"locality_code":"S0035","adm_region":"Nishihara","locality_name":"University of Ryukyus Forest S0035","site_id":"UNIVRYUKYUSFR","latitude":26.24528,"longitude":127.75887,"elevation":113,"img_url":[]},
 	{
-	"locality_code":"S0036","adm_region":"Nishihara","locality_name":"University of Ryukyus Forest S0036","site_id":"UNIVRYUKYUSFR","latitude":26.24548,"longitude":127.75863,"elevation":112},
+	"locality_code":"S0036","adm_region":"Nishihara","locality_name":"University of Ryukyus Forest S0036","site_id":"UNIVRYUKYUSFR","latitude":26.24548,"longitude":127.75863,"elevation":112,"img_url":[]},
 	{
-	"locality_code":"S0037","adm_region":"Nishihara","locality_name":"University of Ryukyus Forest S0037","site_id":"UNIVRYUKYUSFR","latitude":26.24407,"longitude":127.75877,"elevation":130},
+	"locality_code":"S0037","adm_region":"Nishihara","locality_name":"University of Ryukyus Forest S0037","site_id":"UNIVRYUKYUSFR","latitude":26.24407,"longitude":127.75877,"elevation":130,"img_url":[]},
 	{
-	"locality_code":"S0001","adm_region":"Onna","locality_name":"OIST Open S0001","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135},
+	"locality_code":"S0001","adm_region":"Onna","locality_name":"OIST Open S0001","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135,"img_url":[]},
 	{
-	"locality_code":"S0002","adm_region":"Onna","locality_name":"OIST Open S0002","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135},
+	"locality_code":"S0002","adm_region":"Onna","locality_name":"OIST Open S0002","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135,"img_url":[]},
 	{
-	"locality_code":"T0001","adm_region":"Onna","locality_name":"OIST Open T0001","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135},
+	"locality_code":"T0001","adm_region":"Onna","locality_name":"OIST Open T0001","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135,"img_url":[]},
 	{
-	"locality_code":"S0003","adm_region":"Onna","locality_name":"OIST Open S0003","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135}
+	"locality_code":"S0003","adm_region":"Onna","locality_name":"OIST Open S0003","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135,"img_url":[]}
 	];		
 	
 	
@@ -89,77 +89,88 @@ var dataset2 = [
     "type":"University",
     "latitude":26.247714,
     "longitude":127.765284,
-    "Japanese_name":"_________"
+    "Japanese_name":"_________",
+    "img_url":[]
   },
   {
     "collaborator":"Yona Field Station, University of the Ryukyus",
     "type":"University",
     "latitude":26.763152,
     "longitude":128.21595,
-    "Japanese_name":"_______"
+    "Japanese_name":"_______",
+    "img_url":[]
   },
   {
     "collaborator":"Onna Village Museum",
     "type":"Museum Partners",
     "latitude":26.436553,
     "longitude":127.793365,
-    "Japanese_name":"______"
+    "Japanese_name":"______",
+    "img_url":[]
   },
   {
     "collaborator":"The Nago Museum",
     "type":"Museum Partners",
     "latitude":26.586481,
     "longitude":127.986921,
-    "Japanese_name":"_____"
+    "Japanese_name":"_____",
+    "img_url":[]
   },
   {
     "collaborator":"The Higashi Museum",
     "type":"Museum Partners",
     "latitude":26.641529,
     "longitude":128.167093,
-    "Japanese_name":"____________"
+    "Japanese_name":"____________",
+    "img_url":[]
   },
   {
     "collaborator":"Okinawa Prefectural Museum and Art Museum",
     "type":"Museum Partners",
     "latitude":26.227603,
     "longitude":127.69387,
-    "Japanese_name":"_______"
+    "Japanese_name":"_______",
+    "img_url":[]
   },
   {
     "collaborator":"Hentona High School",
     "type":"High School",
     "latitude":26.703483,
     "longitude":128.130858,
-    "Japanese_name":"_____"
+    "Japanese_name":"_____",
+    "img_url":[]
   },
   {
     "collaborator":"Futenma High School",
     "type":"High School",
     "latitude":26.291651,
     "longitude":127.777916,
-    "Japanese_name":"_____"
+    "Japanese_name":"_____",
+    "img_url":[]
   },
   {
     "collaborator":"Kyuyo High School",
     "type":"High School",
     "latitude":26.319609,
     "longitude":127.785201,
-    "Japanese_name":"____"
+    "Japanese_name":"____",
+    "img_url":[]
   },
   {
     "collaborator":"Kaiho High School",
     "type":"High School",
     "latitude":26.217686,
     "longitude":127.732593,
-    "Japanese_name":"____"
+    "Japanese_name":"____",
+    "img_url":[]
   },
   {
     "collaborator":"Urasoe High School",
     "type":"High School",
     "latitude":26.237923,
     "longitude":127.702796,
-    "Japanese_name":"____"
+    "Japanese_name":"____",
+    "img_url":[]
   }
 ];			
 
@@ -211,6 +222,11 @@ var adm2={
 ]
 };
 
+
+
+
+
+
 //functions to draw leaflet+D3 map
 
 	var southWest = L.latLng(23, 122),
@@ -219,7 +235,7 @@ var adm2={
 
 	var map = new L.Map("map", {
 				center: [26.5, 128], 
-				zoom: 9,
+				zoom: 10,
 				minZoom:8,
 				maxBounds: bounds,
 				maxZoom:14
@@ -231,13 +247,26 @@ var adm2={
 		
 		tile2 = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
 						attribution: ''
+						}),
+						
+		tile3 = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+						attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+						}),
+		tile4 = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}', {
+						attribution: 'Tiles &copy; Esri &mdash; Source: Esri'
 						});
+						
+						
 		
 		tile2.addTo(map);
+		
+		
+	
+		
 			
 	var layerControlItems = {
-			  "<div class='layer-titles'> Roads </div>": tile1,
-			  "<div class='layer-titles'> Topology </div>": tile2
+			  "<div class='layer-titles'> Topology </div>": tile2,
+			  "<div class='layer-titles'> Roads </div>": tile3
 			};
 		
 		 L.control.layers(layerControlItems).addTo(map);
@@ -264,6 +293,7 @@ var adm2={
 		path = d3.geo.path().projection(transform);
 
 
+
 	var okinawa;
 
 	function loadPolygons(){
@@ -275,7 +305,7 @@ var adm2={
 		  	  adm2.features.forEach(function(d){
 					d.properties['number']=0;
 					//console.log(d.properties.number);
-					console.log(d.properties.NAME_2);
+					//console.log(d.properties.NAME_2);
 		
 					dataset.forEach(function(d2){
 						if(d2.adm_region==d.properties.NAME_2){
@@ -325,6 +355,12 @@ var adm2={
 	map.on("viewreset", resetView);
 	
 	
+	//gallery
+	var gallery = d3.select("#main").append("svg").attr("id","gallery-bg");
+		var gallery_width = $("#main").width()+30;
+		console.log(gallery_width);
+		gallery.attr("width",gallery_width).attr("height",140);
+	
 	function getOverlayG() {
 		return g;
 	}
@@ -345,7 +381,7 @@ var adm2={
 	        .append("circle")
 	        .attr("r", 6)
 			.attr("fill", "#46b698")
-	        .style("stroke", "black")
+	        .style("stroke", "white")
 	        .classed("point", true)
 	        .attr('cx',function(d){
 					return getProjection()([d.longitude,d.latitude]).x;
@@ -356,28 +392,29 @@ var adm2={
 			.on("mouseover.border",function(){
 				d3.select(this)
 				.transition()
-				.duration(1000)
+				.duration(300)
 				.style({
 					'stroke-width':6,
 					'stroke-opacity':0.3,
 					'fill-opacity':1,
-					'stroke':'black',
+					'stroke':'white',
 					'cursor':'pointer'
 					});
 			})
 			.on("mouseout.border",function(){
 				d3.select(this)
 				.transition()
-				.duration(2000)
+				.duration(700)
 				.style({
 					'stroke-width':1,
 					'stroke-opacity':1,
 					'fill-opacity':1,
-					'stroke':'black'
+					'stroke':'white'
 					});
 			})
 			.on("mouseover",drawInfolabel)
 			.on("mouseout",removeInfolabel)
+			//.on("mousemove", moveLabel)
 			.on("click",drawInfopanel)
 			.each(function(){
 				return this.parentNode.appendChild(this);
@@ -401,8 +438,8 @@ var adm2={
 	        .enter()
 	        .append("circle")
 	        .attr("r", 6)
-			.attr("fill", "#81B26D")
-	        .style("stroke", "black")
+			.attr("fill", "#92a05f")
+	        .style("stroke", "white")
 	        .classed("point", true)
 	        .attr('cx',function(d){
 					return getProjection()([d.longitude,d.latitude]).x;
@@ -413,28 +450,29 @@ var adm2={
 			.on("mouseover.border",function(){
 				d3.select(this)
 				.transition()
-				.duration(1000)
+				.duration(300)
 				.style({
 					'stroke-width':6,
 					'stroke-opacity':0.3,
 					'fill-opacity':1,
-					'stroke':'black',
+					'stroke':'white',
 					'cursor':'pointer'
 					});
 			})
 			.on("mouseout.border",function(){
 				d3.select(this)
 				.transition()
-				.duration(2000)
+				.duration(700)
 				.style({
 					'stroke-width':1,
 					'stroke-opacity':1,
 					'fill-opacity':1,
-					'stroke':'black'
+					'stroke':'white'
 					});
 			})
 			.on("mouseover",drawInfolabel_col)
 			.on("mouseout",removeInfolabel)
+			//.on("mousemove", moveLabel)
 			.on("click",drawInfopanel_col)
 			.each(function(){
 				return this.parentNode.appendChild(this);
@@ -483,21 +521,25 @@ var adm2={
 		
 		//console.log("drawInfolabel");
 	
-		var labelHTML = "<p><span class='bold'>SITE: </span>"+d.locality_name+"<br><span class='bold'>REGION: </span>"+d.adm_region+"</p>";
+		var labelHTML = "<h4>"+d.locality_name+"</h4><p>"+d.adm_region+"</p>";
 		var infolabel=d3.select("#map").append("div")
 			.attr("class","infolabel")
-			.style("background-color", "#81B26D")
+			.style("box-shadow", "5px 5px 5px #888888")
+			.style("background-color", "white") 
 			.attr("id", "infolabel-"+i)
 			.style("color","black")
 			.html(labelHTML);
+	
 	}
 	
 	
+	
 	function drawInfolabel_col(d,i,j){
-		var labelHTML = "<p><span class='bold'>COLLABORATOR: </span>"+d.collaborator+"<br><span class='bold'>TYPE: </span>"+d.type+"</p>";
+		var labelHTML = "<h4>"+d.collaborator+"</h4><p>"+d.type+"</p>";
 		var infolabel=d3.select("#map").append("div")
 			.attr("class","infolabel")
-			.style("background-color", "#81B26D")
+			.style("box-shadow", "5px 5px 5px #888888")
+			.style("background-color", "white")
 			.attr("id", "infolabel-col"+i)
 			.style("color","black")
 			.html(labelHTML);
@@ -517,17 +559,43 @@ var adm2={
 	//side panel
 	function drawInfopanel(d,i,j){
 	
-		console.log("drawInfopanel");
 		d3.selectAll(".infopanel").remove();
-		var labelHTML = "<p class='collaborator'>"+d.locality_name+"</p>"
+		var labelHTML = "<h4 style='background-color:#46b698'>"+d.locality_name+"</h4>"
 						+"<p> <span class='bold'>Description: </span>"+d.description
 						+"</p><p> <span class='bold'>Coordinates: </span>["+d.latitude+" , "+d.longitude+"]"
 						+"</p><p> <span class='bold'>Region: </span>"+d.adm_region
 						+"</p>";
-		var infolabel=d3.select("#metadata").append("div")
+		var infolabel=d3.select("#metadata").append("div");
+		   
+		   infolabel
 			.attr("class","infopanel")
 			.attr("id", "infopanel-"+i)
 			.html(labelHTML);
+			
+			infolabel.append("img")
+    				.attr('src', 'https://dl.dropboxusercontent.com/u/102373131/airport.png')
+    				.on('mouseover',function(){
+						d3.select(this)
+						.transition()
+						.duration(500)
+						.style({
+						'opacity':0.7,
+						'cursor':'pointer'
+						});	
+				}).on('mouseout',function(){
+					d3.select(this)
+					.transition()
+					.duration(500)
+					.style({
+					'opacity':1
+					});
+				}).on('click',function(){
+					var imgArray = ['https://dl.dropboxusercontent.com/u/102373131/airport.png','https://dl.dropboxusercontent.com/u/102373131/airport.png','https://dl.dropboxusercontent.com/u/102373131/airport.png'];
+					//write a getImgArray function
+					d3.select("#gallery-bg").style("display","inline").style("opacity",0.5);
+					drawImage(imgArray);
+					
+				});
 			
 			infolabel.append("text").attr("id","x-close").text("x")
 				.on('mouseover',function(){
@@ -535,7 +603,7 @@ var adm2={
 					.transition()
 					.duration(500)
 					.style({
-					'color':'black',
+					'color':'gray',
 					'cursor':'pointer'
 					});
 				})
@@ -544,19 +612,263 @@ var adm2={
 					.transition()
 					.duration(500)
 					.style({
-					'color':'white'
+					'color':'black'
 					});
 				})
 				.on("click",function(){
 						d3.selectAll(".infopanel").remove();
 				});
+
+	}
+	
+	
+	function drawImage(imgArray){
+		 var img_container = d3.select("#metadata").append("div");
+		
+		//img_container width can be based on the length of the imgArray 
+		 var imgArrLength = imgArray.length;
+		 var imgContainerWidth = getWidth(imgArrLength);
+		 
+
+		if(imgArrLength<=4){
+		
+			imgArray.forEach(function(d,i) {
+		
+				console.log(d);
+			
+				var indv_img = img_container.append("div")
+				.classed("img-div","true")
+				.attr("id","img-"+i)
+				.style("bottom","10px")
+				.style("left",i*190+36+"px")
+				.html("img"+(i+1));
+			
+				indv_img
+				.append('a').attr("href", d).append("img")
+				.attr('src', d);
+				//.html('<a href="'+d+'" target="_blank"></a>');
+			
+				indv_img.on('click',function(){
+					//console.log('peegy');
+					//console.log(this);
+					//console.log(d3.select(this)[0].parentNode);
+				
+				});		
+			
+			
+				indv_img.append("text").attr("class","x-close-img").text("x")
+					.on('mouseover',function(){
+						d3.select(this)
+						.transition()
+						.duration(500)
+						.style({
+						'color':'gray',
+						'cursor':'pointer'
+						});
+					})
+					.on('mouseout',function(){
+						d3.select(this)
+						.transition()
+						.duration(500)
+						.style({
+						'color':'black'
+						});
+					})
+					.on("click",function(){
+							d3.select(this.parentNode.parentNode).remove();
+							d3.select("#gallery-bg").style("display","none");
+					});
+			
+				});  
+			
+				
+				
+				img_container.append("div").append("img").attr("id","arrow-left").attr("class","arrows")
+				.attr('src', 'https://dl.dropboxusercontent.com/u/102373131/arrow-left.png').style("bottom","40px")
+				.style("left","-15px"); //change if it is mobile
+				
+				img_container.append("div").append("img").attr("id","arrow-right").attr("class","arrows")
+				.attr('src', 'https://dl.dropboxusercontent.com/u/102373131/arrow-right.png').style("bottom","40px")
+				.style("right","15px");
+				
+				d3.selectAll(".arrows")
+				.on('mouseover',function(d){
+					d3.select(this)
+						.transition()
+						.duration(500)
+						.style({
+						'opacity':0.5,
+						'cursor':'pointer'
+						});
+				})
+				.on('mouseout',function(d){
+					d3.select(this)
+						.transition()
+						.duration(500)
+						.style({
+						'opacity':1
+						});
+				});
+				
+				var currentStart = 0;
+				
+				d3.select("#arrow-right")
+				.on('click',function(){
+					if(currentStart < imgArray.length-1){
+						currentStart++;
+					}else{
+						currentStart=0;
+					}
+					var temp = new Array();
+					temp.push(imgArray[imgArray.length-1]);
+					for (i = 0; i <= imgArray.length-2; i++){ 
+						temp.push(imgArray[i]);
+					}
+					console.log(temp);
+					imgArray = temp;
+					//arr1 = arr1.concat(arr1.splice(0,2)); // shift left by 2
+					var newImgArray = temp.splice(currentStart, currentStart+5);
+					//or temp.splice(0,5)? since we already shifted it
+					drawImgArray(newImgArray);
+				});
+				
+				d3.select("#arrow-left")
+				.on('click',function(){
+					if(currentStart == 0){
+						currentStart = imgArray.length-1;
+					}else{
+						currentStart--;
+					}
+					var temp = new Array();
+					for (i = 1; i <= imgArray.length-1; i++){ 
+						temp.push(imgArray);
+					}
+					temp.push(imgArray[0]);
+					imgArray = temp;
+					
+					var newImgArray = temp.splice(currentStart, currentStart+5);
+					//or temp.splice(0,5)? since we already shifted it
+					drawImgArray(newImgArray);
+				});
+			
+			}else{ //if there are more than 4 images
+				
+				
+				img_container.append("div").append("img").attr("id","arrow-left").attr("class","arrows")
+				.attr('src', 'https://dl.dropboxusercontent.com/u/102373131/arrow-left.png').style("bottom","40px")
+				.style("left","-15px"); //change if it is mobile
+				
+				img_container.append("div").append("img").attr("id","arrow-right").attr("class","arrows")
+				.attr('src', 'https://dl.dropboxusercontent.com/u/102373131/arrow-right.png').style("bottom","40px")
+				.style("right","15px");
+				
+				d3.selectAll(".arrows")
+				.on('mouseover',function(d){
+					d3.select(this)
+						.transition()
+						.duration(500)
+						.style({
+						'opacity':0.5,
+						'cursor':'pointer'
+						});
+				})
+				.on('mouseout',function(d){
+					d3.select(this)
+						.transition()
+						.duration(500)
+						.style({
+						'opacity':1
+						});
+				});
+				
+				imgArray.forEach(function(d,i) {
+		
+				console.log(d);
+			
+				var indv_img = img_container.append("div")
+				.classed("img-div","true")
+				.attr("id","img-"+i)
+				.style("bottom","10px")
+				.style("left",i*190+36+"px")
+				.html("img"+(i+1));
+			
+				indv_img
+				.append('a').attr("href", d).append("img")
+				.attr('src', d);
+				//.html('<a href="'+d+'" target="_blank"></a>');
+			
+				indv_img.on('click',function(){
+					//console.log('peegy');
+					//console.log(this);
+					//console.log(d3.select(this)[0].parentNode);
+				
+				});		
+			
+			
+				indv_img.append("text").attr("class","x-close-img").text("x")
+					.on('mouseover',function(){
+						d3.select(this)
+						.transition()
+						.duration(500)
+						.style({
+						'color':'gray',
+						'cursor':'pointer'
+						});
+					})
+					.on('mouseout',function(){
+						d3.select(this)
+						.transition()
+						.duration(500)
+						.style({
+						'color':'black'
+						});
+					})
+					.on("click",function(){
+							d3.select(this.parentNode.parentNode).remove();
+							d3.select("#gallery-bg").style("display","none");
+					});
+			
+				});  
+			
+			
+			
+			   //  //DIDNT WORK
+// 				d3.select("#gallery-bg").append("div").append("img").attr("id","arrow-left")
+// 				.attr('src', 'https://dl.dropboxusercontent.com/u/102373131/arrow-left.png')
+// 				.attr("height",100).attr("width",50);
+// 				d3.select("#gallery-bg").append("svg:image").attr("id","arrow-left")
+// 				.attr('xlink:href', 'https://dl.dropboxusercontent.com/u/102373131/arrow-left.png')
+// 				.attr("height",100).attr("width",50)
+// 				.attr('x',0).attr('y',0);
+			}
+		
+		
+	
+	}
+	
+	function drawImgArray(imgArray){
+		
+	}
+	
+	function getWidth(imgArrLength){
+			return imgArrLength*(180+5)+5+5;//every image is 180px in width + 5px padding in between & 5px on each side
+	}
+	
+	
+	function getImageArray(site,collaborator){
+		if(site){
+			return site.img_url;
+		}
+		
+		if(collaborator){
+			return collaborator.img_url;
+		}
 	}
 	
 	function drawInfopanel_col(d,i,j){
 	
-		console.log("drawInfopanel");
 		d3.selectAll(".infopanel").remove();
-		var labelHTML = "<p class='collaborator'>"+d.collaborator+"</p>"
+		var labelHTML = "<h4 style='background-color:#92a05f'>"+d.collaborator+"</h4>"
 						+"<p> <span class='bold'>Description: </span>"+d.description
 						+"</p><p> <span class='bold'>Coordinates: </span><span class='coord'>["+d.latitude+" , "+d.longitude+"]</span>"
 						+"</p><p> <span class='bold'>Type: </span>"+d.type
@@ -572,7 +884,7 @@ var adm2={
 					.transition()
 					.duration(500)
 					.style({
-					'color':'black',
+					'color':'gray',
 					'cursor':'pointer'
 					});
 				})
@@ -581,7 +893,7 @@ var adm2={
 					.transition()
 					.duration(500)
 					.style({
-					'color':'white'
+					'color':'black'
 					});
 				})
 				.on("click",function(){
@@ -596,18 +908,31 @@ var adm2={
 			.html(titleHTML);
 			
 			var legend = d3.select("#map-title").append("svg").classed("legend",true);
-			legend.append("rect").attr("x",10).attr("y",10).attr("width", 20).attr("height",20).attr("fill","#46b698");
+			legend.append("rect").attr("x",10).attr("y",10).attr("width", 20).attr("height",20).attr("fill","#46b698").style("stroke","white")
+				   .style("stroke-width",0.5);
 			legend.append("text").attr("x", 35).attr("y",24).classed("glow",true).text("sites");
-			legend.append("rect").attr("x",80).attr("y",10).attr("width", 20).attr("height",20).attr("fill","#81B26D");
+			legend.append("rect").attr("x",80).attr("y",10).attr("width", 20).attr("height",20).attr("fill","#92a05f").style("stroke","white")
+				   .style("stroke-width",0.5);
 			legend.append("text").attr("x", 105).attr("y",24).classed("glow",true).text("collaborators");
 			
 		
 	
 	}
+	
+	function moveLabel(){
 
-
+		var coordinates = [0, 0];
+			coordinates = d3.mouse(this);
+		var x = coordinates[0];
+		var y = coordinates[1];
+		
+		d3.selectAll(".infolabel")
+			.style("left", x+"px")
+			.style("top", y+"px");
+	};
+	
 
 	
+	}); // window onload
 	
-	
-}//end initialize
+})(jQuery);

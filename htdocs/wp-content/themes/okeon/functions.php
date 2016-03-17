@@ -6,15 +6,14 @@ function theme_styles(){
 	wp_enqueue_style('main_css', get_template_directory_uri().'/style.css');	
 	wp_enqueue_style('menu_css', get_template_directory_uri().'/css/menu.css');	
 	wp_enqueue_style('leaflet_css', get_template_directory_uri().'/js/libraries/leaflet/leaflet.css');	
-	wp_enqueue_style('font_awesome_css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');	
+	wp_enqueue_style('font_awesome_css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 }
 
 add_action('wp_enqueue_scripts','theme_styles');
 
 function theme_js(){
 
-	// wp_enqueue_script('bootstrap_js',get_template_directory_uri().'/js/libraries/bootstrap.min.js',array('jquery'),'',true);
-	wp_enqueue_script('bootstrap_js','https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js',array('jquery'),'',true);
+	wp_enqueue_script('bootstrap_js',get_template_directory_uri().'/js/libraries/bootstrap.min.js',array('jquery'),'',true);
 	wp_enqueue_script('d3_js','http://d3js.org/d3.v3.min.js',array('jquery'),'',true);
 	wp_enqueue_script('d3_geo_js','http://d3js.org/d3.geo.projection.v0.min.js',array('jquery'),'',true);
 	wp_enqueue_script('topojson_js',get_template_directory_uri().'/js/libraries/topojson-js/topojson.min.js',array('jquery','d3_js'),'',true);

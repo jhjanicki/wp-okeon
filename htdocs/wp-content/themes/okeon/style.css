@@ -25,7 +25,7 @@ two blues:
 	a{
 		transition: all 300ms ease;
 		text-decoration:none;
-		color: #81B26D;
+		color: #92a05f;
 	}
 	
 	#cssmenu li a{
@@ -38,7 +38,7 @@ two blues:
 	}
 	
 	a.title{
-		color:#4E494A;
+		color:black;
 		text-decoration:none;
 	}
 	a.title:hover{
@@ -55,7 +55,7 @@ two blues:
 	}
 	
 	.shadow{
-		text-shadow: #4E494A 0.1em 0.1em 0.2em
+		text-shadow: black 0.1em 0.1em 0.2em
 	}
 	
 	.maxWidth {
@@ -155,8 +155,8 @@ two blues:
 		height: 40px;
 		width:130px;
 		background-color: none;
-		color: #4E494A;
-		border: solid 1px #4E494A;
+		color: black;
+		border: solid 1px black;
 		-webkit-transition: all 500ms ease;
 		-moz-transition: all 500ms ease;
 		-ms-transition: all 500ms ease;
@@ -164,14 +164,14 @@ two blues:
 	}
 
 	.button:hover{
-		background-color: #4E494A;
+		background-color: black;
 		color:#F0EDE2;
 		text-decoration:none;
 		cursor: pointer;
 	}
 	
 	.button a{
-		color:#4E494A !important;
+		color:black !important;
 	}
 	
 	.button a:hover{
@@ -179,7 +179,7 @@ two blues:
 	}
 
 	.button:active{
-		color:#81B26D;
+		color:#92a05f;
 		text-decoration:none;
 	}
 	
@@ -210,7 +210,7 @@ two blues:
 	}
 
 	.button2:hover{
-		background-color: /* #81B26D */#594731;
+		background-color: /* #92a05f */#594731;
 		color:#F0EDE2;
 		text-decoration:none;
 		cursor: pointer;
@@ -221,7 +221,7 @@ two blues:
 	}
 	
 	.widget p{
-		color:#81B26D;
+		color:#92a05f;
 	}
 
 	.active-button{
@@ -231,9 +231,9 @@ two blues:
 	}
 	
 	.active-button:hover{
-		background-color: #4E494A;
+		background-color: black;
 		color:#F0EDE2;
-		border: solid 1px #4E494A;
+		border: solid 1px black;
 		text-decoration:none;
 		cursor: pointer;
 	
@@ -257,7 +257,7 @@ two blues:
 		margin-top:50px;
 		margin-left:70px;
 		-webkit-text-stroke-width: 1px;
-  		-webkit-text-stroke-color: #4E494A;
+  		-webkit-text-stroke-color: black;
 	}
 	
 	
@@ -274,8 +274,8 @@ two blues:
 	}
 	#searchsubmit{
 		background-color: white;
-		color:#4E494A;
-		border: solid 1px #4E494A;
+		color:black;
+		border: solid 1px black;
 		-webkit-transition: all 500ms ease;
 		-moz-transition: all 500ms ease;
 		-ms-transition: all 500ms ease;
@@ -283,7 +283,7 @@ two blues:
 		font-family: 'Roboto', sans-serif;
 	}
 	#searchsubmit:hover{
-		background-color:#4E494A;
+		background-color:black;
 		color:#F0EDE2;
 		text-decoration:none;
 		cursor: pointer;
@@ -344,26 +344,51 @@ two blues:
 	#second-pane{
 		min-height:340px;
 		background:white;
+		padding-bottom:100px;
 	}
 	
 	#second-pane h2{
 		padding-top:50px;
-		color:#4B464A;
+		color:black;
 	}
 	
 	#second-pane h4{
 		padding-top:20px;
-		color:#4B464A;
+		color:black;
 	}
 	
 	#second-pane p{
 		color:#46b698;
 	}	
 	
-	
+	//icons
 	#front-icons-wrapper{
 		margin-top:0px;
 	}
+	
+	
+	i.fa.fa-4x{
+		padding:20px; /* change to 34px if including about page */
+		padding-left:34px;
+		padding-right:34px;
+	}
+
+	i.fa.fa-4x:hover{
+		cursor:pointer;
+		transition: all 1s ease;
+		background-color:#46b698;
+		color:white !important;
+		-webkit-clip-path: circle(50px at center);
+
+	}
+	
+	.clip-circle {
+		-webkit-clip-path: circle(64px at center);
+	  	clip-path: circle(64px at center);
+	  	/* OLD VALUE example: circle(245px, 140px, 50px); */
+	  	/* Yep, even the new clip-path has deprecated stuff. */
+	}
+	
 	
 	#map{
 	    /* width:50%; */
@@ -381,7 +406,7 @@ two blues:
  		width:100%;
  		height:500px;
 		color:#F0EDE2;
-		background-color:  #81B26D;
+		background-color:  #92a05f;
 		padding-bottom:80px;
 		font-family: 'Roboto', sans-serif;
 		margin-top:-16px;
@@ -399,6 +424,33 @@ two blues:
     	color:#F0EDE2;
     	background-color:#F0EDE2;
     	height:3px;
+    	margin-bottom:50px;
+    }
+    
+    hr.home-top {
+    	width: 320px;
+    	color:#F0EDE2;
+    	background-color:#F0EDE2;
+    	height:2px;
+    	margin-top:20px;
+    	margin-bottom:10px;
+    }
+    
+    hr.home-bottom {
+    	width: 320px;
+    	color:#F0EDE2;
+    	background-color:#F0EDE2;
+    	height:2px;
+    	margin-bottom:40px;
+    	margin-top:-6px;
+    }
+    
+    hr.icons {
+    	width: 130px;
+    	color:black;
+    	background-color:black;
+    	height:3px;
+    	margin-top:10px;
     	margin-bottom:50px;
     }
     
@@ -428,48 +480,127 @@ two blues:
 		font-size:20px;
 	}
 	
+	/* TOOLTIP */
+	.ui-tooltip {
+		background: #666;
+		color: white;
+		border: none;
+		padding: 0;
+		opacity: 1;
+	}
+	.ui-tooltip-content {
+		position: relative;
+		padding: 1em;
+	}
+	.ui-tooltip-content::after {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		display: block;
+		width: 0;
+	}
+	.right .ui-tooltip-content::after {
+		top: 18px;
+		left: -10px;
+		border-color: transparent #666;
+		border-width: 10px 10px 10px 0;
+	}
+	.left .ui-tooltip-content::after {
+		top: 18px;
+		right: -10px;
+		border-color: transparent #666;
+		border-width: 10px 0 10px 10px;
+	}
+	.top .ui-tooltip-content::after {
+		bottom: -10px;
+		left: 72px;
+		border-color: #666 transparent;
+		border-width: 10px 10px 0;    
+	}
+	.bottom .ui-tooltip-content::after {
+		top: -10px;
+		left: 72px;
+		border-color: #666 transparent;
+		border-width: 0 10px 10px;
+	}
+
+	
 	.infolabel{
 		position:absolute;
-		top:80px;
-		left:50px;
+		top:280px; /* take out */
+		right:80px; /* take out */
 		min-width:220px;
-		height:60px;
+		max-width:400px;
+		max-height:80px;
 		text-align: center;
+		padding-left:5px;
+		padding-right:5px;
 	}
+	
 
 	.infolabel p{
 		padding:10px;
 		font-size:14px;
 	}
+	
+	.infolabel h4{
+		font-size:18px;
+		margin-top:10px;
+	}
 
 	.infopanel{
 		padding:10px;
-		position:absolute;
-		top:150px;
-		left:34px;
+		border-radius: 10px;
 		width:230px;
-		height:110px;
-		background-color: #46b698;
-		color:#F0EDE2;
+		min-height:140px;
+		position:absolute;
+		top:100px;
+		left:34px;
+		background-color: white;
+		color:black;
+		box-shadow: 10px 10px 5px #888888;
 		text-align: center;
 		z-index:999;
 		
 	}
 
 	.infopanel p{
-		font-size:12px;
+		font-size:14px;
 		margin-bottom:0px !important;
 	}
 	.infopanel h4{
 		font-size:20px;
 		margin-top:10px;
+		color:white;
+		/* background-color:rgb(70, 182, 152); */
+		padding:2px;
+		border-radius:5px;
 	}
 	
 	#x-close{
 		position:absolute;
-		top:-5px;
-		left:218px;
+		top:-3px;
+		left:215px;
 		z-index:9999;
+	}
+	
+	.x-close-img{
+		position:absolute;
+		top:-3px;
+		right:5px;
+		z-index:9999;
+	}
+	
+	.img-div{
+		position:absolute;
+		/* 
+		top:350px;
+		left:36px;
+ */
+		width:180px;
+		height:120px;
+		background-color: white;
+		z-index:999;
 	}
 	
 	#map-title{
@@ -500,10 +631,30 @@ two blues:
 	}
 	
 	#okeon-sites{
-		color:#4B464A;
+		color:black;
 	}
 	
 	
+	#gallery-bg{
+		position:absolute;
+		z-index:888;
+		background-color:black;
+		bottom:0px;
+		left:-15px;
+		display:none;
+		transition: display 1s ease;
+	}
+	
+	.arrows{
+		position:absolute;
+		/* 
+top:5px;
+		left:5px;
+ */
+ 		width:30px;
+ 		height:60px;
+		z-index:999;
+	}
 	
 
 
@@ -533,8 +684,8 @@ two blues:
 		margin-bottom: 20px;
 		border: 0;
 		border-top: 1px solid #eee;
-		color:#81B26D;
-		background-color:#81B26D;
+		color:#92a05f;
+		background-color:#92a05f;
 		height: 3px;
 	}
 	
@@ -548,6 +699,27 @@ two blues:
 		background-color:/* #66C0CF */#46b698;
 		height: 3px;
 	}
+	
+	
+	
+@media all and (max-width: 1450px) and (min-width: 1350px){
+	hr.page_side{
+		width:110%;
+	}
+}
+
+@media all and (max-width: 1339px) and (min-width: 1150px){
+	hr.page_side{
+		width:120%;
+	}
+}
+	
+@media all and (max-width: 1149px) and (min-width: 992px){
+	hr.page_side{
+		width:130%;
+	}
+}
+
 	.current_page{
 		margin-left:50px;
 		margin-bottom:0px;
@@ -580,7 +752,7 @@ two blues:
 	
 	
 	#map-page-s2{
-		background-color:#81B26D;
+		background-color:#92a05f;
 		
 	}
 	
@@ -613,8 +785,8 @@ two blues:
 		margin-bottom: 20px;
 		border: 0;
 		border-top: 1px solid #eee;
-		color:/* #0275d8 */#2ca25f;
-		background-color:/* #0275d8 */#2ca25f;
+		color: #46b698;
+		background-color:#46b698;
 		height: 3px;
 		width:250px;
 		margin-left:0px;
@@ -651,7 +823,7 @@ two blues:
 	  width: 100%;
 	  /* Set the fixed height of the footer here */
 	  height: 60px;
-	  background-color: #4E494A;
+	  background-color: black; /* #4E494A */
 	  font-family: 'Roboto', sans-serif;
 	}
 	.footer_p{
@@ -675,12 +847,12 @@ two blues:
 
 	}
 	table, th, td {
-		border: 1px solid #4E494A;
+		border: 1px solid black;
 		border-collapse: collapse;
 	}
 	
 	thead{
-		background-color:/* #81B26D; */#46b698;
+		background-color:/* #92a05f; */#46b698;
 		color:#F0EDE2;
 	}
 	
