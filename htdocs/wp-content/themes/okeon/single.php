@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 
-    <div class="row">
+    <div class="row below-nav">
     	<p class="current_page"> <?php wp_title(''); ?> <i class="fa fa-angle-double-right"></i></p>
-    	<hr class="current_page_hr">
+    	<!-- <hr class="current_page_hr"> -->
     </div>
     
     

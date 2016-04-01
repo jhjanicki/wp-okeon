@@ -1,21 +1,24 @@
 <?php get_header(); ?>
 
 
-    <div class="row">
+    <div class="row below-nav">
     	<p class="current_page"> <?php the_title(); ?> <i class="fa fa-angle-double-right"></i></p>
-    	<hr class="current_page_hr">
+    	<!-- <hr class="current_page_hr"> -->
+    	
     </div>
     
     
     
     <div class="row width-90-percent">
       
-      <div class="col-md-9">
+      <div class="col-md-12">
       	
       		
       		<?php if (have_posts()): while (have_posts()):the_post(); ?>
-      			<h2> <?php the_title(); ?></h2>
+      			<!-- 
+<h2> <?php the_title(); ?></h2>
       			<hr class="page_main">
+ -->
       			<?php the_post_thumbnail(''); ?>
       			<?php the_content(); ?>
       		<?php endwhile; else: ?>
@@ -35,7 +38,7 @@
       
     
       
-      <?php get_sidebar(); ?>
+      <!-- <?php get_sidebar(); ?> -->
     </div>
       
 

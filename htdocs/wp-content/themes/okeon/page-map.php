@@ -6,9 +6,9 @@
 <?php get_header(); ?>
 
 <section id="map-page">
-    <div class="row">
+    <div class="row below-nav">
     	<p class="current_page"> <?php the_title(); ?> <i class="fa fa-angle-double-right"></i></p>
-    	<hr class="current_page_hr">
+    	<!-- <hr class="current_page_hr"> -->
     </div>
     
     
@@ -19,7 +19,7 @@
     <div id="">
     	<div id="side">
     			<div id="open_text">
-    				<h3> Field Network </h3>
+    				<h3 id='second-map-title'> Field Network </h3>
     				<hr>
     			</div>
     			<div id="buttons">
@@ -52,11 +52,12 @@
 
 
 </section>
-	<section id="map-page-s2">
+	<!-- 
+<section id="map-page-s2">
 		<div class="container">
 		    <div class="row text-center">
 		    	<div class="col-lg-12 text-center">
-					<h2> OKEON Site Map By Region</h2>
+					<h2 id="below-map-title"> OKEON Site Map By Region</h2>
 					<hr class="map-hr">
 				</div>
 		    </div>
@@ -67,6 +68,7 @@
             </div>
         </div>
     </section>
+ -->
 
    
 

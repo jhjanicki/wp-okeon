@@ -8,79 +8,84 @@ $(window).load(function() {
 // site data
 
 	var dataset =[
-	{
-	"locality_code":"S0008","adm_region":"Onna","locality_name":"OIST Forest S0008","site_id":"OISTFR","latitude":26.46509,"longitude":127.8419,"elevation":114,"img_url":[]},
-	{
-	"locality_code":"S0007","adm_region":"Onna","locality_name":"OIST Forest S0007","site_id":"OISTFR","latitude":26.46517,"longitude":127.8422,"elevation":115,"img_url":[]},
-	{
-	"locality_code":"S0009","adm_region":"Onna","locality_name":"OIST Forest S0009","site_id":"OISTFR","latitude":26.4648,"longitude":127.84209,"elevation":109,"img_url":[]},
-	{
-	"locality_code":"S0005","adm_region":"Onna","locality_name":"OIST Open S0005","site_id":"OISTOP","latitude":26.46294,"longitude":127.82893,"elevation":62,"img_url":[]},
-	{
-	"locality_code":"S0004","adm_region":"Onna","locality_name":"OIST Open S0004","site_id":"OISTOP","latitude":26.4631,"longitude":127.82857,"elevation":61,"img_url":[]},
-	{
-	"locality_code":"S0006","adm_region":"Onna","locality_name":"OIST Open S0006","site_id":"OISTOP","latitude":26.46351,"longitude":127.82809,"elevation":57,"img_url":[]},
-	{
-	"locality_code":"S0020","adm_region":"Nakagusuku","locality_name":"Nakagusuku Forest S0020","site_id":"NAKAGUSUKUFR","latitude":26.28557,"longitude":127.79491,"elevation":107,"img_url":[]},
-	{
-	"locality_code":"S0019","adm_region":"Nakagusuku","locality_name":"Nakagusuku Forest S0019","site_id":"NAKAGUSUKUFR","latitude":26.28571,"longitude":127.79523,"elevation":106,"img_url":[]},
-	{
-	"locality_code":"S0018","adm_region":"Nakagusuku","locality_name":"Nakagusuku Forest S0018","site_id":"NAKAGUSUKUFR","latitude":26.28498,"longitude":127.79572,"elevation":121,"img_url":[]},
-	{
-	"locality_code":"S0012","adm_region":"Okinawa","locality_name":"Takeyanbaru Forest S0012","site_id":"TAKEYANBARUFR","latitude":26.41375,"longitude":127.78918,"elevation":137,"img_url":[]},
-	{
-	"locality_code":"S0013","adm_region":"Okinawa","locality_name":"Takeyanbaru Forest S0013","site_id":"TAKEYANBARUFR","latitude":26.41363,"longitude":127.78934,"elevation":135,"img_url":[]},
-	{
-	"locality_code":"S0014","adm_region":"Okinawa","locality_name":"Takeyanbaru Forest S0014","site_id":"TAKEYANBARUFR","latitude":26.4131,"longitude":127.79021,"elevation":129,"img_url":[]},
-	{
-	"locality_code":"S0021","adm_region":"Nago","locality_name":"Genka Open S0021","site_id":"GENKAOP","latitude":26.63912,"longitude":128.06187,"elevation":6,"img_url":[]},
-	{
-	"locality_code":"S0010","adm_region":"Ogimi","locality_name":"Kitamura 04 S0010","site_id":"KITAMURA04","latitude":26.7056,"longitude":128.17001,"elevation":17,"img_url":[]},
-	{
-	"locality_code":"S0011","adm_region":"Ogimi","locality_name":"Kitamura 03 S0011","site_id":"KITAMURA03","latitude":26.69066,"longitude":128.17839,"elevation":155,"img_url":[]},
-	{
-	"locality_code":"S0024","adm_region":"Kunigami","locality_name":"Yona Forest S0024","site_id":"YONAFR","latitude":26.73974,"longitude":128.23598,"elevation":297,"img_url":[]},
-	{
-	"locality_code":"S0025","adm_region":"Kunigami","locality_name":"Yona Forest S0025","site_id":"YONAFR","latitude":26.73972,"longitude":128.2363,"elevation":300,"img_url":[]},
-	{
-	"locality_code":"S0026","adm_region":"Kunigami","locality_name":"Yona Forest S0026","site_id":"YONAFR","latitude":26.73894,"longitude":128.2372,"elevation":311,"img_url":[]},
-	{
-	"locality_code":"S0029","adm_region":"Okinawa","locality_name":"Kurashiki Open S0029","site_id":"KURASHIKIOP","latitude":26.39299,"longitude":127.80787,"elevation":80,"img_url":[]},
-	{
-	"locality_code":"S0030","adm_region":"Uruma","locality_name":"Kurashiki Open S0030","site_id":"KURASHIKIOP","latitude":26.39329,"longitude":127.8074,"elevation":78,"img_url":[]},
-	{
-	"locality_code":"S0031","adm_region":"Uruma","locality_name":"Kurashiki Open S0031","site_id":"KURASHIKIOP","latitude":26.39382,"longitude":127.80736,"elevation":77,"img_url":[]},
-	{
-	"locality_code":"S0015","adm_region":"Ogimi","locality_name":"Hentona Open S0015","site_id":"HENTONAOP","latitude":26.70314,"longitude":128.13156,"elevation":23,"img_url":[]},
-	{
-	"locality_code":"S0017","adm_region":"Ogimi","locality_name":"Hentona Open S0017","site_id":"HENTONAOP","latitude":26.70251,"longitude":128.13113,"elevation":11,"img_url":[]},
-	{
-	"locality_code":"S0016","adm_region":"Ogimi","locality_name":"Hentona Open S0016","site_id":"HENTONAOP","latitude":26.70286,"longitude":128.13,"elevation":6,"img_url":[]},
-	{
-	"locality_code":"S0022","adm_region":"Nago","locality_name":"Genka Open S0022","site_id":"GENKAOP","latitude":26.6396,"longitude":128.06212,"elevation":7,"img_url":[]},
-	{
-	"locality_code":"S0023","adm_region":"Nago","locality_name":"Genka Open S0023","site_id":"GENKAOP","latitude":26.63974,"longitude":128.06258,"elevation":5,"img_url":[]},
-	{
-	"locality_code":"S0032","adm_region":"Nishihara","locality_name":"University of Ryukyus Open S0032","site_id":"UNIVRYUKYUSOP","latitude":26.24818,"longitude":127.75763,"elevation":105,"img_url":[]},
-	{
-	"locality_code":"S0033","adm_region":"Nishihara","locality_name":"University of Ryukyus Open S0033","site_id":"UNIVRYUKYUSOP","latitude":26.24795,"longitude":127.75863,"elevation":105,"img_url":[]},
-	{
-	"locality_code":"S0034","adm_region":"Nishihara","locality_name":"University of Ryukyus Open S0034","site_id":"UNIVRYUKYUSOP","latitude":26.24921,"longitude":127.75906,"elevation":114,"img_url":[]},
-	{
-	"locality_code":"S0035","adm_region":"Nishihara","locality_name":"University of Ryukyus Forest S0035","site_id":"UNIVRYUKYUSFR","latitude":26.24528,"longitude":127.75887,"elevation":113,"img_url":[]},
-	{
-	"locality_code":"S0036","adm_region":"Nishihara","locality_name":"University of Ryukyus Forest S0036","site_id":"UNIVRYUKYUSFR","latitude":26.24548,"longitude":127.75863,"elevation":112,"img_url":[]},
-	{
-	"locality_code":"S0037","adm_region":"Nishihara","locality_name":"University of Ryukyus Forest S0037","site_id":"UNIVRYUKYUSFR","latitude":26.24407,"longitude":127.75877,"elevation":130,"img_url":[]},
-	{
-	"locality_code":"S0001","adm_region":"Onna","locality_name":"OIST Open S0001","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135,"img_url":[]},
-	{
-	"locality_code":"S0002","adm_region":"Onna","locality_name":"OIST Open S0002","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135,"img_url":[]},
-	{
-	"locality_code":"T0001","adm_region":"Onna","locality_name":"OIST Open T0001","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135,"img_url":[]},
-	{
-	"locality_code":"S0003","adm_region":"Onna","locality_name":"OIST Open S0003","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135,"img_url":[]}
-	];		
+	{"locality_code":"S0001","adm_region":"Onna","locality_name":"OIST Test S0001","site_id":"OISTTE","latitude":26.45944,"longitude":127.83583,"elevation":135},
+	{"locality_code":"S0002","adm_region":"Onna","locality_name":"OIST Test S0002","site_id":"OISTTE","latitude":26.45944,"longitude":127.83583,"elevation":135},
+	{"locality_code":"S0003","adm_region":"Onna","locality_name":"OIST Test S0003","site_id":"OISTTE","latitude":26.45944,"longitude":127.83583,"elevation":135},
+	{"locality_code":"S0004","adm_region":"Onna","locality_name":"OIST Open S0004","site_id":"OISTOP","latitude":26.4631,"longitude":127.82857,"elevation":67},
+	{"locality_code":"S0005","adm_region":"Onna","locality_name":"OIST Open S0005","site_id":"OISTOP","latitude":26.46294,"longitude":127.82893,"elevation":66},
+	{"locality_code":"S0006","adm_region":"Onna","locality_name":"OIST Open S0006","site_id":"OISTOP","latitude":26.46351,"longitude":127.82809,"elevation":62},
+	{"locality_code":"S0007","adm_region":"Onna","locality_name":"OIST Forest S0007","site_id":"OISTFR","latitude":26.46517,"longitude":127.8422,"elevation":120},
+	{"locality_code":"S0008","adm_region":"Onna","locality_name":"OIST Forest S0008","site_id":"OISTFR","latitude":26.46509,"longitude":127.8419,"elevation":107},
+	{"locality_code":"S0009","adm_region":"Onna","locality_name":"OIST Forest S0009","site_id":"OISTFR","latitude":26.4648,"longitude":127.84209,"elevation":113},
+	{"locality_code":"S0010","adm_region":"Ogimi","locality_name":"Kitamura 04 Forest S0010","site_id":"KITAMURA04FR","latitude":26.7056,"longitude":128.17001,"elevation":16},
+	{"locality_code":"S0011","adm_region":"Ogimi","locality_name":"Kitamura 03 Forest S0011 ","site_id":"KITAMURA03FR","latitude":26.69066,"longitude":128.17839,"elevation":150},
+	{"locality_code":"S0012","adm_region":"Okinawa","locality_name":"Takeyanbaru Forest S0012","site_id":"TAKEYANBARUFR","latitude":26.41375,"longitude":127.78918,"elevation":137},
+	{"locality_code":"S0013","adm_region":"Okinawa","locality_name":"Takeyanbaru Forest S0013","site_id":"TAKEYANBARUFR","latitude":26.41363,"longitude":127.78934,"elevation":128},
+	{"locality_code":"S0014","adm_region":"Okinawa","locality_name":"Takeyanbaru Forest S0014","site_id":"TAKEYANBARUFR","latitude":26.4131,"longitude":127.79021,"elevation":122},
+	{"locality_code":"S0015","adm_region":"Ogimi","locality_name":"Hentona Open S0015","site_id":"HENTONAOP","latitude":26.70314,"longitude":128.13156,"elevation":21,"images":['https://dl.dropboxusercontent.com/u/102373131/okeon-img/Hentona01.jpg','https://dl.dropboxusercontent.com/u/102373131/okeon-img/HentonaKitamura01.jpg','https://dl.dropboxusercontent.com/u/102373131/okeon-img/HentonaKitamura02.jpg']},
+	{"locality_code":"S0016","adm_region":"Ogimi","locality_name":"Hentona Open S0016","site_id":"HENTONAOP","latitude":26.70286,"longitude":128.13,"elevation":4,"images":['https://dl.dropboxusercontent.com/u/102373131/okeon-img/Hentona01.jpg','https://dl.dropboxusercontent.com/u/102373131/okeon-img/HentonaKitamura01.jpg','https://dl.dropboxusercontent.com/u/102373131/okeon-img/HentonaKitamura02.jpg']},
+	{"locality_code":"S0017","adm_region":"Ogimi","locality_name":"Hentona Open S0017","site_id":"HENTONAOP","latitude":26.70251,"longitude":128.13113,"elevation":9,"images":['https://dl.dropboxusercontent.com/u/102373131/okeon-img/Hentona01.jpg','https://dl.dropboxusercontent.com/u/102373131/okeon-img/HentonaKitamura01.jpg','https://dl.dropboxusercontent.com/u/102373131/okeon-img/HentonaKitamura02.jpg']},
+	{"locality_code":"S0018","adm_region":"Nakagusuku","locality_name":"Nakagusuku Forest S0018","site_id":"NAKAGUSUKUFR","latitude":26.28498,"longitude":127.79572,"elevation":127,"images":['https://dl.dropboxusercontent.com/u/102373131/okeon-img/Nakagusuku01.jpg']},
+	{"locality_code":"S0019","adm_region":"Nakagusuku","locality_name":"Nakagusuku Forest S0019","site_id":"NAKAGUSUKUFR","latitude":26.28571,"longitude":127.79523,"elevation":104,"images":['https://dl.dropboxusercontent.com/u/102373131/okeon-img/Nakagusuku01.jpg']},
+	{"locality_code":"S0020","adm_region":"Nakagusuku","locality_name":"Nakagusuku Forest S0020","site_id":"NAKAGUSUKUFR","latitude":26.28557,"longitude":127.79491,"elevation":111,"images":['https://dl.dropboxusercontent.com/u/102373131/okeon-img/Nakagusuku01.jpg']},
+	{"locality_code":"S0021","adm_region":"Nago","locality_name":"Genka Open S0021","site_id":"GENKAOP","latitude":26.63912,"longitude":128.06187,"elevation":5},
+	{"locality_code":"S0022","adm_region":"Nago","locality_name":"Genka Open S0022","site_id":"GENKAOP","latitude":26.6396,"longitude":128.06212,"elevation":7},
+	{"locality_code":"S0023","adm_region":"Nago","locality_name":"Genka Open S0023","site_id":"GENKAOP","latitude":26.63974,"longitude":128.06258,"elevation":4},
+	{"locality_code":"S0024","adm_region":"Kunigami","locality_name":"Yona Forest S0024","site_id":"YONAFR","latitude":26.73974,"longitude":128.23598,"elevation":294},
+	{"locality_code":"S0025","adm_region":"Kunigami","locality_name":"Yona Forest S0025","site_id":"YONAFR","latitude":26.73972,"longitude":128.2363,"elevation":303},
+	{"locality_code":"S0026","adm_region":"Kunigami","locality_name":"Yona Forest S0026","site_id":"YONAFR","latitude":26.73894,"longitude":128.2372,"elevation":313},
+	{"locality_code":"S0027","adm_region":"Ogimi","locality_name":"Kitamura 04 Forest S0027","site_id":"KITAMURA04FR","latitude":26.70569,"longitude":128.17,"elevation":16},
+	{"locality_code":"S0028","adm_region":"Ogimi","locality_name":"Kitamura 03 Forest S0028","site_id":"KITAMURA03FR","latitude":26.69016,"longitude":128.17805,"elevation":147},
+	{"locality_code":"S0029","adm_region":"Okinawa","locality_name":"Kurashiki Open S0029","site_id":"KURASHIKIOP","latitude":26.39299,"longitude":127.80787,"elevation":77},
+	{"locality_code":"S0030","adm_region":"Uruma","locality_name":"Kurashiki Open S0030","site_id":"KURASHIKIOP","latitude":26.39329,"longitude":127.8074,"elevation":67},
+	{"locality_code":"S0031","adm_region":"Uruma","locality_name":"Kurashiki Open S0031","site_id":"KURASHIKIOP","latitude":26.39382,"longitude":127.80736,"elevation":72},
+	{"locality_code":"S0032","adm_region":"Nishihara","locality_name":"University of Ryukyus Open S0032","site_id":"UNIVRYUKYUSOP","latitude":26.24818,"longitude":127.75763,"elevation":104},
+	{"locality_code":"S0033","adm_region":"Nishihara","locality_name":"University of Ryukyus Open S0033","site_id":"UNIVRYUKYUSOP","latitude":26.24795,"longitude":127.75863,"elevation":95},
+	{"locality_code":"S0034","adm_region":"Nishihara","locality_name":"University of Ryukyus Open S0034","site_id":"UNIVRYUKYUSOP","latitude":26.24921,"longitude":127.75906,"elevation":117},
+	{"locality_code":"S0035","adm_region":"Nishihara","locality_name":"University of Ryukyus Forest S0035","site_id":"UNIVRYUKYUSFR","latitude":26.24528,"longitude":127.75887,"elevation":120},
+	{"locality_code":"S0036","adm_region":"Nishihara","locality_name":"University of Ryukyus Forest S0036","site_id":"UNIVRYUKYUSFR","latitude":26.24548,"longitude":127.75863,"elevation":113},
+	{"locality_code":"S0037","adm_region":"Nishihara","locality_name":"University of Ryukyus Forest S0037","site_id":"UNIVRYUKYUSFR","latitude":26.24407,"longitude":127.75877,"elevation":129},
+	{"locality_code":"S0038","adm_region":"Chatan","locality_name":"Chatan Open S0038","site_id":"CHATANOP","latitude":26.32468,"longitude":127.75918,"elevation":14},
+	{"locality_code":"S0039","adm_region":"Chatan","locality_name":"Chatan Open S0039","site_id":"CHATANOP","latitude":26.32495,"longitude":127.75885,"elevation":9},
+	{"locality_code":"S0040","adm_region":"Chatan","locality_name":"Chatan Open S0040","site_id":"CHATANOP","latitude":26.32503,"longitude":127.75868,"elevation":12},
+	{"locality_code":"S0041","adm_region":"Ginowan","locality_name":"Ohyama Ta-mu Open S0041","site_id":"OHYAMAOP","latitude":26.28129,"longitude":127.74419,"elevation":2,"images":['https://dl.dropboxusercontent.com/u/102373131/okeon-img/Ohyamatamu01.jpg','https://dl.dropboxusercontent.com/u/102373131/okeon-img/Ohyamatamu02.jpg']},
+	{"locality_code":"S0042","adm_region":"Ginowan","locality_name":"Ohyama Ta-mu Open S0042","site_id":"OHYAMAOP","latitude":26.28088,"longitude":127.74456,"elevation":5,"images":['https://dl.dropboxusercontent.com/u/102373131/okeon-img/Ohyamatamu01.jpg','https://dl.dropboxusercontent.com/u/102373131/okeon-img/Ohyamatamu02.jpg']},
+	{"locality_code":"S0043","adm_region":"Ginowan","locality_name":"Ohyama Ta-mu Open S0043","site_id":"OHYAMAOP","latitude":26.28009,"longitude":127.74404,"elevation":4,"images":['https://dl.dropboxusercontent.com/u/102373131/okeon-img/Ohyamatamu01.jpg','https://dl.dropboxusercontent.com/u/102373131/okeon-img/Ohyamatamu02.jpg']},
+	{"locality_code":"S0044","adm_region":"Uruma","locality_name":"Yacho No Mori Open S0044","site_id":"YACHOOP","latitude":26.37612,"longitude":127.87032,"elevation":34},
+	{"locality_code":"S0045","adm_region":"Uruma","locality_name":"Yacho No Mori Open S0045","site_id":"YACHOOP","latitude":26.37581,"longitude":127.87071,"elevation":30},
+	{"locality_code":"S0046","adm_region":"Uruma","locality_name":"Yacho No Mori Open S0046","site_id":"YACHOOP","latitude":26.37503,"longitude":127.87093,"elevation":18},
+	{"locality_code":"S0047","adm_region":"Kunigami","locality_name":"Oku Forest S0047","site_id":"OKUFR","latitude":26.83635,"longitude":128.27013,"elevation":222},
+	{"locality_code":"S0048","adm_region":"Kunigami","locality_name":"Oku Forest S0048","site_id":"OKUFR","latitude":26.8363,"longitude":128.27051,"elevation":228},
+	{"locality_code":"S0049","adm_region":"Kunigami","locality_name":"Oku Forest S0049","site_id":"OKUFR","latitude":26.83604,"longitude":128.27191,"elevation":230},
+	{"locality_code":"S0050","adm_region":"Okinawa","locality_name":"Southeast Botanical Garden Open S0050","site_id":"TOUNANOP","latitude":26.37771,"longitude":127.80656,"elevation":48},
+	{"locality_code":"S0051","adm_region":"Okinawa","locality_name":"Southeast Botanical Garden Open S0051","site_id":"TOUNANOP","latitude":26.37793,"longitude":127.80549,"elevation":44},
+	{"locality_code":"S0052","adm_region":"Okinawa","locality_name":"Southeast Botanical Garden Open S0052","site_id":"TOUNANOP","latitude":26.37832,"longitude":127.80571,"elevation":43},
+	{"locality_code":"S0053","adm_region":"Kunigami","locality_name":"Yanbaru Manabi No Mori Forest S0053","site_id":"MANABIFR","latitude":26.72256,"longitude":128.26027,"elevation":157},
+	{"locality_code":"S0054","adm_region":"Kunigami","locality_name":"Yanbaru Manabi No Mori Forest S0054","site_id":"MANABIFR","latitude":26.7226,"longitude":128.2597,"elevation":157},
+	{"locality_code":"S0055","adm_region":"Kunigami","locality_name":"Yanbaru Manabi No Mori Forest S0055","site_id":"MANABIFR","latitude":26.72245,"longitude":128.25934,"elevation":154},
+	{"locality_code":"S0056","adm_region":"Naha","locality_name":"Sueyoshi Park Forest S0056","site_id":"SUEYOSHIFR","latitude":26.22817,"longitude":127.71642,"elevation":70},
+	{"locality_code":"S0057","adm_region":"Naha","locality_name":"Sueyoshi Park Forest S0057","site_id":"SUEYOSHIFR","latitude":26.22831,"longitude":127.716,"elevation":65},
+	{"locality_code":"S0058","adm_region":"Naha","locality_name":"Sueyoshi Park Forest S0058","site_id":"SUEYOSHIFR","latitude":26.22917,"longitude":127.71609,"elevation":98},
+	{"locality_code":"S0059","adm_region":"Itoman","locality_name":"Heiwasouzou no Mori S0059","site_id":"HEIWA","latitude":26.08335,"longitude":127.68786,"elevation":23},
+	{"locality_code":"S0060","adm_region":"Itoman","locality_name":"Heiwasouzou no Mori S0060","site_id":"HEIWA","latitude":26.08378,"longitude":127.68875,"elevation":22},
+	{"locality_code":"S0061","adm_region":"Itoman","locality_name":"Heiwasouzou no Mori S0061","site_id":"HEIWA","latitude":26.08436,"longitude":127.68933,"elevation":25},
+	{"locality_code":"S0062","adm_region":"Nanjo","locality_name":"Tamagusuku youth and children's center S0062","site_id":"TAMAGUSUKU","latitude":26.14247,"longitude":127.78266,"elevation":132},
+	{"locality_code":"S0063","adm_region":"Nanjo","locality_name":"Tamagusuku youth and children's center S0063","site_id":"TAMAGUSUKU","latitude":26.14217,"longitude":127.78458,"elevation":100},
+	{"locality_code":"S0064","adm_region":"Nanjo","locality_name":"Tamagusuku youth and children's center S0064","site_id":"TAMAGUSUKU","latitude":26.14243,"longitude":127.78451,"elevation":117},
+	{"locality_code":"S0065","adm_region":"Nanjo","locality_name":"Sefa Utaki Forest S0065","site_id":"SEFAUTAKIFR","latitude":26.17333,"longitude":127.82573,"elevation":107},
+	{"locality_code":"S0066","adm_region":"Nanjo","locality_name":"Sefa Utaki Forest S0066","site_id":"SEFAUTAKIFR","latitude":26.17351,"longitude":127.82587,"elevation":109},
+	{"locality_code":"S0067","adm_region":"Nanjo","locality_name":"Sefa Utaki ForestS0067","site_id":"SEFAUTAKIFR","latitude":26.17418,"longitude":127.82538,"elevation":117},
+	{"locality_code":"S0068","adm_region":"Nago","locality_name":"Nago Joushi Forest S0068","site_id":"NAGOFR","latitude":26.59008,"longitude":127.99402,"elevation":86},
+	{"locality_code":"S0069","adm_region":"Nago","locality_name":"Nago Joushi Forest S0069","site_id":"NAGOFR","latitude":26.58956,"longitude":127.99418,"elevation":99},
+	{"locality_code":"S0070","adm_region":"Nago","locality_name":"Nago Joushi Forest S0070","site_id":"NAGOFR","latitude":26.58945,"longitude":127.99315,"elevation":74},
+	{"locality_code":"S0071","adm_region":"Onna","locality_name":"Kemin No Mori Forest S0071","site_id":"KEMINFR","latitude":26.50553,"longitude":127.91046,"elevation":98},
+	{"locality_code":"S0072","adm_region":"Onna","locality_name":"Kemin No Mori Forest S0072","site_id":"KEMINFR","latitude":26.50624,"longitude":127.9103,"elevation":111},
+	{"locality_code":"S0073","adm_region":"Onna","locality_name":"Kemin No Mori Forest S0073","site_id":"KEMINFR","latitude":26.50664,"longitude":127.91042,"elevation":113},
+	{"locality_code":"S0074","adm_region":"Nago","locality_name":"Katsuu Dake S0074","site_id":"KATSUUDAKE","latitude":26.63249,"longitude":127.93468,"elevation":385},
+	{"locality_code":"S0075","adm_region":"Nago","locality_name":"Katsuu Dake S0075","site_id":"KATSUUDAKE","latitude":26.63279,"longitude":127.93497,"elevation":377},
+	{"locality_code":"S0076","adm_region":"Nago","locality_name":"Katsuu Dake S0076","site_id":"KATSUUDAKE","latitude":26.63305,"longitude":127.93561,"elevation":382},
+	{"locality_code":"T0001","adm_region":"Onna","locality_name":"OIST Open T0001","site_id":"OISTOP","latitude":26.45944,"longitude":127.83583,"elevation":135}];					
+		
 	
 	
 var dataset2 = [
@@ -561,7 +566,7 @@ var adm2={
 	
 		d3.selectAll(".infopanel").remove();
 		var labelHTML = "<h4 style='background-color:#46b698'>"+d.locality_name+"</h4>"
-						+"<p> <span class='bold'>Description: </span>"+d.description
+						// +"<p> <span class='bold'>Description: </span>"+d.description
 						+"</p><p> <span class='bold'>Coordinates: </span>["+d.latitude+" , "+d.longitude+"]"
 						+"</p><p> <span class='bold'>Region: </span>"+d.adm_region
 						+"</p>";
@@ -572,32 +577,7 @@ var adm2={
 			.attr("id", "infopanel-"+i)
 			.html(labelHTML);
 			
-			infolabel.append("img")
-    				.attr('src', 'https://dl.dropboxusercontent.com/u/102373131/airport.png')
-    				.on('mouseover',function(){
-						d3.select(this)
-						.transition()
-						.duration(500)
-						.style({
-						'opacity':0.7,
-						'cursor':'pointer'
-						});	
-				}).on('mouseout',function(){
-					d3.select(this)
-					.transition()
-					.duration(500)
-					.style({
-					'opacity':1
-					});
-				}).on('click',function(){
-					var imgArray = ['https://dl.dropboxusercontent.com/u/102373131/airport.png','https://dl.dropboxusercontent.com/u/102373131/airport.png','https://dl.dropboxusercontent.com/u/102373131/airport.png'];
-					//write a getImgArray function
-					d3.select("#gallery-bg").style("display","inline").style("opacity",0.5);
-					drawImage(imgArray);
-					
-				});
-			
-			infolabel.append("text").attr("id","x-close").text("x")
+			infolabel.append("text").attr("class","x-close").text("x")
 				.on('mouseover',function(){
 					d3.select(this)
 					.transition()
@@ -618,7 +598,43 @@ var adm2={
 				.on("click",function(){
 						d3.selectAll(".infopanel").remove();
 				});
+			
+			infolabel.append("img")
+    				.attr('src',  d.images[0])
+    				.on('mouseover',function(){
+						d3.select(this)
+						.transition()
+						.duration(500)
+						.style({
+						'opacity':0.7,
+						'cursor':'pointer'
+						});	
+				}).on('mouseout',function(){
+					d3.select(this)
+					.transition()
+					.duration(500)
+					.style({
+					'opacity':1
+					});
+				}).on('click',function(){
+					//var imgArray = ['https://dl.dropboxusercontent.com/u/102373131/airport.png','https://dl.dropboxusercontent.com/u/102373131/airport.png','https://dl.dropboxusercontent.com/u/102373131/airport.png'];
+					//write a getImgArray function
+					var imgArray = d.images;
+						console.log(d);
+    					console.log(d.images);
+					d3.select("#gallery-bg").style("display","inline").style("opacity",0.5);
+					drawImage(imgArray);
+					
+				});
+			
+			
 
+	}
+	
+	window.onclick = function(event) {
+	  if (!event.target.matches('.infopanel') || !event.target.matches('.point') ) {
+			// d3.selectAll('.infopanel').remove();
+		}
 	}
 	
 	
@@ -634,17 +650,26 @@ var adm2={
 		
 			imgArray.forEach(function(d,i) {
 		
-				console.log(d);
+				//console.log(d);
 			
 				var indv_img = img_container.append("div")
 				.classed("img-div","true")
 				.attr("id","img-"+i)
 				.style("bottom","10px")
 				.style("left",i*190+36+"px")
-				.html("img"+(i+1));
+				// .html("img"+(i+1));
 			
 				indv_img
-				.append('a').attr("href", d).append("img")
+				.append('a').attr("href", function(){
+					 console.log(d);
+					 var url = decodeURIComponent(d);
+					 var len = url.length;
+					 console.log(url);
+				     console.log(url.substring(0, len-4) + "B" + url.substring(len-4));
+				     var newUrl = url.substring(0, len-4) + "B" + url.substring(len-4);
+				     return newUrl;
+				
+				}).append("img")
 				.attr('src', d);
 				//.html('<a href="'+d+'" target="_blank"></a>');
 			
@@ -671,7 +696,7 @@ var adm2={
 						.transition()
 						.duration(500)
 						.style({
-						'color':'black'
+						'color':'white'
 						});
 					})
 					.on("click",function(){
@@ -682,6 +707,13 @@ var adm2={
 				});  
 			
 				
+				
+				
+				
+			
+			}else{ //if there are more than 4 images
+			
+			
 				
 				img_container.append("div").append("img").attr("id","arrow-left").attr("class","arrows")
 				.attr('src', 'https://dl.dropboxusercontent.com/u/102373131/arrow-left.png').style("bottom","40px")
@@ -750,8 +782,6 @@ var adm2={
 					//or temp.splice(0,5)? since we already shifted it
 					drawImgArray(newImgArray);
 				});
-			
-			}else{ //if there are more than 4 images
 				
 				
 				img_container.append("div").append("img").attr("id","arrow-left").attr("class","arrows")

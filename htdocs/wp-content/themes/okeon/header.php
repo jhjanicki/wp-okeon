@@ -31,28 +31,29 @@
 </head>
 
 <body> 
+<div id="wrapper">
+
+	<div id="header">
+	
+		<span id="brand-title" class="inline">OKEON</span>&nbsp;&nbsp;<span id="brand-title2">～美ら森プロジェクト～</span></h1>
+		<span class="inline" id="search"><?php if (dynamic_sidebar('front-nav')); ?></span>
+	</div> 
 
 
-<div id="header">
-    
-    <span id="brand-title" class="inline">OKEON</span>&nbsp;&nbsp;<span id="brand-title2">～美ら森プロジェクト～</span></h1>
-    <span class="inline" id="search"><?php if (dynamic_sidebar('front-nav')); ?></span>
-</div> 
+	<div id='cssmenu'>
 
-
-<div id='cssmenu'>
-
- <?php 
-            $args = array(
-              'menu'        => 'header-menu',
-              'container'   => 'true',
-              'container_id'   =>'cssmenu'
-            );
-            wp_nav_menu( $args );
- ?>
+	 <?php 
+				$args = array(
+				  'menu'        => 'header-menu',
+				  'container'   => 'true',
+				  'container_id'   =>'cssmenu'
+				);
+				wp_nav_menu( $args );
+	 ?>
 
 
 
-</div> 
+	</div> 
 
+	<div id="content">
 

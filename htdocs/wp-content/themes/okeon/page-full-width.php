@@ -6,9 +6,9 @@
 <?php get_header(); ?>
 
 
-    <div class="row">
+    <div class="row below-nav">
     	<p class="current_page"> <?php the_title(); ?> <i class="fa fa-angle-double-right"></i></p>
-    	<hr class="current_page_hr">
+    	<!-- <hr class="current_page_hr"> -->
     </div>
     
     
@@ -19,8 +19,10 @@
       	
       		
       		<?php if (have_posts()): while (have_posts()):the_post(); ?>
-      			<h2> <?php the_title(); ?></h2>
+      			<!-- 
+<h2> <?php the_title(); ?></h2>
       			<hr class="page_main">
+ -->
       			
       			<?php the_content(); ?>
       		<?php endwhile; else: ?>
