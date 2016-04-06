@@ -14,7 +14,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
- /*  background-color:black; */
  
 }
 
@@ -33,7 +32,9 @@
 }
 #cssmenu {
   font-family: 'Roboto', sans-serif;
-  background: /*#4B464A; */black;
+  background: white;
+  color: black;
+  border-bottom: 2px solid #ddd;
   margin-top:0px;
 }
 #cssmenu > ul > li {
@@ -59,12 +60,12 @@
   font-size: 14px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #dddddd;
-  font-weight: 700;
+  color: black;
+  font-weight: 300;
   text-transform: uppercase;
 }
 #cssmenu > ul > li:hover > a {
-  color: #ffffff;
+  color: gray;
 }
 #cssmenu > ul > li.has-sub > a {
   padding-right: 30px;
@@ -76,7 +77,7 @@
   width: 8px;
   height: 2px;
   display: block;
-  background: #dddddd;
+  background: black;
   content: '';
 }
 #cssmenu > ul > li.has-sub > a:before {
@@ -86,7 +87,7 @@
   display: block;
   width: 2px;
   height: 8px;
-  background: #dddddd;
+  background: black;
   content: '';
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -137,9 +138,9 @@
   width: 170px;
   font-size: 12px;
   text-decoration: none;
-  color: #dddddd;
+  color: black;
   font-weight: 400;
-  background: black;
+  background: white;
 }
 #cssmenu ul ul li:last-child > a,
 #cssmenu ul ul li.last-item > a {
@@ -147,7 +148,7 @@
 }
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li a:hover {
-  color: #ffffff;
+  color: #ddd;
 }
 #cssmenu ul ul li.has-sub > a:after {
   position: absolute;

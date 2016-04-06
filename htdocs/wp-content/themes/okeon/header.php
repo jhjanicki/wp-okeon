@@ -22,11 +22,7 @@
     
     <?php wp_head(); ?>
     
-    <style>
-    html{
-		overflow-x: hidden;
-	}	
-    </style>
+    
     <!-- echoes out functions.php code -->
 </head>
 
@@ -34,9 +30,12 @@
 <div id="wrapper">
 
 	<div id="header">
-	
-		<span id="brand-title" class="inline">OKEON</span>&nbsp;&nbsp;<span id="brand-title2">～美ら森プロジェクト～</span></h1>
-		<span class="inline" id="search"><?php if (dynamic_sidebar('front-nav')); ?></span>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 id="brand-title" class="text-center">OKEON&nbsp;&nbsp;美ら森プロジェクト</h2>
+				<!-- <span class="inline" id="search"><?php if (dynamic_sidebar('front-nav')); ?></span> -->
+			</div>
+		</div>
 	</div> 
 
 
