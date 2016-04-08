@@ -28,21 +28,8 @@
 		</div>　<!~~ end row ~~>
 	</section>
  -->
-	
-	
-<div id="wrapper" class="width-80-percent">
-	<section id="first-pane">
-		<div class="row">
-			<?php if (have_posts()): while (have_posts()): the_post(); ?>
-					<?php the_content(); ?>		
-			<?php endwhile; endif; ?>
-		</div>
-	
-	</section>
-	
-	
-		
-	<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+ 
+ <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
   <!-- Indicators -->
   
   <ol class="carousel-indicators">
@@ -51,7 +38,7 @@
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <div class="item active"> <img src="http://lorempixel.com/1200/400/abstract" style="width:100%" alt="First slide">
+    <div class="item active"> <img src="http://lorempixel.com/1200/300/abstract" style="width:100%" alt="First slide">
       <div class="container">
         <div class="carousel-caption">
           <h1>Slide 1</h1>
@@ -60,7 +47,7 @@
         </div>
       </div>
     </div>
-    <div class="item"> <img src="http://lorempixel.com/1200/400/people" style="width:100%" data-src="" alt="Second slide">
+    <div class="item"> <img src="http://lorempixel.com/1200/300/people" style="width:100%" data-src="" alt="Second slide">
       <div class="container">
         <div class="carousel-caption">
           <h1>Slide 2</h1>
@@ -69,7 +56,7 @@
         </div>
       </div>
     </div>
-    <div class="item"> <img src="http://lorempixel.com/1200/400/nature" style="width:100%" data-src="" alt="Third slide">
+    <div class="item"> <img src="http://lorempixel.com/1200/300/nature" style="width:100%" data-src="" alt="Third slide">
       <div class="container">
         <div class="carousel-caption">
           <h1>Slide 3</h1>
@@ -82,13 +69,32 @@
   <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
   
 
+	
+	
+<div id="wrapper" class="width-80-percent">
+
+
+	<section id="first-pane">
+		<div class="row">
+			<?php if (have_posts()): while (have_posts()): the_post(); ?>
+					<?php the_content(); ?>		
+			<?php endwhile; endif; ?>
+		</div>
+	
+	</section>
+	
+	
+		
 
 
 
-	<section id="second-pane">
+
+	<!-- 
+<section id="second-pane">
 		<?php if (dynamic_sidebar('front-icons')); ?>
 	
 	</section>
+ -->
 	
 	<section id="third-pane">
 		<div class="row">

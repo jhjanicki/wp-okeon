@@ -35,6 +35,18 @@ two blues:
 		margin-right:0px;
 		
 	}
+	
+	.panel-title{
+		font-size:22px;
+		font-weight:300;
+		color: black;
+		padding:0px;
+	}
+	
+	.panel-title a:hover{
+		color: #00a388;
+		transition: all 1s ease;
+	}
 
 	/* general */
 	html{
@@ -91,6 +103,10 @@ two blues:
 	}
 	.margin-top50{
 		margin-top:50px;
+	}
+	
+	.margin-bottom50{
+		margin-bottom:50px;
 	}
 	
 	.margin-top100{
@@ -310,13 +326,12 @@ two blues:
 	/* header page */
 	
 	#brand-title, #brand-title2{
-		color:#F0EDE2;
+		color:white;/* #F0EDE2; */
 		font-size:50px;
 		vertical-align: middle;
-		font-weight:200;
+		font-weight:300;
 		padding-top:0px;
-		/* -webkit-text-stroke-width: 1px; */
-  		/* -webkit-text-stroke-color: black; */
+		
 	}
 	
 
@@ -327,11 +342,20 @@ two blues:
 		padding:0px;
 		height:100px;
 		width:100%;
-		background:#00a388;
+		background: black;/* #00a388;  */
 		position: relative;
     	overflow: hidden;
 	}	
 	
+	#main-icon{
+		position: absolute;
+		width:90px;
+		height:90px;
+		top:5px;
+		left:15px;
+		z-index:999;
+	
+	}
 
 
 	
@@ -353,9 +377,9 @@ two blues:
 	
 	#first-pane{
 		/* margin-bottom:-34px; */
-		min-height:340px;
+		/* min-height:340px; */
 		background:white;
-		padding-top:50px;
+		padding-top:0px;
 		padding-bottom:50px;
 	}
 	#second-pane{
