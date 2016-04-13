@@ -23,7 +23,7 @@
     				<hr>
     			</div>
     			<div id="buttons">
-    				<h4  class="button" id="fieldsites-button">Field Sites View</h4>  <!-- style="float:left" -->
+    				<h4  class="button active-button" id="fieldsites-button">Field Sites View</h4>  <!-- style="float:left" -->
 					<h4 class="button" id="collaborators-button">Collaborators</h4> <!-- style="float:left" -->
 				</div>
 			
@@ -39,36 +39,21 @@
     </div>
     </div>
 </div>
-
-<div class="row ">
-	<!-- <img id="top" src="img/top.png"> -->
-    <div class="col-md-12">   
-    <table id="table">
-      				<thead></thead>
-      				<tbody></tbody>
-   	</table>	
-    </div>
-</div>
-
-
 </section>
-	<!-- 
-<section id="map-page-s2">
+	<section>
 		<div class="container">
-		    <div class="row text-center">
-		    	<div class="col-lg-12 text-center">
-					<h2 id="below-map-title"> OKEON Site Map By Region</h2>
-					<hr class="map-hr">
-				</div>
-		    </div>
             <div class="row">
-               <div class="col-md-12 text-center">   
-               		<p> Click on Region to retrieve list of sites and information about those sites </p>
+               <div class="col-md-12 text-center site-details">   
+               		<div id="site-overview"></div> <!-- id, name, number, lat/lon, host -->
+               		<div id="site-description"></div>
+               		<div id="site-history"></div>
+               		<div id="site-vegetation"></div>
+               		<div id="site-soil"></div>
+               		<div id="site-weather"></div> <!-- weather station -->
                 </div>
             </div>
         </div>
     </section>
- -->
 
    
 

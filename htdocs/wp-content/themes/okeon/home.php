@@ -15,7 +15,7 @@
       <div class="col-lg-9">
       	
       	
-      	<div id="myCarousel" class="carousel slide">
+      	<div id="myCarouselBlog" class="carousel slide">
 			 <div class="carousel-inner">
 			  <?php 
 			   $the_query = new WP_Query(array(
