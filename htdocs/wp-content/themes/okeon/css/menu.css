@@ -36,6 +36,7 @@
   color: black;
   border-bottom: 2px solid #ddd;
   margin-top:0px;
+  border-top: 1px solid #ddd;
 }
 #cssmenu > ul > li {
   float: left;
@@ -56,8 +57,8 @@
   float: right;
 }
 #cssmenu > ul > li > a {
-  padding: 17px;
-  font-size: 14px;
+  padding: 20px;
+  font-size: 16px;
   letter-spacing: 1px;
   text-decoration: none;
   color: black;
@@ -72,7 +73,7 @@
 }
 #cssmenu > ul > li.has-sub > a:after {
   position: absolute;
-  top: 22px;
+  top: 27px;  /* 22 */
   right: 11px;
   width: 8px;
   height: 2px;
@@ -82,7 +83,7 @@
 }
 #cssmenu > ul > li.has-sub > a:before {
   position: absolute;
-  top: 19px;
+  top: 24px;  /* 19 */
   right: 14px;
   display: block;
   width: 2px;
@@ -188,6 +189,22 @@
   height: 0;
 }
 
+@media all and (max-width: 950px){
+
+	#cssmenu > ul > li > a {
+	  padding: 18px;
+	  font-size: 14px;
+	}
+	
+	#cssmenu > ul > li.has-sub > a:after {
+  			top: 22px;
+ 	 }
+ 	 
+ 	 #cssmenu > ul > li.has-sub > a:before {
+  		position: absolute;
+  		top: 19px;
+  	}
+}
 
 
 @media all and (max-width: 768px){

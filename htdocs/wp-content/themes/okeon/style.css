@@ -36,6 +36,11 @@ two blues:
 		
 	}
 	
+	.carousel-caption {
+		background: rgba(0, 0, 0, 0.2);
+		padding:30px;
+	}
+	
 	#myCarouselBlog .img-responsive, #myCarouselBlog .thumbnail>img, #myCarouselBlog .thumbnail a>img,
 	 #myCarouselBlog .carousel-inner>.item>img, #myCarouselBlog .carousel-inner>.item>a>img {
 		display: block;
@@ -426,7 +431,7 @@ two blues:
 	/* header page */
 	
 	#brand-title, #brand-title2{
-		color:white;/* #F0EDE2; */
+		color:#00a388;
 		font-size:40px;
 		vertical-align: middle;
 		font-weight:300;
@@ -436,11 +441,11 @@ two blues:
 	}
 	
 	#sub-brand-title{
-		color:white;/* #F0EDE2; */
-		font-size:30px;
+		color:#00a388;
+		font-size:20px;
 		vertical-align: middle;
 		font-weight:300;
-		padding-top:0px;
+		padding-top:10px;
 		margin-top:0px;
 	}
 	
@@ -452,7 +457,7 @@ two blues:
 		padding:0px;
 		height:100px;
 		width:100%;
-		background: black;/* #00a388;  */
+		background: white;
 		position: relative;
     	overflow: hidden;
 	}	
@@ -465,6 +470,13 @@ two blues:
 		left:15px;
 		z-index:999;
 	
+	}
+	
+	@media all and (max-width: 1280px){
+		.carousel-caption {
+			padding:22px;
+		}
+		
 	}
 	
 	@media all and (max-width: 1200px){
@@ -497,6 +509,7 @@ two blues:
 				text-align:left;
 				left:15%;
 				max-width:70%;
+				padding:20px;
 			}
 		
 			.carousel-caption h1{
@@ -528,6 +541,7 @@ two blues:
 				text-align:left;
 				left:15%;
 				max-width:70%;
+				padding:15px;
 			}
 		
 			.carousel-caption h1{
@@ -564,6 +578,7 @@ two blues:
 				bottom:20px;
 				text-align:center;
 				left:15%;
+				padding:10px;
 			}
 		
 			.carousel-caption h1{
@@ -593,14 +608,20 @@ two blues:
 			#sub-brand-title{
 				font-size:16px;
 			}
+			
+			.carousel-indicators{
+				display:none;
+			}
 	}
 	
 	@media all and (max-width: 500px){
 			
 			.carousel-caption {
 				bottom:10px;
+				margin-top:0px;
 				text-align:center;
 				left:15%;
+				padding:5px;
 			}
 		
 			.carousel-caption h1{
