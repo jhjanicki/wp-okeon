@@ -46,9 +46,9 @@
                <div class="col-md-12 text-center site-details">   
                		<div id="site-overview"></div> <!-- id, name, number, lat/lon, host -->
                		<div id="site-description"></div>
+               		<div id="site-traps"></div>
                		<div id="site-history"></div>
                		<div id="site-vegetation"></div>
-               		<div id="site-soil"></div>
                		<div id="site-weather"></div> <!-- weather station -->
                 </div>
             </div>

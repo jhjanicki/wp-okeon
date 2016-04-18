@@ -1,0 +1,100 @@
+[
+  {
+    "collaborator":"Tsuji Lab, Univsersity of the Ryukyus",
+    "type":"University",
+    "latitude":26.247714,
+    "longitude":127.765284,
+    "Japanese_name":"_________"
+  },
+  {
+    "collaborator":"Yona Field Station, University of the Ryukyus",
+    "type":"University",
+    "latitude":26.763152,
+    "longitude":128.21595,
+    "Japanese_name":"_______"
+  },
+  {
+    "collaborator":"Kyushu Research Center, Forestry and Forest Products Research Institute",
+    "type":"University",
+    "latitude":null,
+    "longitude":null,
+    "Japanese_name":""
+  },
+  {
+    "collaborator":"Okinawa City Municipal Museum",
+    "type":"Museum Partners",
+    "latitude":null,
+    "longitude":null,
+    "Japanese_name":""
+  },
+  {
+    "collaborator":"Onna Village Museum",
+    "type":"Museum Partners",
+    "latitude":26.436553,
+    "longitude":127.793365,
+    "Japanese_name":"______"
+  },
+  {
+    "collaborator":"The Nago Museum",
+    "type":"Museum Partners",
+    "latitude":26.586481,
+    "longitude":127.986921,
+    "Japanese_name":"_____"
+  },
+  {
+    "collaborator":"The Higashi Museum",
+    "type":"Museum Partners",
+    "latitude":26.641529,
+    "longitude":128.167093,
+    "Japanese_name":"____________"
+  },
+  {
+    "collaborator":"Chatan-cho",
+    "type":"Museum Partners",
+    "latitude":null,
+    "longitude":null,
+    "Japanese_name":"______"
+  },
+  {
+    "collaborator":"Okinawa Prefectural Museum and Art Museum",
+    "type":"Museum Partners",
+    "latitude":26.227603,
+    "longitude":127.69387,
+    "Japanese_name":"_______"
+  },
+  {
+    "collaborator":"Hentona High School",
+    "type":"High School",
+    "latitude":26.703483,
+    "longitude":128.130858,
+    "Japanese_name":"_____"
+  },
+  {
+    "collaborator":"Futenma High School",
+    "type":"High School",
+    "latitude":26.291651,
+    "longitude":127.777916,
+    "Japanese_name":"_____"
+  },
+  {
+    "collaborator":"Kyuyo High School",
+    "type":"High School",
+    "latitude":26.319609,
+    "longitude":127.785201,
+    "Japanese_name":"____"
+  },
+  {
+    "collaborator":"Kaiho High School",
+    "type":"High School",
+    "latitude":26.217686,
+    "longitude":127.732593,
+    "Japanese_name":"____"
+  },
+  {
+    "collaborator":"Urasoe High School",
+    "type":"High School",
+    "latitude":26.237923,
+    "longitude":127.702796,
+    "Japanese_name":"____"
+  }
+]

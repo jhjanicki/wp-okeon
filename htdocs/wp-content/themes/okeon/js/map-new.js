@@ -132,320 +132,7 @@ function initialize(){
 	
 //site details
 
-var site_details = [
-  {
-    "site_id":"OISTOP",
-    "site_name":"OIST Open",
-    "site_number":"Site01",
-    "owner":"OIST",
-    "type":"Open",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"OISTFR",
-    "site_name":"OIST Forest",
-    "site_number":"Site02",
-    "owner":"OIST",
-    "type":"Forest",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"YONAFR",
-    "site_name":"Yona Forest",
-    "site_number":"Site03",
-    "owner":"Ryukyu University Subtropical Field Center",
-    "type":"Forest",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"TAKEYANBARUFR",
-    "site_name":"Takeyanbaru Forest",
-    "site_number":"Site04",
-    "owner":"",
-    "type":"Forest",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"CHATANOP",
-    "site_name":"Chatan Open",
-    "site_number":"Site05",
-    "owner":"",
-    "type":"Open",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"HENTONAOP",
-    "site_name":"Hentona Open",
-    "site_number":"Site06",
-    "owner":"Hentona High School",
-    "type":"Open",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"KURASHIKIOP",
-    "site_name":"Kurashiki Open",
-    "site_number":"Site07",
-    "owner":"",
-    "type":"Open",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"GENKAOP",
-    "site_name":"Genka Open",
-    "site_number":"Site08",
-    "owner":"",
-    "type":"Open",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"NAKAGUSUKUFR",
-    "site_name":"Nakagusuku Forest",
-    "site_number":"Site09",
-    "owner":"",
-    "type":"Forest",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"UNIVRYUKYUSFR",
-    "site_name":"University of Ryukyus Forest",
-    "site_number":"Site10",
-    "owner":"Ryukyu University Subtropical Field Center",
-    "type":"Forest",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"UNIVRYUKYUSOP",
-    "site_name":"University of Ryukyus Open",
-    "site_number":"Site11",
-    "owner":"Ryukyu University Subtropical Field Center",
-    "type":"Open",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"TAMAGUSUKUFR",
-    "site_name":"Tamagusuku Youth and Children's Center Forest ",
-    "site_number":"Site12",
-    "owner":"",
-    "type":"Forest",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"HEIWAOP",
-    "site_name":"Heiwasouzou no Mori Open",
-    "site_number":"Site13",
-    "owner":"",
-    "type":"Open",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"OKUFR",
-    "site_name":"Oku Forest",
-    "site_number":"Site14",
-    "owner":"",
-    "type":"Forest",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"YACHOOP",
-    "site_name":"Yacho No Mori Open",
-    "site_number":"Site15",
-    "owner":"",
-    "type":"Open",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"KEMINFR",
-    "site_name":"Kemin No Mori Forest",
-    "site_number":"Site16",
-    "owner":"",
-    "type":"Forest",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"OHYAMAOP",
-    "site_name":"Ohyama Ta-mu Open",
-    "site_number":"Site17",
-    "owner":"",
-    "type":"Open",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"NAGOFR",
-    "site_name":"Nago Joushi Forest",
-    "site_number":"Site18",
-    "owner":"",
-    "type":"Forest",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"SUEYOSHIFR",
-    "site_name":"Sueyoshi Park Forest",
-    "site_number":"Site19",
-    "owner":"",
-    "type":"Forest",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"GESASHIOP",
-    "site_name":"Gesashi Open",
-    "site_number":"Site20",
-    "owner":"",
-    "type":"Open",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"TOUNANOP",
-    "site_name":"Southeast Botanical Garden Open",
-    "site_number":"Site21",
-    "owner":"Southeast Botanical Garden ",
-    "type":"Open",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"MANABIFR",
-    "site_name":"Yanbaru Manabi No Mori Forest",
-    "site_number":"Site22",
-    "owner":"Yanbaru Manabi Forest",
-    "type":"Forest",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"SEFAUTAKIFR",
-    "site_name":"Sefa Utaki Forest",
-    "site_number":"Site23",
-    "owner":"",
-    "type":"Forest",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  },
-  {
-    "site_id":"KATSUUDAKEFR",
-    "site_name":"Katsuu Dake Forest",
-    "site_number":"Site24",
-    "owner":"",
-    "type":"",
-    "area":"",
-    "ecosystem":"",
-    "history":"",
-    "vegetation":"",
-    "soil":"",
-    "img_url":""
-  }
-];
+var site_details = [{"site_id":"OISTOP","site_name":"OIST Open","site_number":"Site01","owner":"OIST","type":"Open","area":"","location":"Onna","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.4631,"lon1":127.82857,"lat2":26.46294,"lon2":127.82893,"lat3":26.46351,"lon3":127.82809,"trap1":"S0004","trap2":"S0005","trap3":"S0006","weather_station":"WS01"},{"site_id":"OISTFR","site_name":"OIST Forest","site_number":"Site02","owner":"OIST","type":"Forest","area":"","location":"Onna","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.46517,"lon1":127.8422,"lat2":26.46509,"lon2":127.8419,"lat3":26.4648,"lon3":127.84209,"trap1":"S0007","trap2":"S0008","trap3":"S0009","weather_station":"WS02"},{"site_id":"YONAFR","site_name":"Yona Forest","site_number":"Site03","owner":"Ryukyu University Subtropical Field Center","type":"Forest","area":"","location":"Kunigami","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.73974,"lon1":128.23598,"lat2":26.73974,"lon2":128.23598,"lat3":26.73894,"lon3":128.2372,"trap1":"S0024","trap2":"S0025","trap3":"S0026","weather_station":""},{"site_id":"TAKEYANBARUFR","site_name":"Takeyanbaru Forest","site_number":"Site04","owner":"","type":"Forest","area":"","location":"Okinawa","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.41375,"lon1":127.78918,"lat2":26.41363,"lon2":127.78934,"lat3":26.4131,"lon3":127.79021,"trap1":"S0012","trap2":"S0013","trap3":"S0014","weather_station":""},{"site_id":"CHATANOP","site_name":"Chatan Open","site_number":"Site05","owner":"","type":"Open","area":"","location":"Chatan","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.32468,"lon1":127.75918,"lat2":26.32495,"lon2":127.75885,"lat3":26.32495,"lon3":127.75885,"trap1":"S0038","trap2":"S0039","trap3":"S0040","weather_station":""},{"site_id":"HENTONAOP","site_name":"Hentona Open","site_number":"Site06","owner":"Hentona High School","type":"Open","area":"","location":"Ogimi","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.70314,"lon1":128.13156,"lat2":26.70286,"lon2":128.13,"lat3":26.70251,"lon3":128.13113,"trap1":"S0015","trap2":"S0016","trap3":"S0017","weather_station":""},{"site_id":"KURASHIKIOP","site_name":"Kurashiki Open","site_number":"Site07","owner":"","type":"Open","area":"","location":"Okinawa/ Uruma","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.39299,"lon1":127.80787,"lat2":26.39329,"lon2":127.8074,"lat3":26.39382,"lon3":127.80736,"trap1":"S0029","trap2":"S0030","trap3":"S0031","weather_station":""},{"site_id":"GENKAOP","site_name":"Genka Open","site_number":"Site08","owner":"","type":"Open","area":"","location":"Nago","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.63912,"lon1":128.06187,"lat2":26.6396,"lon2":128.06212,"lat3":26.63974,"lon3":128.06258,"trap1":"S0021","trap2":"S0022","trap3":"S0023","weather_station":""},{"site_id":"NAKAGUSUKUFR","site_name":"Nakagusuku Forest","site_number":"Site09","owner":"","type":"Forest","area":"","location":"Nakagusuku","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.28498,"lon1":127.79572,"lat2":26.28571,"lon2":127.79523,"lat3":26.28557,"lon3":127.79491,"trap1":"S0018","trap2":"S0019","trap3":"S0020","weather_station":""},{"site_id":"UNIVRYUKYUSFR","site_name":"University of Ryukyus Forest","site_number":"Site10","owner":"Ryukyu University Subtropical Field Center","type":"Forest","area":"","location":"Nishihara","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.24528,"lon1":127.75887,"lat2":26.24548,"lon2":127.75863,"lat3":26.24407,"lon3":127.75877,"trap1":"S0035","trap2":"S0036","trap3":"S0037","weather_station":""},{"site_id":"UNIVRYUKYUSOP","site_name":"University of Ryukyus Open","site_number":"Site11","owner":"Ryukyu University Subtropical Field Center","type":"Open","area":"","location":"Nishihara","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.24818,"lon1":127.75763,"lat2":26.24795,"lon2":127.75863,"lat3":26.24921,"lon3":127.75906,"trap1":"S0032","trap2":"S0033","trap3":"S0034","weather_station":""},{"site_id":"TAMAGUSUKUFR","site_name":"Tamagusuku Youth and Children's Center Forest ","site_number":"Site12","owner":"","type":"Forest","area":"","location":"Nanjo","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.14247,"lon1":127.78266,"lat2":26.14217,"lon2":127.78458,"lat3":26.14243,"lon3":127.78451,"trap1":"S0062","trap2":"S0063","trap3":"S0064","weather_station":""},{"site_id":"HEIWAOP","site_name":"Heiwasouzou no Mori Open","site_number":"Site13","owner":"","type":"Open","area":"","location":"Itoman","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.08335,"lon1":127.68786,"lat2":26.08378,"lon2":127.68875,"lat3":26.08436,"lon3":127.68933,"trap1":"S0059","trap2":"S0060","trap3":"S0061","weather_station":""},{"site_id":"OKUFR","site_name":"Oku Forest","site_number":"Site14","owner":"","type":"Forest","area":"","location":"Kunigami","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.83635,"lon1":128.27013,"lat2":26.8363,"lon2":128.27051,"lat3":26.83604,"lon3":128.27191,"trap1":"S0047","trap2":"S0048","trap3":"S0049","weather_station":""},{"site_id":"YACHOOP","site_name":"Yacho No Mori Open","site_number":"Site15","owner":"","type":"Open","area":"","location":"Uruma","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.37612,"lon1":127.87032,"lat2":26.37581,"lon2":127.87071,"lat3":26.37503,"lon3":127.87093,"trap1":"S0044","trap2":"S0045","trap3":"S0046","weather_station":""},{"site_id":"KEMINFR","site_name":"Kemin No Mori Forest","site_number":"Site16","owner":"","type":"Forest","area":"","location":"Onna","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.50553,"lon1":127.91046,"lat2":26.50624,"lon2":127.9103,"lat3":26.50664,"lon3":127.91042,"trap1":"S0071","trap2":"S0072","trap3":"S0073","weather_station":""},{"site_id":"OHYAMAOP","site_name":"Ohyama Ta-mu Open","site_number":"Site17","owner":"","type":"Open","area":"","location":"Ginowan","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.28129,"lon1":127.74419,"lat2":26.28088,"lon2":127.74456,"lat3":26.28009,"lon3":127.74404,"trap1":"S0041","trap2":"S0042","trap3":"S0043","weather_station":""},{"site_id":"NAGOFR","site_name":"Nago Joushi Forest","site_number":"Site18","owner":"","type":"Forest","area":"","location":"Nago","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.59008,"lon1":127.99402,"lat2":26.58956,"lon2":127.99418,"lat3":26.58945,"lon3":127.99315,"trap1":"S0068","trap2":"S0069","trap3":"S0070","weather_station":""},{"site_id":"SUEYOSHIFR","site_name":"Sueyoshi Park Forest","site_number":"Site19","owner":"","type":"Forest","area":"","location":"Naha","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.22817,"lon1":127.71642,"lat2":26.22831,"lon2":127.716,"lat3":26.22917,"lon3":127.71609,"trap1":"S0056","trap2":"S0057","trap3":"S0058","weather_station":""},{"site_id":"GESASHIOP","site_name":"Gesashi Open","site_number":"Site20","owner":"","type":"Open","area":"","location":"Higashi","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.60461,"lon1":128.14345,"lat2":26.60447,"lon2":128.14258,"lat3":26.6037,"lon3":128.14246,"trap1":"S0077","trap2":"S0078","trap3":"S0079","weather_station":""},{"site_id":"TOUNANOP","site_name":"Southeast Botanical Garden Open","site_number":"Site21","owner":"Southeast Botanical Garden ","type":"Open","area":"","location":"Okinawa","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.37771,"lon1":127.80656,"lat2":26.37793,"lon2":127.80549,"lat3":26.37832,"lon3":127.80571,"trap1":"S0050","trap2":"S0051","trap3":"S0052","weather_station":""},{"site_id":"MANABIFR","site_name":"Yanbaru Manabi No Mori Forest","site_number":"Site22","owner":"Yanbaru Manabi Forest","type":"Forest","area":"","location":"Kunigami","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.72256,"lon1":128.26027,"lat2":26.7226,"lon2":128.2597,"lat3":26.72245,"lon3":128.25934,"trap1":"S0053","trap2":"S0054","trap3":"S0055","weather_station":""},{"site_id":"SEFAUTAKIFR","site_name":"Sefa Utaki Forest","site_number":"Site23","owner":"","type":"Forest","area":"","location":"Nanjo","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.17333,"lon1":127.82573,"lat2":26.17351,"lon2":127.82587,"lat3":26.17418,"lon3":127.82538,"trap1":"S0065","trap2":"S0066","trap3":"S0067","weather_station":""},{"site_id":"KATSUUDAKEFR","site_name":"Katsuu Dake Forest","site_number":"Site24","owner":"","type":"Forest","area":"","location":"Nago","habitat":"","history":"","vegetation":"","soil":"","img_url":"","lat1":26.63249,"lon1":127.93468,"lat2":26.63279,"lon2":127.93497,"lat3":26.63305,"lon3":127.93561,"trap1":"S0074","trap2":"S0075","trap3":"S0076","weather_station":""}];
 	
 
 
@@ -515,7 +202,7 @@ jQuery(document).ready(function($){
 			 
 			 }
 			 
-			 //d3.selectAll(".site-details div").remove();
+			 d3.selectAll(".site-details div").html('');
 		});
 	
 
@@ -819,7 +506,7 @@ jQuery(document).ready(function($){
 				.attr("class","infolabel")
 				.style("box-shadow", "5px 5px 5px #888888")
 				.style("background-color", "white") 
-				.attr("id", "infolabel-"+i)
+				.attr("id", "infolabel-col"+i)
 				.style("color","black")
 				.html(labelHTML);
 		
@@ -852,22 +539,25 @@ jQuery(document).ready(function($){
 		.attr("class","site-description")
 		.html(descriptionHTML);
 		
+		var trapsHTML = "<h2 class='site-titles'> Traps </h2><h3>&nbsp;&nbsp;<b>"+d.trap1+
+		"</b>: ["+d.lat1+", "+d.lon1+"] <br>&nbsp;&nbsp;<b>"+d.trap2+"</b>: ["+d.lat2+", "+d.lon2+
+		"] <br>&nbsp;&nbsp;<b>"+d.trap3+"</b>: ["+d.lat3+", "+d.lon3+"]</h3>";
+		var site_traps= d3.select("#site-traps")
+		.attr("class","site-traps")
+		.html(trapsHTML);
+		
 		var historyHTML = "<h2 class='site-titles'> History </h2>";
 		var site_history = d3.select("#site-history")
 		.attr("class","site-history")
 		.html(historyHTML);
 		
-		var vegetationHTML = "<h2 class='site-titles'> Vegetation, Ecosystem & Landcover </h2>";
+		var vegetationHTML = "<h2 class='site-titles'> Habitat, Vegetation and Soil </h2>";
 		var site_vegetation = d3.select("#site-vegetation")
 		.attr("class","site-vegetation")
 		.html(vegetationHTML);
 		
-		var soilHTML = "<h2 class='site-titles'> Soil </h2>";
-		var site_soil = d3.select("#site-soil")
-		.attr("class","site-soil")
-		.html(soilHTML);
 		
-		var weatherHTML = "<h2 class='site-titles'> Weather Station </h2>";
+		var weatherHTML = "<h2 class='site-titles'> Weather Station </h2><h3>&nbsp;&nbsp;"+d.weather_station+"</h3>";
 		var site_weather = d3.select("#site-weather")
 		.attr("class","site-weather")
 		.html(weatherHTML);
