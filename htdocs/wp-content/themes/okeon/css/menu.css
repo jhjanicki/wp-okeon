@@ -31,12 +31,12 @@
   display: none;
 }
 #cssmenu {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open sans', sans-serif;
   background: white;
   color: black;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
   margin-top:0px;
-  border-top: 1px solid #ddd;
+  /* border-top: 1px solid #ddd; */
 }
 #cssmenu > ul > li {
   float: left;
@@ -66,7 +66,7 @@
   text-transform: uppercase;
 }
 #cssmenu > ul > li:hover > a {
-  color: gray;
+  color: #009999;
 }
 #cssmenu > ul > li.has-sub > a {
   padding-right: 30px;
@@ -81,6 +81,7 @@
   background: black;
   content: '';
 }
+
 #cssmenu > ul > li.has-sub > a:before {
   position: absolute;
   top: 24px;  /* 19 */
@@ -99,6 +100,7 @@
 #cssmenu > ul > li.has-sub:hover > a:before {
   top: 23px;
   height: 0;
+  
 }
 #cssmenu ul ul {
   position: absolute;
@@ -149,7 +151,7 @@
 }
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li a:hover {
-  color: #ddd;
+  color: #009999;
 }
 #cssmenu ul ul li.has-sub > a:after {
   position: absolute;
@@ -187,6 +189,7 @@
 #cssmenu ul ul > li.has-sub:hover > a:before {
   top: 17px;
   height: 0;
+  
 }
 
 @media all and (max-width: 950px){

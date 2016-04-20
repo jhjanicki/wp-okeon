@@ -18,6 +18,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 two blues:
 #31b0d5
 #2c7fb8
+
+previous blue-green:
+#00a388
+
+prev two colors:
+#009999
+#428bca
+
+current:
+#4A766E
+#009999
  */
 
 
@@ -39,6 +50,10 @@ two blues:
 	.carousel-caption {
 		background: rgba(0, 0, 0, 0.2);
 		padding:30px;
+	}
+	
+	.panel-default>.panel-heading{
+		background-color:#F9F9F9;
 	}
 	
 	#myCarouselBlog .img-responsive, #myCarouselBlog .thumbnail>img, #myCarouselBlog .thumbnail a>img,
@@ -108,8 +123,12 @@ two blues:
 	}
 	
 	.panel-title a:hover{
-		color: #00a388;
+		color: #009999;
 		transition: all 1s ease;
+	}
+	
+	.card-block a:hover{
+		text-decoration:none;
 	}
 	
 	
@@ -120,10 +139,15 @@ two blues:
 		overflow-x: hidden;
 		font-family:'Open Sans', sans-serif;
 	}	
+	
+	html, body{
+		background-color:#f5f5f5;
+	}
+	
 	a{
 		transition: all 300ms ease;
 		text-decoration:none;
-		color: #00a388;
+		color: #009999;
 	}
 	
 	a:hover{
@@ -137,7 +161,7 @@ two blues:
 		text-decoration:none;
 	}
 	a.title:hover{
-		color:#46b698;
+		color:#4A766E;
 		text-decoration:none;
 	}
 	
@@ -239,6 +263,8 @@ two blues:
 		margin:0;
 		padding:0;
 		height:100%;
+		font-family: 'Raleway', sans-serif;
+
 	}
 	#wrapper {
 		min-height:100%;
@@ -313,7 +339,7 @@ two blues:
 		line-height: 1.5;
 		text-transform: uppercase;
 		height: 40px;
-		background-color: #00a388;
+		background-color: #009999;
 		color:#F0EDE2;
 		text-decoration:none;
 		-webkit-transition: all 500ms ease;
@@ -324,7 +350,7 @@ two blues:
 
 	.button2:hover{
 		background-color: black;
-		color: #00a388;
+		color: #009999;
 		border: solid 1px black;
 		text-decoration:none;
 		cursor: pointer;
@@ -354,9 +380,9 @@ two blues:
 	}
 
 	.button3:hover{
-		background-color: #46b698;
+		background-color: #4A766E;
 		color: none;
-		border: solid 1px #46b698;
+		border: solid 1px #4A766E;
 		text-decoration:none;
 		cursor: pointer;
 	}
@@ -372,8 +398,8 @@ two blues:
 
 	.active-button{
 		color:#F0EDE2;
-		background-color:#00a388;
-		border: solid 1px #00a388;
+		background-color:#009999;
+		border: solid 1px #009999;
 	}
 	
 	.active-button:hover{
@@ -431,7 +457,7 @@ two blues:
 	/* header page */
 	
 	#brand-title, #brand-title2{
-		color:#00a388;
+		color:white; 
 		font-size:40px;
 		vertical-align: middle;
 		font-weight:300;
@@ -441,7 +467,7 @@ two blues:
 	}
 	
 	#sub-brand-title{
-		color:#00a388;
+		color:white;
 		font-size:20px;
 		vertical-align: middle;
 		font-weight:300;
@@ -457,7 +483,7 @@ two blues:
 		padding:0px;
 		height:100px;
 		width:100%;
-		background: white;
+		background: #4A766E; /* #46b698 */
 		position: relative;
     	overflow: hidden;
 	}	
@@ -612,6 +638,10 @@ two blues:
 			.carousel-indicators{
 				display:none;
 			}
+			
+			#myCarouselBlog{
+				display:none;
+			}
 	}
 	
 	@media all and (max-width: 500px){
@@ -697,7 +727,7 @@ two blues:
 	}
 	
 	#second-pane p{
-		color:#46b698;
+		color:#4A766E;
 	}
 	
 	#third-pane{
@@ -747,7 +777,7 @@ two blues:
 	}
 	
 	.text-muted{
-    	color:#46b698; 
+    	color:#4A766E; 
     }
 	
 	
@@ -758,9 +788,17 @@ two blues:
 		padding-bottom:30px;
 	}
 	
-	.post:nth-of-type(1) hr{
-		border-top: 2px solid black;
+	/* 
+.post:nth-of-type(1) hr{
+		border-top: 2px solid #a5a5af;
 	}
+ */
+ 
+ 	.post hr{
+ 		background-color: #4A766E;
+ 		color: #4A766E;
+ 		height:1px;
+ 	}
 	
 	.intro{
 		font-size:20px;
@@ -771,7 +809,7 @@ two blues:
 	
 	/* front-page icons */
 	.text-primary{
-		color: #46b698 !important;/*  #46b698 */
+		color: #4A766E !important;/*  #4A766E */
 	}
 	#front-icons-wrapper{
 		margin-top:0px;
@@ -787,7 +825,7 @@ two blues:
 	i.fa.fa-4x:hover{
 		cursor:pointer;
 		transition: all 1s ease;
-		background-color:#46b698;
+		background-color:#4A766E;
 		color:white !important;
 		-webkit-clip-path: circle(50px at center);
 
@@ -819,11 +857,11 @@ two blues:
     }
     
     hr.home2{
-    	width: 100%;
+    	width: 99%;
     	color:black;
     	margin-left:0px;
     	background-color:black;
-    	height:2px;
+    	height:1px;
     	margin-bottom:50px;
     }
     
@@ -849,15 +887,15 @@ two blues:
     	width: 130px;
     	color:black;
     	background-color:black;
-    	height:3px;
+    	height:2px;
     	margin-top:10px;
     	margin-bottom:50px;
     }
     
     hr.cards{
     	width: 100%;
-    	color: #46b698;
-		background-color:#46b698;
+    	color: #4A766E;
+		background-color:#4A766E;
 		height: 3px;
     }
     
@@ -909,8 +947,8 @@ two blues:
 		margin-bottom: 20px;
 		border: 0;
 		border-top: 1px solid #eee;
-		color: #46b698;
-		background-color:#46b698;
+		color: #4A766E;
+		background-color:#4A766E;
 		height: 2px;
 		width:250px;
 		margin-left:0px;
@@ -921,7 +959,7 @@ two blues:
 	}
 	
 	.date{
-		color:/* #46b698; */ #46b698;
+		color:/* #4A766E; */ #4A766E;
 	}
 	
 	.category a{
@@ -944,7 +982,7 @@ two blues:
 	/* data page */
 	
 	.data-theme{
-		color:#00a388;
+		color:#009999;
 		font-weight:300;
 		font-size:34px;
 	}
@@ -1217,8 +1255,8 @@ two blues:
 		margin-bottom: 20px;
 		border: 0;
 		border-top: 1px solid #eee;
-		color:#00a388;
-		background-color:#00a388;
+		color:#009999;
+		background-color:#009999;
 		height: 2px;
 	}
 	
@@ -1228,9 +1266,9 @@ two blues:
 		margin-bottom: 20px;
 		border: 0;
 		border-top: 1px solid #eee;
-		color:#00a388;
-		background-color:#00a388;
-		height: 2px;
+		color:#009999;
+		background-color:#009999;
+		height: 1px;
 	}
 	
 	
@@ -1257,6 +1295,7 @@ two blues:
 		margin-left:50px;
 		margin-bottom:0px;
 		padding:5px;
+		margin-top: 10px;
 	}
 	
 	hr.current_page_hr{
@@ -1267,8 +1306,8 @@ two blues:
 		border-top: 1px solid #eee;
 		width:150px;
 		margin-left:55px;
-		border-color:/* #46b698 */#46b698;
-		color:/* #46b698 */#46b698;
+		border-color:/* #4A766E */#4A766E;
+		color:/* #4A766E */#4A766E;
 		height:2px;
 	}
 	
@@ -1337,7 +1376,7 @@ two blues:
 	}
 	
 	thead{
-		background-color:#46b698;
+		background-color:#4A766E;
 		color:#F0EDE2;
 	}
 	
@@ -1478,7 +1517,7 @@ two blues:
 		text-align: center;
 		color: #fff;
 		opacity: 0;
-		background: #46b698;
+		background: #4A766E;
 		-webkit-transition: all .35s;
 		-moz-transition: all .35s;
 		transition: all .35s;
@@ -1527,7 +1566,7 @@ two blues:
 	}
 
 	.text-primary {
-		color: #46b698 !important;  /* #CDD9BA */
+		color: #4A766E !important;  /* #CDD9BA */
 	}
 
 	.no-gutter > [class*=col-] {
