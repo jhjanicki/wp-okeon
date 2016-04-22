@@ -459,17 +459,18 @@ current:
 	
 	#brand-title, #brand-title2{
 		color:white; 
-		font-size:40px;
-		vertical-align: middle;
+		font-size:36px;
+		margin-top:14px;
 		font-weight:300;
 		padding-top:0px;
 		margin-bottom:0px;
+		
 		
 	}
 	
 	#sub-brand-title{
 		color:white;
-		font-size:20px;
+		font-size:28px;
 		vertical-align: middle;
 		font-weight:300;
 		padding-top:10px;
@@ -1576,6 +1577,22 @@ current:
 			.slider-text{
 				font-weight:200;
 				font-size:12px;
+			}
+			#brand-title{
+				font-size:16px;
+
+			}
+			
+			#sub-brand-title{
+				font-size:12px;
+			}
+			
+			#main-icon{
+				margin-left:-5px;
+			}
+			
+			#header{
+				height:80px;
 			}
 	}
 	
