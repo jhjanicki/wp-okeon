@@ -8,10 +8,11 @@
     
     
     
+    
     <div class="row width-90-percent">
       
       <div class="col-md-9">
-      	
+      
       		<article class="width-80-percent">
       		<?php if (have_posts()): while (have_posts()):the_post(); ?>
       			<h2> <?php the_title(); ?></h2>
@@ -29,9 +30,20 @@
       		<?php endwhile; else: ?>
       		
       		<?php endif; ?>
-      		</article>
       	
+      		<div class="navigation">
+      				<div class="alignright">
+					<?php next_post_link(); ?>
+					</div>
+					<div class="alignleft">
+					<?php previous_post_link(); ?>	
+					</div>
+			</div> <!-- end navigation -->
+      		</article>
+      		
+      		
       </div>
+      		
       
     
       

@@ -59,10 +59,11 @@ current:
 	#myCarouselBlog .img-responsive, #myCarouselBlog .thumbnail>img, #myCarouselBlog .thumbnail a>img,
 	 #myCarouselBlog .carousel-inner>.item>img, #myCarouselBlog .carousel-inner>.item>a>img {
 		display: block;
-		width: 90%;
-		margin-left:5%;
-		margin-right:5%;
+		width: 80%;
+		margin-left:10%;
+		margin-right:10%;
 		height: auto;
+		
 	}
 	
 	#myCarouselBlog p{
@@ -182,6 +183,7 @@ current:
 	.left{
 		text-align: left;
 	}
+	
 	
 	.maxWidth {
 	  width: 100%;
