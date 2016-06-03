@@ -260,6 +260,10 @@ current:
 		text-align:center;
 	}
 	
+	.light{
+		font-weight:300;
+	}
+	
 	/* general but footer related */
 	html,
 	body {
@@ -642,6 +646,15 @@ current:
 	}
 	.icon-text{
 			font-size:20px;
+	}
+	
+	[class^="icon-"], [class*=" icon-"] {
+		display: inline-block;
+		width: 100%;
+	}
+	
+	i {
+		text-align:center;
 	}
 	
 	.clip-circle {
