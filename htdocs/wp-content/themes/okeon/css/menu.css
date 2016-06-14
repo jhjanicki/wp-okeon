@@ -40,7 +40,7 @@
 }
 #cssmenu > ul > li {
   float: left;
-  z-index:999999;
+  z-index:999;
 }
 #cssmenu.align-center > ul {
   font-size: 0;

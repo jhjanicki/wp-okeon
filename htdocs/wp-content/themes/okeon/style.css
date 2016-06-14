@@ -242,6 +242,11 @@ current:
 		padding:20px;
 	}
 	
+	.padding-left-right-20{
+		padding-left:20px;
+		padding-right:20px;
+	}
+	
 	.padding-left-20{
 		padding-left:20px;
 	}
@@ -658,15 +663,15 @@ current:
 	}
 	
 	.clip-circle {
-		-webkit-clip-path: circle(64px at center);
 	  	clip-path: circle(64px at center);
+		-webkit-clip-path: circle(64px at center);
 	  	/* OLD VALUE example: circle(245px, 140px, 50px); */
 	  	/* Yep, even the new clip-path has deprecated stuff. */
 	}
 	
 	
 	
-.current_page{
+	.current_page{
 		margin-left:50px;
 		margin-bottom:0px;
 		padding:5px;
@@ -853,6 +858,7 @@ current:
 		text-transform:uppercase;
 		font-weight:300;
 		font-size:30px;
+		margin-top:-20px;
 	}
 	
 	
@@ -896,7 +902,7 @@ current:
 	}
 	
 	/* 
-.post:nth-of-type(1) hr{
+	.post:nth-of-type(1) hr{
 		border-top: 2px solid #a5a5af;
 	}
  */
@@ -982,7 +988,7 @@ current:
 	}
 	
 	/* 
-.infolabel{
+	.infolabel{
 		position:absolute;
 		top:280px; 
 		right:80px; 
@@ -993,9 +999,9 @@ current:
 		padding-left:5px;
 		padding-right:5px;
 	}
- */
+	*/
  
- .infolabel{
+	 .infolabel{
 		position:absolute;
 		top:160px; /* take out */
 		left:230px; /* take out */
@@ -1217,35 +1223,122 @@ current:
 		text-align:left;
 	}
 	
+	.portfolio-modal .modal-content {
+		border-radius: 0;
+		background-clip: border-box;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		border: 0;
+		min-height: 100%;
+		padding: 100px 0;
+		text-align: center
+	}
+	.portfolio-modal .modal-content h2 {
+		margin-bottom: 15px;
+		font-size: 3em
+	}
+	.portfolio-modal .modal-content p {
+		margin-bottom: 30px
+	}
+	.portfolio-modal .modal-content p.item-intro {
+		margin: 20px 0 30px;
+		font-style: italic;
+		font-size: 16px
+	}
+	.portfolio-modal .modal-content ul.list-inline {
+		margin-bottom: 30px;
+		margin-top: 0
+	}
+	.portfolio-modal .modal-content img {
+		margin-bottom: 30px
+	}
+	.portfolio-modal .close-modal {
+		position: absolute;
+		width: 75px;
+		height: 75px;
+		background-color: transparent;
+		top: 25px;
+		right: 25px;
+		cursor: pointer
+	}
+	.portfolio-modal .close-modal:hover {
+		opacity: .3
+	}
+	.portfolio-modal .close-modal .lr {
+		height: 75px;
+		width: 1px;
+		margin-left: 35px;
+		background-color: #222;
+		transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		z-index: 1051
+	}
+	.portfolio-modal .close-modal .lr .rl {
+		height: 75px;
+		width: 1px;
+		background-color: #222;
+		transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		z-index: 1052
+	}
+	.portfolio-modal .modal-backdrop {
+		opacity: 0;
+		display: none
+	}
+	::-moz-selection {
+		text-shadow: none;
+		background: #fed136
+	}
+	::selection {
+		text-shadow: none;
+		background: #fed136
+	}
+	img::selection {
+		background: 0 0
+	}
+	img::-moz-selection {
+		background: 0 0
+	}
+
+	.img-centered {
+		margin: 0 auto
+	}
+
+	@media (min-width: 767px) {
+		#portfolio .portfolio-item {
+			margin: 0 0 30px
+		}
+	}
+	@media all and (max-width: 1040px){
+			.legend{
+				position:absolute;
+				top:430px;
+				left:-30px;
+				width:200px;
+				height:50px;
 	
-@media all and (max-width: 1040px){
-		.legend{
-			position:absolute;
-			top:430px;
-			left:-30px;
-			width:200px;
-			height:50px;
+			}
+		}
 	
+	@media all and (max-width: 1450px) and (min-width: 1350px){
+		hr.page_side{
+			width:110%;
+		}
+	}
+
+	@media all and (max-width: 1339px) and (min-width: 1150px){
+		hr.page_side{
+			width:120%;
 		}
 	}
 	
-@media all and (max-width: 1450px) and (min-width: 1350px){
-	hr.page_side{
-		width:110%;
+	@media all and (max-width: 1149px) and (min-width: 992px){
+		hr.page_side{
+			width:130%;
+		}
 	}
-}
-
-@media all and (max-width: 1339px) and (min-width: 1150px){
-	hr.page_side{
-		width:120%;
-	}
-}
-	
-@media all and (max-width: 1149px) and (min-width: 992px){
-	hr.page_side{
-		width:130%;
-	}
-}
 
 	
 
