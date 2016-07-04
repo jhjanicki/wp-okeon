@@ -23,12 +23,18 @@ previous blue-green:
 #00a388
 
 prev two colors:
-#009999
+#c70019
 #428bca
 
-current:
+prev:
 #4A766E
 #009999
+
+current:
+#a00707
+#c70019
+
+
  */
 
 
@@ -125,7 +131,7 @@ current:
 	}
 	
 	.panel-title a:hover{
-		color: #009999;
+		color: #c70019;
 		transition: all 1s ease;
 	}
 	
@@ -149,7 +155,7 @@ current:
 	a{
 		transition: all 300ms ease;
 		text-decoration:none;
-		color: #009999;
+		color: #c70019;
 	}
 	
 	a:hover{
@@ -163,7 +169,7 @@ current:
 		text-decoration:none;
 	}
 	a.title:hover{
-		color:#4A766E;
+		color:#a00707;
 		text-decoration:none;
 	}
 	
@@ -351,7 +357,7 @@ current:
 		line-height: 1.5;
 		text-transform: uppercase;
 		height: 40px;
-		background-color: #009999;
+		background-color: #c70019;
 		color:#F0EDE2;
 		text-decoration:none;
 		-webkit-transition: all 500ms ease;
@@ -362,7 +368,7 @@ current:
 
 	.button2:hover{
 		background-color: black;
-		color: #009999;
+		color: #c70019;
 		border: solid 1px black;
 		text-decoration:none;
 		cursor: pointer;
@@ -392,9 +398,9 @@ current:
 	}
 
 	.button3:hover{
-		background-color: #4A766E;
+		background-color: #a00707;
 		color: none;
-		border: solid 1px #4A766E;
+		border: solid 1px #a00707;
 		text-decoration:none;
 		cursor: pointer;
 	}
@@ -410,8 +416,8 @@ current:
 
 	.active-button{
 		color:#F0EDE2;
-		background-color:#009999;
-		border: solid 1px #009999;
+		background-color:#c70019;
+		border: solid 1px #c70019;
 	}
 	
 	.active-button:hover{
@@ -496,7 +502,7 @@ current:
 		padding:0px;
 		height:100px;
 		width:100%;
-		background: #4A766E; /* #46b698 */
+		background: #c70019; /* #4A766E */
 		position: relative;
     	overflow: hidden;
 	}	
@@ -557,7 +563,7 @@ current:
 	}
 	
 	#second-pane p{
-		color:#4A766E;
+		color:#a00707;
 	}
 	
 	#third-pane{
@@ -607,7 +613,7 @@ current:
 	}
 	
 	.text-muted{
-    	color:#4A766E; 
+    	color:#a00707; 
     }
 	
 	
@@ -628,7 +634,7 @@ current:
 	
 	/* front-page icons */
 	.text-primary{
-		color: #4A766E !important;/*  #4A766E */
+		color: #a00707 !important;/*  #a00707 */
 	}
 	#front-icons-wrapper{
 		margin-top:0px;
@@ -644,7 +650,7 @@ current:
 	i.fa.fa-4x:hover{
 		cursor:pointer;
 		transition: all 1s ease;
-		background-color:#4A766E;
+		background-color:#a00707;
 		color:white !important;
 		-webkit-clip-path: circle(50px at center);
 
@@ -686,8 +692,8 @@ current:
 		border-top: 1px solid #eee;
 		width:150px;
 		margin-left:55px;
-		border-color:/* #4A766E */#4A766E;
-		color:/* #4A766E */#4A766E;
+		border-color:/* #a00707 */#a00707;
+		color:/* #a00707 */#a00707;
 		height:2px;
 	}
 	
@@ -754,7 +760,7 @@ current:
 	}
 	
 	thead{
-		background-color:#4A766E;
+		background-color:#a00707;
 		color:#F0EDE2;
 	}
 	
@@ -828,8 +834,8 @@ current:
     
     hr.cards{
     	width: 100%;
-    	color: #4A766E;
-		background-color:#4A766E;
+    	color: #a00707;
+		background-color:#a00707;
 		height: 3px;
     }
     
@@ -882,8 +888,8 @@ current:
 		margin-bottom: 20px;
 		border: 0;
 		border-top: 1px solid #eee;
-		color: #4A766E;
-		background-color:#4A766E;
+		color: #a00707;
+		background-color:#a00707;
 		height: 2px;
 		width:250px;
 		margin-left:0px;
@@ -894,7 +900,7 @@ current:
 	}
 	
 	.date{
-		color:/* #4A766E; */ #4A766E;
+		color:/* #a00707; */ #a00707;
 	}
 	
 	.category a{
@@ -918,8 +924,8 @@ current:
 	}
  
  	.post hr{
- 		background-color: #4A766E;
- 		color: #4A766E;
+ 		background-color: #a00707;
+ 		color: #a00707;
  		height:1px;
  	}
 	
@@ -939,7 +945,7 @@ current:
 	/* data page */
 	
 	.data-theme{
-		color:#009999;
+		color:#c70019;
 		font-weight:300;
 		font-size:34px;
 	}
@@ -1195,8 +1201,8 @@ current:
 		margin-bottom: 20px;
 		border: 0;
 		border-top: 1px solid #eee;
-		color:#009999;
-		background-color:#009999;
+		color:#c70019;
+		background-color:#c70019;
 		height: 2px;
 	}
 	
@@ -1206,8 +1212,8 @@ current:
 		margin-bottom: 20px;
 		border: 0;
 		border-top: 1px solid #eee;
-		color:#009999;
-		background-color:#009999;
+		color:#c70019;
+		background-color:#c70019;
 		height: 1px;
 	}
 	
@@ -1289,11 +1295,11 @@ current:
 	}
 	::-moz-selection {
 		text-shadow: none;
-		background: #fed136
+		background: #ff7b7b
 	}
 	::selection {
 		text-shadow: none;
-		background: #fed136
+		background: #ff7b7b
 	}
 	img::selection {
 		background: 0 0
@@ -1457,7 +1463,7 @@ current:
 		text-align: center;
 		color: #fff;
 		opacity: 0;
-		background: #4A766E;
+		background: #a00707;
 		-webkit-transition: all .35s;
 		-moz-transition: all .35s;
 		transition: all .35s;
@@ -1506,7 +1512,7 @@ current:
 	}
 
 	.text-primary {
-		color: #4A766E !important;  /* #CDD9BA */
+		color: #a00707 !important;  /* #CDD9BA */
 	}
 
 	.no-gutter > [class*=col-] {

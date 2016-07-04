@@ -337,7 +337,7 @@ jQuery(document).ready(function($){
 					.data(sites_dataset)
 					.enter()
 					.append("svg:image")
-					.attr("xlink:href", "https://dl.dropboxusercontent.com/u/102373131/okeon-img/tear-icon-blue.png")
+					.attr("xlink:href", "https://dl.dropboxusercontent.com/u/102373131/okeon-img/tear-icon-red4.png")
 					.attr("x", function(d, i) {
 						//console.log(getProjection()([d.longitude,d.latitude]).x);
 						return getProjection()([d.longitude,d.latitude]).x-wh+200/wh;})
@@ -388,7 +388,7 @@ jQuery(document).ready(function($){
 					.data(collaborators_dataset)
 					.enter()
 					.append("svg:image")
-					.attr("xlink:href", "https://dl.dropboxusercontent.com/u/102373131/okeon-img/tear-icon-green.png")
+					.attr("xlink:href", "https://dl.dropboxusercontent.com/u/102373131/okeon-img/tear-icon-red3.png")
 					.attr("x", function(d, i) {
 						//console.log(getProjection()([d.longitude,d.latitude]).x);
 						return getProjection()([d.longitude,d.latitude]).x-wh+200/wh;})
@@ -491,7 +491,7 @@ jQuery(document).ready(function($){
 		//console.log(d);
 		//console.log(display);
 		if(display=='sites'){
-			var labelHTML = "<h4 style='background-color:#009999;' >"+d.locality_name+"</h4><b><p>"+d.adm_region+"</b>&nbsp;&nbsp;&nbsp;&nbsp;<i>"+d.site_id+"</i></p>";
+			var labelHTML = "<h4 style='background-color:#c70019;' >"+d.locality_name+"</h4><b><p>"+d.adm_region+"</b>&nbsp;&nbsp;&nbsp;&nbsp;<i>"+d.site_id+"</i></p>";
 			var infolabel=d3.select("#mapContainer").append("div")
 				.attr("class","infolabel")
 				.style("box-shadow", "5px 5px 5px #888888")
@@ -501,7 +501,7 @@ jQuery(document).ready(function($){
 				.html(labelHTML);
 		}else if(display=='collaborators'){
 		
-				var labelHTML = "<h4 style='background-color:#4A766E;'>"+d.collaborator+"</h4><i><p style='padding-left:10px'>"+d.type+"</i></p>";
+				var labelHTML = "<h4 style='background-color:#a00707;'>"+d.collaborator+"</h4><i><p style='padding-left:10px'>"+d.type+"</i></p>";
 				var infolabel=d3.select("#mapContainer").append("div")
 				.attr("class","infolabel")
 				.style("box-shadow", "5px 5px 5px #888888")

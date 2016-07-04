@@ -34,7 +34,7 @@
 			<div class="col-lg-12 text-center">
 				
 				<h2 id="brand-title" class="">OKEON 美ら森プロジェクト</h2>
-				<img id="main-icon" src="<?php echo get_template_directory_uri(); ?>/images/okeon-icon7.png" />
+				<!-- <img id="main-icon" src="<?php echo get_template_directory_uri(); ?>/images/okeon-icon7.png" /> -->
 				<h3 id="sub-brand-title"><b>OK</b>inawa <b>E</b>nvironmental <b>O</b>bservation <b>N</b>etwork</h3>  
 				<!-- <span class="inline" id="search"><?php if (dynamic_sidebar('front-nav')); ?></span> -->
 			</div>
