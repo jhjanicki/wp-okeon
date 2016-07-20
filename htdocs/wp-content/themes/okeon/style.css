@@ -228,6 +228,10 @@ current:
 		margin-right:55px;
 	}
 	
+	.margin-bottom-20{
+		margin-bottom:20px;
+	}
+	
 	.width-90-percent{
 		width:90% !important;
 		margin-left:5% !important;
@@ -255,6 +259,10 @@ current:
 	
 	.padding-left-20{
 		padding-left:20px;
+	}
+	
+	.padding-bottom-20{
+		padding-bottom:20px;
 	}
 	
 	.img-responsive{
