@@ -632,6 +632,11 @@ current:
 		padding-bottom:30px;
 	}
 	
+	.blog-content p{
+		font-size:18px;
+		font-weight:400;
+	}
+	
 	
 	.intro{
 		font-size:20px;

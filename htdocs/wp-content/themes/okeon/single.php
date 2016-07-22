@@ -23,8 +23,9 @@
       				in <span class="category"><?php the_category(', '); ?></span>, 
       				<a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
       			</em></p>
-      			
+      			<div class="blog-content">
       			<?php the_content(); ?>
+      			</div>
       			<hr>
       			<?php comments_template(); ?>
       		<?php endwhile; else: ?>
