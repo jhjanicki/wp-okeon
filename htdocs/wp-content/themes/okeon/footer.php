@@ -16,7 +16,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-4">
-                     <p class="footer_p" >&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
+                     <p class="footer_p" >   <img class="footer-logo"src="<?php echo get_template_directory_uri(); ?>/images/oist-logo-red.png">  &nbsp;&nbsp;&nbsp;OKEON Churamori project is funded by OIST</p>
                 </div>
                
             </div>

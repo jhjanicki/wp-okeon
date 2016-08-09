@@ -45,6 +45,7 @@
             <div class="row">
                <div class="col-md-12 text-center site-details">   
                		<div id="site-overview"></div> <!-- id, name, number, lat/lon, host -->
+               		<div id="site-images"></div>
                		<div id="site-description"></div>
                		<div id="site-traps"></div>
                		<div id="site-history"></div>
