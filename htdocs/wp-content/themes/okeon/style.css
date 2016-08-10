@@ -1332,10 +1332,21 @@ current:
 	img::-moz-selection {
 		background: 0 0
 	}
+	
+	.port-body-text{
+		font-size:18px;
+		font-family: 'Lato', sans-serif;
+	}
 
 	.img-centered {
 		margin: 0 auto
 	}
+	
+	
+	.modal{
+		bottom:-10px !important; /* in bootstrap is 0 but the bottom is showing so hack*/
+	}
+
 
 	@media (min-width: 767px) {
 		#portfolio .portfolio-item {
