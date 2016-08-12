@@ -226,6 +226,10 @@ jQuery(document).ready(function($){
 				maxBounds: bounds,
 				maxZoom:15
 			});
+			
+	$("#reset").on('click',function(){
+		map.setView(new L.LatLng(26.5, 128), 10);
+	});
 		
 	var tile1 = L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
 						attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -559,7 +563,7 @@ jQuery(document).ready(function($){
 		.attr("class","site-overview")
 		.html(overviewHTML);
 		
-		var descriptionHTML = "<h2 class='site-titles'> Description </h2>"+d.description;
+		var descriptionHTML = "<h2 class='site-titles'> Description </h2><h3>&nbsp;&nbsp;"+d.description+"</h3>";
 		var site_description= d3.select("#site-description")
 		.attr("class","site-description")
 		.html(descriptionHTML);

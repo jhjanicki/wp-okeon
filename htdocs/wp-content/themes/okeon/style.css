@@ -768,7 +768,6 @@ current:
     }
     
 
-	
 	table{
 		width:100%;
 		margin-left:auto;
@@ -1012,6 +1011,25 @@ current:
 		position: absolute;
 		z-index:99;
 		margin-left:50px;
+	}
+	
+	#reset{
+	 	position: absolute;
+		z-index:99;
+		margin-left:20px;
+		margin-top:100px;
+		
+	}
+	
+	#reset:hover{
+		opacity:0.5;
+		cursor:pointer;
+		transition: opacity 0.5s ease;
+	}
+	
+	#reset img{
+		width:50px;
+		height:50px;
 	}
 	
 	/* 
@@ -1333,9 +1351,11 @@ current:
 		background: 0 0
 	}
 	
+	
 	.port-body-text{
-		font-size:18px;
+		font-size:22px;
 		font-family: 'Lato', sans-serif;
+		font-weight:300;
 	}
 
 	.img-centered {
