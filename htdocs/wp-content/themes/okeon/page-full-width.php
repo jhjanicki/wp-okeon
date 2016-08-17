@@ -13,7 +13,7 @@
     
     
     
-    <div class="row width-80-percent">
+    <div class="row">
       
       <div class="col-md-12">
       	

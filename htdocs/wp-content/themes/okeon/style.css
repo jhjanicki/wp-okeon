@@ -124,9 +124,9 @@ current:
 	}
 	
 	.panel-title{
-		font-size:22px;
+		font-size:32px;
 		font-weight:300;
-		color: black;
+		color: #c70019;
 		padding:0px;
 	}
 	
@@ -259,6 +259,11 @@ current:
 	
 	.padding-left-20{
 		padding-left:20px;
+	}
+	
+	.padding-left-20-5{
+		padding-left:20px;
+		padding-top:5px;
 	}
 	
 	.padding-right-20{
@@ -967,7 +972,7 @@ current:
 	.data-theme{
 		color:#c70019;
 		font-weight:300;
-		font-size:34px;
+		font-size:28px;
 	}
 	
 	/* footer */
@@ -1701,6 +1706,13 @@ current:
 			.slider-text{
 				font-size:14px;
 			}
+			.panel-title{
+				font-size:28px;
+			}
+			
+			.data-theme{
+				font-size:24px;
+			}
 	}
 	
 	
@@ -1726,6 +1738,13 @@ current:
 			
 			#myCarouselBlog{
 				display:none;
+			}
+			.panel-title{
+				font-size:26px;
+			}
+			
+			.data-theme{
+				font-size:22px;
 			}
 	}
 	
@@ -1763,6 +1782,13 @@ current:
 			#header{
 				height:80px;
 			}
+			.panel-title{
+				font-size:24px;
+			}
+			
+			.data-theme{
+				font-size:20px;
+			}
 	}
 	
 	@media all and (max-width: 430px){
@@ -1780,6 +1806,13 @@ current:
 	
 			.slider-text{
 				font-size:10px;
+			}
+			.panel-title{
+				font-size:22px;
+			}
+			
+			.data-theme{
+				font-size:18px;
 			}
 	}
 
