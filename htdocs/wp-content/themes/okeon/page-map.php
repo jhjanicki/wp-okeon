@@ -14,8 +14,20 @@
     
     
    
-    <div class="row">
-    <div class="col-md-12">    
+   <div class="row">
+    <div class="col-md-12 width-90-percent">    
+     
+      <?php if (have_posts()): while (have_posts()):the_post(); ?>
+      		
+      			<?php the_content(); ?>
+      		<?php endwhile; else: ?>
+      		
+      		<?php endif; ?>
+      </div>
+    </div>
+      
+ <div class="row">
+    <div class="col-md-12">
     <div id="">
     	<div id="side">
     			<div id="open_text">

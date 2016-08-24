@@ -133,6 +133,31 @@ $("#gallery-1 img").each(function( index ) {
 
 })(jQuery);
 
+(function($){
+		
+		
+		$("#universitiesClick").click(function (){
+					$('html, body').animate({
+							scrollTop: $("#universities").offset().top
+					}, 1000);
+		});
+		$("#museumsClick").click(function (){
+					$('html, body').animate({
+							scrollTop: $("#museums").offset().top
+					}, 1000);
+		});
+		$("#highschoolsClick").click(function (){
+					$('html, body').animate({
+							scrollTop: $("#highschools").offset().top
+					}, 1000);
+		});
+		$("#othersClick").click(function (){
+					$('html, body').animate({
+							scrollTop: $("#others").offset().top
+					}, 1000);
+		});
+})(jQuery);
+
 </script>
 
 <?php get_footer(); ?>   
