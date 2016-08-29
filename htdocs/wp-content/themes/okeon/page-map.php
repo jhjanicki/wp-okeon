@@ -35,10 +35,12 @@
     				<hr>
     			</div>
     			 <div id="reset"> <img src = "<?php echo get_template_directory_uri(); ?>/images/reset.png"/></div>
-    			<div id="buttons">
-    				<h4  class="button active-button" id="fieldsites-button">Field Sites View</h4>  <!-- style="float:left" -->
-					<h4 class="button" id="collaborators-button">Collaborators</h4> <!-- style="float:left" -->
+    			<!-- 
+<div id="buttons">
+    				<h4  class="button active-button" id="fieldsites-button">Field Sites View</h4>  
+					<h4 class="button" id="collaborators-button">Collaborators</h4> 
 				</div>
+ -->
 			
 			
 			<div id="site_view">
