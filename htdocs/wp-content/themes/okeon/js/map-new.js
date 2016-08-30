@@ -270,6 +270,7 @@ jQuery(document).ready(function($){
 	var tile1 = L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
 						attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 						});
+		tile2 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cisgsz47w000e2xpig4g4dr3i/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
 		tile3 = L.tileLayer(
 				'https://api.mapbox.com/styles/v1/jhjanicki/cis9ogm9c00142yqvnfridn8t/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A'
 				);
@@ -279,6 +280,7 @@ jQuery(document).ready(function($){
 			
 	var layerControlItems = {
 			  "<div class='layer-titles'> OSM Landscape </div>": tile1,
+			  "<div class='layer-titles'> Landcover </div>": tile2,
 			  "<div class='layer-titles'> Water Features </div>": tile3
 			};
 		
