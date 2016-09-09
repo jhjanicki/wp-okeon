@@ -190,6 +190,19 @@ current:
 		text-align: left;
 	}
 	
+	span.red{
+		color: #c70019 !important;
+		font-weight:400;
+	}
+	
+	.btn-red{
+		color: #fff;
+   		background-color: #c70019;
+    	border-color: #c70019;
+		margin-top:30px;
+		margin-left:40px;
+	}
+	
 	
 	.maxWidth {
 	  width: 100%;
@@ -913,6 +926,10 @@ i.fa.fa-4x:hover{
 	@media all and (max-width: 1370px){
 		#gallery-1 .gallery-item{
 			width:100% !important;
+		}
+		
+		.card-title{
+			font-size:20px;
 		}
 	}
 	

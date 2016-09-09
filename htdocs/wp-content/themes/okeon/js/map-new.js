@@ -284,8 +284,9 @@ jQuery(document).ready(function($){
 			  "<div class='layer-titles'> Water Features </div>": tile3
 			};
 		
-		 L.control.layers(layerControlItems).addTo(map);
-	
+		 L.control.layers(layerControlItems,null,{collapsed:false}).addTo(map);
+	      $(".leaflet-control-layers").addClass("leaflet-control-layers-expanded")
+	       
     map.scrollWheelZoom.disable();
     map.touchZoom.disable();
 

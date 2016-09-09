@@ -127,13 +127,6 @@ $("#cssmenu").menumaker({
 
 
 (function($){
-$("#gallery-1 img").each(function( index ) {
-  $(this).addClass("img-responsive");
-});
-
-})(jQuery);
-
-(function($){
 		
 		
 		$("#universitiesClick").click(function (){
@@ -155,6 +148,11 @@ $("#gallery-1 img").each(function( index ) {
 					$('html, body').animate({
 							scrollTop: $("#others").offset().top
 					}, 1000);
+		});
+		$("#back-to-top-click").click(function (){
+					$('html, body').animate({
+							scrollTop: $("#back-to-top").offset().top
+					}, 1200);
 		});
 })(jQuery);
 
