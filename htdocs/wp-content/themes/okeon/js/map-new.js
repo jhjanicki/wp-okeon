@@ -270,18 +270,23 @@ jQuery(document).ready(function($){
 	var tile1 = L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
 						attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 						});
-		tile2 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cisgsz47w000e2xpig4g4dr3i/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
-		tile3 = L.tileLayer(
-				'https://api.mapbox.com/styles/v1/jhjanicki/cis9ogm9c00142yqvnfridn8t/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A'
-				);
+	var tile2 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit3me6o000032xrlr9pyl2gt/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
+	var tile3 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit3xzkiz001u2xp7i4o04u04/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
 		
+	var tile4= L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit3y44ja00072yo9i3f5dv6g/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
+	
+	var tile5 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit3yccu700092yo9ox7u8mkf/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
 		
+	var tile6 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit3ylb0y000a2yo9m0n29ia3/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
 		tile1.addTo(map);
 			
 	var layerControlItems = {
 			  "<div class='layer-titles'> OSM Landscape </div>": tile1,
-			  "<div class='layer-titles'> Landcover </div>": tile2,
-			  "<div class='layer-titles'> Water Features </div>": tile3
+			  "<div class='layer-titles'> Basin </div>": tile2,
+			  "<div class='layer-titles'> Water Features </div>": tile3,
+			  "<div class='layer-titles'> Roads </div>": tile4,
+			  "<div class='layer-titles'> Combination </div>": tile5,
+			  "<div class='layer-titles'> Accumulated Runoff </div>": tile6
 			};
 		
 		 L.control.layers(layerControlItems,null,{collapsed:false}).addTo(map);
@@ -325,7 +330,7 @@ jQuery(document).ready(function($){
 				   .attr("fill","none")
 				   .style("stroke","black")
 				   .style("stroke-width",0.5)
-				   .style("opacity",1);
+				   .style("opacity",0);
 				
 				var bounds = path.bounds(adm2),
 					topLeft = bounds[0],
