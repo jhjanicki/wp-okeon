@@ -251,7 +251,7 @@ jQuery(document).ready(function($){
 				zoom: 10,
 				minZoom:10,
 				maxBounds: bounds,
-				maxZoom:15
+				maxZoom:17
 			});
 	
 	
@@ -279,6 +279,8 @@ jQuery(document).ready(function($){
 		
 	var tile6 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit3ylb0y000a2yo9m0n29ia3/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
 		tile1.addTo(map);
+	
+	var tile7 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit5517wq002t2xmxoszgcgrf/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
 			
 	var layerControlItems = {
 			  "<div class='layer-titles'> OSM Landscape </div>": tile1,
@@ -286,13 +288,14 @@ jQuery(document).ready(function($){
 			  "<div class='layer-titles'> Water Features </div>": tile3,
 			  "<div class='layer-titles'> Roads </div>": tile4,
 			  "<div class='layer-titles'> Combination </div>": tile5,
-			  "<div class='layer-titles'> Accumulated Runoff </div>": tile6
+			  "<div class='layer-titles'> Accumulated Runoff </div>": tile6,
+			  "<div class='layer-titles'> Landsat </div>": tile7
 			};
 		
 		 L.control.layers(layerControlItems,null,{collapsed:false}).addTo(map);
 	      $(".leaflet-control-layers").addClass("leaflet-control-layers-expanded")
 	       
-    map.scrollWheelZoom.disable();
+    // map.scrollWheelZoom.disable();
     map.touchZoom.disable();
 
 	var svg = d3.select(map.getPanes().overlayPane).append("svg"),
