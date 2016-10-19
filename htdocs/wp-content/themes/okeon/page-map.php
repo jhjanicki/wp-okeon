@@ -31,10 +31,10 @@
     <div id="">
     	<div id="side">
     			<div id="open_text">
-    				<h3 id='second-map-title'> Field Network </h3>
+    				<h3 id='second-map-title'> <!-- Field Network --> </h3>
     				<hr>
     			</div>
-    			 <div id="reset"> <img src = "<?php echo get_template_directory_uri(); ?>/images/reset.png"/></div>
+    			 <div id="reset"> <img src = "<?php echo get_template_directory_uri(); ?>/images/reset-glow.png"/></div>
     			<!-- 
 <div id="buttons">
     				<h4  class="button active-button" id="fieldsites-button">Field Sites View</h4>  

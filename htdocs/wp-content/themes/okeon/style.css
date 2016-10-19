@@ -788,6 +788,7 @@ i.fa.fa-4x:hover{
     	margin-top:30px;
     	margin-left:0px;
     	font-size:34px;
+    	text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.3), -1px 0px 1px rgba(255, 255, 255, 0.3), 0px 1px 1px rgba(255, 255, 255, 0.3), 0px -1px 1px rgba(255, 255, 255, 0.3);
     }
     
     #below-map-title{
