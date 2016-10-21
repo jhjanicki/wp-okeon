@@ -726,7 +726,7 @@ jQuery(document).ready(function($){
 		if(vars[1] =="lang=ja"){
 			console.log('peegy');
 			console.log(d);
-			descriptionHTML = "<h2 class='site-titles'> 叙述 </h2><h3>&nbsp;&nbsp;"+d.description+"</h3>";
+			descriptionHTML = "<h2 class='site-titles'> 叙述 </h2><h3>"+d.description+"</h3>";
 			trapsHTML = "<h2 class='site-titles'> トラップ </h2><h3>&nbsp;&nbsp;<b>"+d.trap1+
 		"</b>: ["+d.lat1+", "+d.lon1+"] <br>&nbsp;&nbsp;<b>"+d.trap2+"</b>: ["+d.lat2+", "+d.lon2+
 		"] <br>&nbsp;&nbsp;<b>"+d.trap3+"</b>: ["+d.lat3+", "+d.lon3+"]</h3>";
