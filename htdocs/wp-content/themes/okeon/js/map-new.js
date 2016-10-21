@@ -732,7 +732,7 @@ jQuery(document).ready(function($){
 		"] <br>&nbsp;&nbsp;<b>"+d.trap3+"</b>: ["+d.lat3+", "+d.lon3+"]</h3>";
 		weatherHTML = "<h2 class='site-titles'> 気象モニタリング </h2><h3>&nbsp;&nbsp;"+d.weather_station+"</h3>";
 		}else{
-			descriptionHTML = "<h2 class='site-titles'> Description </h2><h3>&nbsp;&nbsp;"+d.description+"</h3>";
+			descriptionHTML = "<h2 class='site-titles'> Description </h2><h3>"+d.description+"</h3>";
 			trapsHTML = "<h2 class='site-titles'> Traps </h2><h3>&nbsp;&nbsp;<b>"+d.trap1+
 		"</b>: ["+d.lat1+", "+d.lon1+"] <br>&nbsp;&nbsp;<b>"+d.trap2+"</b>: ["+d.lat2+", "+d.lon2+
 		"] <br>&nbsp;&nbsp;<b>"+d.trap3+"</b>: ["+d.lat3+", "+d.lon3+"]</h3>";
