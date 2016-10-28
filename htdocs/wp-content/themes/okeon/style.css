@@ -140,7 +140,9 @@ current:
 	}
 	
 	
-	
+	.cartodb-logo{
+		display:none !important;
+	}
 
 	/* general */
 	html{
