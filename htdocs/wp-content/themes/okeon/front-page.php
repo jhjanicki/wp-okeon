@@ -71,12 +71,12 @@
 				 <div class='width-90-percent'>
 				
 						<?php $temp_query = $wp_query; ?>
-						<?php query_posts('showposts=3'); ?>
+						<?php query_posts('showposts=5'); ?>
 						<?php while (have_posts()) : the_post(); ?>
 						<div class="post" id="post-<?php the_ID(); ?>">
 							<hr>
 							<h4><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h4>
-							<?php the_post_thumbnail('medium'); ?>  <?php the_excerpt(); ?>
+							<?php the_date(); ?><br><?php the_post_thumbnail('medium'); ?>  <?php the_excerpt(); ?>
 						</div>
 						<?php endwhile; ?>
 		
