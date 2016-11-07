@@ -207,35 +207,38 @@ jQuery(document).ready(function($){
 		map.setView(new L.LatLng(26.5, 128), 10);
 	});
 		
-	// var tile1 = L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
-// 						attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-// 				});
-// 	var tile2 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit3me6o000032xrlr9pyl2gt/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
-// 	var tile3 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit3xzkiz001u2xp7i4o04u04/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
-// 		
-// 	var tile4= L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit3y44ja00072yo9i3f5dv6g/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
-// 	
-// 	var tile5 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit3yccu700092yo9ox7u8mkf/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
-// 		
-// 	var tile6 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit3ylb0y000a2yo9m0n29ia3/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
-// 		tile1.addTo(map);
-// 	
-// 	var tile7 = L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit5517wq002t2xmxoszgcgrf/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A');
-// 			
-// 	var tile8 = L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png', {
-//           attribution: 'Stamen'
-//         });
-//         
-//         
-//     var vizjson_url = 'https://jhjanicki.carto.com/api/v2/viz/7bfaf774-9bfd-11e6-b8ae-0e3ebc282e83/viz.json';
 
 
-			
 	L.tileLayer('', {
 		attribution: '',
 	}).addTo(map);
 
-	var layersControl = L.control.layers({
+	if(vars[1] =="lang=ja"){
+		var layersControl = L.control.layers({
+		'OSM・風景': L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png').addTo(map),
+		'ステイマン・キャンバス': L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png',{
+			attribution: '&copy; Stamen'}),
+		'白黒の':L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		}),
+		'輸送':L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png'),
+		'ランドサット':L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit5517wq002t2xmxoszgcgrf/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A')
+		}).addTo(map);
+
+		cartodb.createLayer(map, 'https://jhjanicki.carto.com/api/v2/viz/2e0723d2-9cc8-11e6-a4b2-0e3ebc282e83/viz.json')
+			.addTo(map).on('done', function (layer) {
+			layersControl.addOverlay(layer, '道路');
+		});		
+	
+	
+		cartodb.createLayer(map, 'https://jhjanicki.carto.com/api/v2/viz/c05ba7be-9cc6-11e6-b266-0ecd1babdde5/viz.json')
+			.addTo(map).on('done', function (layer) {
+			layersControl.addOverlay(layer, '排水');
+		});
+	
+	
+	}else{
+		var layersControl = L.control.layers({
 		'OSM Landscape': L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png').addTo(map),
 		'Stamen Canvas': L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png',{
 			attribution: '&copy; Stamen'}),
@@ -244,32 +247,25 @@ jQuery(document).ready(function($){
 		}),
 		'Transport':L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png'),
 		'Landsat':L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit5517wq002t2xmxoszgcgrf/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A')
-	}).addTo(map);
+		}).addTo(map);
 
-	cartodb.createLayer(map, 'https://jhjanicki.carto.com/api/v2/viz/2e0723d2-9cc8-11e6-a4b2-0e3ebc282e83/viz.json')
-		.addTo(map).on('done', function (layer) {
-		layersControl.addOverlay(layer, 'Roads');
-	});		
+		cartodb.createLayer(map, 'https://jhjanicki.carto.com/api/v2/viz/2e0723d2-9cc8-11e6-a4b2-0e3ebc282e83/viz.json')
+			.addTo(map).on('done', function (layer) {
+			layersControl.addOverlay(layer, 'Roads');
+		});		
 	
 	
-	cartodb.createLayer(map, 'https://jhjanicki.carto.com/api/v2/viz/c05ba7be-9cc6-11e6-b266-0ecd1babdde5/viz.json')
-		.addTo(map).on('done', function (layer) {
-		layersControl.addOverlay(layer, 'Water Features');
-	});
+		cartodb.createLayer(map, 'https://jhjanicki.carto.com/api/v2/viz/c05ba7be-9cc6-11e6-b266-0ecd1babdde5/viz.json')
+			.addTo(map).on('done', function (layer) {
+			layersControl.addOverlay(layer, 'Water Features');
+		});
 	
+	
+	}
 			
-			
-	// var layerControlItems = {
-// 			  "<div class='layer-titles'> OSM Landscape </div>": tile1,
-// 			  "<div class='layer-titles'> Basin </div>": tile2,
-// 			  "<div class='layer-titles'> Water Features </div>": tile3,
-// 			  "<div class='layer-titles'> Roads </div>": tile4,
-// 			  "<div class='layer-titles'> Landsat </div>": tile7,
-// 			  "<div class='layer-titles'> Roads2 </div>": tile8
-// 			};
-// 		
-// 		 L.control.layers(layerControlItems,null,{collapsed:false}).addTo(map);
-	      $(".leaflet-control-layers").addClass("leaflet-control-layers-expanded");
+
+	
+	$(".leaflet-control-layers").addClass("leaflet-control-layers-expanded");
 	       
     map.scrollWheelZoom.disable();
     map.touchZoom.disable();
@@ -334,104 +330,6 @@ jQuery(document).ready(function($){
 	function getProjection() {
 		return function(xy){ return map.latLngToLayerPoint(new L.LatLng(xy[1], xy[0])) };
 	}
-	
-	
-	
-// 	function drawSitesNew(wh,display){
-// 		sites.selectAll("circle")
-// 					.data(sites_dataset)
-// 					.enter()
-// 					.append("svg:image")
-// 					.attr("class","img-site")
-// 					.attr("xlink:href", "https://dl.dropboxusercontent.com/u/102373131/okeon-img/tear-icon-red4.png")
-// 					.attr("x", function(d, i) {
-// 						//console.log(getProjection()([d.longitude,d.latitude]).x);
-// 						return getProjection()([d.longitude,d.latitude]).x-wh+200/wh;})
-// 					.attr("y", function(d, i) {return getProjection()([d.longitude,d.latitude]).y-wh+200/wh;})
-// 					.attr("width", wh)
-// 					.attr("height", wh)
-// 					.style("opacity",0.8)
-// 					.on("mouseover",function(d,i){
-// 						console.log(getProjection()([d.longitude,d.latitude]).x);
-// 						console.log(getProjection()([d.longitude,d.latitude]).y);
-// 						d3.select(this)
-// 						.transition()
-// 						.duration(500)
-// 						.style({
-// 							'opacity':0.5,
-// 							'cursor':'pointer'
-// 							});
-// 						drawInfolabel(d,i, display);
-// 					})
-// 					.on("mouseout",function(d,i){
-// 						d3.select(this)
-// 						.transition()
-// 						.duration(500)
-// 						.style({
-// 							'opacity':0.8
-// 							});
-// 						removeInfolabel(d,i, display);
-// 					})
-// 					.on('click',function(d,i){
-// 							zoomPanTo(d.latitude, d.longitude);
-// 							console.log('site_details');
-// 							var clickedSite;
-// 							site_details.forEach(function(d2){
-// 								//console.log(d2);
-// 								if(d.site_id == d2.site_id){
-// 									clickedSite = d2;
-// 								}
-// 							});
-// 							drawSitePanel(clickedSite,i);
-// 							$('html, body').animate({
-// 								scrollTop: $("#mapContainer").offset().top
-// 							}, 500);
-// 					});
-// 	}
-// 	
-// 	
-// 	function drawCollaboratorsNew(wh,display){
-// 		collaborators.selectAll("circle")
-// 					.data(collaborators_dataset)
-// 					.enter()
-// 					.append("svg:image")
-// 					.attr("class","img-collaborator")
-// 					.attr("xlink:href", "https://dl.dropboxusercontent.com/u/102373131/okeon-img/tear-icon-red3.png")
-// 					.attr("x", function(d, i) {
-// 						//console.log(getProjection()([d.longitude,d.latitude]).x);
-// 						return getProjection()([d.longitude,d.latitude]).x-wh+200/wh;})
-// 					.attr("y", function(d, i) {return getProjection()([d.longitude,d.latitude]).y-wh+200/wh;})
-// 					.attr("width", wh)
-// 					.attr("height", wh)
-// 					.style("opacity",0.8)
-// 					.on("mouseover",function(d,i){
-// 						d3.select(this)
-// 						.transition()
-// 						.duration(500)
-// 						.style({
-// 							'opacity':0.5,
-// 							'cursor':'pointer'
-// 							});
-// 						drawInfolabel(d,i,display);
-// 					})
-// 					.on("mouseout",function(d,i){
-// 						d3.select(this)
-// 						.transition()
-// 						.duration(500)
-// 						.style({
-// 							'opacity':0.8
-// 							});
-// 						removeInfolabel(d,i,display);
-// 					});
-// 	}
-// 	
-// 	function removeSitesNew(){
-// 		sites.selectAll(".img-site").remove();
-// 	}
-// 	
-// 	function removeCollaboratorsNew(){
-// 		collaborators.selectAll(".img-collaborator").remove();
-// 	}
 	
 	
 	
