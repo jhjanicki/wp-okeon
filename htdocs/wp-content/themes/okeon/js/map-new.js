@@ -216,12 +216,7 @@ jQuery(document).ready(function($){
 	if(vars[1] =="lang=ja"){
 		var layersControl = L.control.layers({
 		'OSM・風景': L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png').addTo(map),
-		// 'ステイマン・キャンバス': L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png',{
-// 			attribution: '&copy; Stamen'}),
-		'白黒の':L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-		}),
-		// '輸送':L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png'),
+	　　 'Thunderfrost・輸送':L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png'),
 		'ランドサット':L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit5517wq002t2xmxoszgcgrf/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A')
 		}).addTo(map);
 
@@ -236,16 +231,14 @@ jQuery(document).ready(function($){
 			layersControl.addOverlay(layer, '排水');
 		});
 	
-	
+	var Esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+	maxZoom: 16
+});
 	}else{
 		var layersControl = L.control.layers({
 		'OSM Landscape': L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png').addTo(map),
-		// 'Stamen Canvas': L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png',{
-// 			attribution: '&copy; Stamen'}),
-		'BlackAndWhite':L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-		}),
-		// 'Transport':L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png'),
+		'Thunderfrost Transport':L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png'),
 		'Landsat':L.tileLayer('https://api.mapbox.com/styles/v1/jhjanicki/cit5517wq002t2xmxoszgcgrf/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A')
 		}).addTo(map);
 
